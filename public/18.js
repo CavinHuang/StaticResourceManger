@@ -1,18 +1,18 @@
 webpackJsonp([18],{
 
-/***/ 131:
+/***/ 113:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(794)
+  __webpack_require__(670)
 }
 var normalizeComponent = __webpack_require__(1)
 /* script */
-var __vue_script__ = __webpack_require__(796)
+var __vue_script__ = __webpack_require__(672)
 /* template */
-var __vue_template__ = __webpack_require__(798)
+var __vue_template__ = __webpack_require__(673)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -29,7 +29,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources\\assets\\js\\views\\tables\\searchable-table.vue"
+Component.options.__file = "resources\\assets\\js\\views\\own-space\\own-space.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -38,9 +38,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-1e8f4f06", Component.options)
+    hotAPI.createRecord("data-v-75160885", Component.options)
   } else {
-    hotAPI.reload("data-v-1e8f4f06", Component.options)
+    hotAPI.reload("data-v-75160885", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -52,23 +52,23 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 794:
+/***/ 670:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(795);
+var content = __webpack_require__(671);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(5)("4adc44dc", content, false);
+var update = __webpack_require__(5)("663f2bae", content, false);
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-1e8f4f06\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../node_modules/less-loader/index.js!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./searchable-table.vue", function() {
-     var newContent = require("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-1e8f4f06\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../node_modules/less-loader/index.js!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./searchable-table.vue");
+   module.hot.accept("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-75160885\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../node_modules/less-loader/index.js!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./own-space.vue", function() {
+     var newContent = require("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-75160885\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../node_modules/less-loader/index.js!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./own-space.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -79,7 +79,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 795:
+/***/ 671:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(2)(false);
@@ -87,19 +87,18 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, "\n.margin-top-8 {\n  margin-top: 8px;\n}\n.margin-top-10 {\n  margin-top: 10px;\n}\n.margin-top-20 {\n  margin-top: 20px;\n}\n.margin-left-10 {\n  margin-left: 10px;\n}\n.margin-bottom-10 {\n  margin-bottom: 10px;\n}\n.margin-bottom-100 {\n  margin-bottom: 100px;\n}\n.margin-right-10 {\n  margin-right: 10px;\n}\n.padding-left-6 {\n  padding-left: 6px;\n}\n.padding-left-8 {\n  padding-left: 5px;\n}\n.padding-left-10 {\n  padding-left: 10px;\n}\n.padding-left-20 {\n  padding-left: 20px;\n}\n.height-100 {\n  height: 100%;\n}\n.height-120px {\n  height: 100px;\n}\n.height-200px {\n  height: 200px;\n}\n.height-492px {\n  height: 492px;\n}\n.height-460px {\n  height: 460px;\n}\n.line-gray {\n  height: 0;\n  border-bottom: 2px solid #dcdcdc;\n}\n.notwrap {\n  word-break: keep-all;\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis;\n}\n.padding-left-5 {\n  padding-left: 10px;\n}\n[v-cloak] {\n  display: none;\n}\n.dragging-tip-enter-active {\n  opacity: 1;\n  -webkit-transition: opacity .3s;\n  transition: opacity .3s;\n}\n.dragging-tip-enter,\n.dragging-tip-leave-to {\n  opacity: 0;\n  -webkit-transition: opacity 0.3s;\n  transition: opacity 0.3s;\n}\n.dragging-tip-con {\n  display: block;\n  text-align: center;\n  width: 100%;\n  height: 50px;\n}\n.dragging-tip-con span {\n  font-size: 18px;\n}\n.record-tip-con {\n  display: block;\n  width: 100%;\n  height: 292px;\n  overflow: auto;\n}\n.record-item {\n  -webkit-box-sizing: content-box;\n          box-sizing: content-box;\n  display: block;\n  overflow: hidden;\n  height: 24px;\n  line-height: 24px;\n  padding: 8px 10px;\n  border-bottom: 1px dashed gainsboro;\n}\n.record-tip-con span {\n  font-size: 14px;\n}\n.edittable-test-con {\n  height: 160px;\n}\n.edittable-table-height-con {\n  height: 190px;\n}\n.edittable-con-1 {\n  -webkit-box-sizing: content-box;\n          box-sizing: content-box;\n  padding: 15px 0 0;\n  height: 196px;\n}\n.edittable-table-get-currentdata-con {\n  height: 190px !important;\n}\n.exportable-table-download-con1 {\n  padding: 16px 0 16px 20px;\n  border-bottom: 1px dashed #c3c3c3;\n  margin-bottom: 16px;\n}\n.exportable-table-download-con2 {\n  padding-left: 20px;\n}\n.show-image {\n  padding: 20px 0px;\n}\n.show-image img {\n  display: block;\n  width: 100%;\n  height: auto;\n}\n.searchable-table-con1 {\n  height: 230px !important;\n}\n", ""]);
+exports.push([module.i, "\n.own-space-btn-box {\n  margin-bottom: 10px;\n}\n.own-space-btn-box button {\n  padding-left: 0;\n}\n.own-space-btn-box button span {\n  color: #2D8CF0;\n  -webkit-transition: all .2s;\n  transition: all .2s;\n}\n.own-space-btn-box button span:hover {\n  color: #0C25F1;\n  -webkit-transition: all .2s;\n  transition: all .2s;\n}\n.own-space-tra {\n  width: 10px;\n  height: 10px;\n  -webkit-transform: rotate(45deg);\n          transform: rotate(45deg);\n  position: absolute;\n  top: 50%;\n  margin-top: -6px;\n  left: -3px;\n  -webkit-box-shadow: 0 0 2px 3px rgba(0, 0, 0, 0.1);\n          box-shadow: 0 0 2px 3px rgba(0, 0, 0, 0.1);\n  background-color: white;\n  z-index: 100;\n}\n.own-space-input-identifycode-con {\n  position: absolute;\n  width: 200px;\n  height: 100px;\n  right: -220px;\n  top: 50%;\n  margin-top: -50px;\n  border-radius: 4px;\n  -webkit-box-shadow: 0 0 2px 3px rgba(0, 0, 0, 0.1);\n          box-shadow: 0 0 2px 3px rgba(0, 0, 0, 0.1);\n}\n", ""]);
 
 // exports
 
 
 /***/ }),
 
-/***/ 796:
+/***/ 672:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__data_search__ = __webpack_require__(797);
 //
 //
 //
@@ -157,64 +156,203 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-    name: 'searchable-table',
+    name: 'ownspace_index',
     data: function data() {
+        var _this = this;
+
+        var validePhone = function validePhone(rule, value, callback) {
+            var re = /^1[0-9]{10}$/;
+            if (!re.test(value)) {
+                callback(new Error('请输入正确格式的手机号'));
+            } else {
+                callback();
+            }
+        };
+        var valideRePassword = function valideRePassword(rule, value, callback) {
+            if (value !== _this.editPasswordForm.newPass) {
+                callback(new Error('两次输入密码不一致'));
+            } else {
+                callback();
+            }
+        };
         return {
-            searchConName1: '',
-            searchConName2: '',
-            searchConTel2: '',
-            searchConName3: '',
-            columns1: __WEBPACK_IMPORTED_MODULE_0__data_search__["a" /* columns1 */],
-            data1: [],
-            initTable1: [],
-            data2: [],
-            initTable2: [],
-            data3: [],
-            initTable3: []
+            userForm: {
+                name: '',
+                cellphone: '',
+                company: '',
+                department: ''
+            },
+            uid: '', // 登录用户的userId
+            securityCode: '', // 验证码
+            phoneHasChanged: false, // 是否编辑了手机
+            save_loading: false,
+            identifyError: '', // 验证码错误
+            editPasswordModal: false, // 修改密码模态框显示
+            savePassLoading: false,
+            oldPassError: '',
+            identifyCodeRight: false, // 验证码是否正确
+            hasGetIdentifyCode: false, // 是否点了获取验证码
+            canGetIdentifyCode: false, // 是否可点获取验证码
+            checkIdentifyCodeLoading: false,
+            inforValidate: {
+                name: [{ required: true, message: '请输入姓名', trigger: 'blur' }],
+                cellphone: [{ required: true, message: '请输入手机号码' }, { validator: validePhone }]
+            },
+            editPasswordForm: {
+                oldPass: '',
+                newPass: '',
+                rePass: ''
+            },
+            passwordValidate: {
+                oldPass: [{ required: true, message: '请输入原密码', trigger: 'blur' }],
+                newPass: [{ required: true, message: '请输入新密码', trigger: 'blur' }, { min: 6, message: '请至少输入6个字符', trigger: 'blur' }, { max: 32, message: '最多输入32个字符', trigger: 'blur' }],
+                rePass: [{ required: true, message: '请再次输入新密码', trigger: 'blur' }, { validator: valideRePassword, trigger: 'blur' }]
+            },
+            inputCodeVisible: false, // 显示填写验证码box
+            initPhone: '',
+            gettingIdentifyCodeBtnContent: '获取验证码' // “获取验证码”按钮的文字
         };
     },
 
     methods: {
-        init: function init() {
-            this.data1 = this.initTable1 = __WEBPACK_IMPORTED_MODULE_0__data_search__["b" /* searchTable1 */];
-            this.data2 = this.initTable2 = __WEBPACK_IMPORTED_MODULE_0__data_search__["c" /* searchTable2 */];
-            this.data3 = this.initTable3 = __WEBPACK_IMPORTED_MODULE_0__data_search__["d" /* searchTable3 */];
-        },
-        search: function search(data, argumentObj) {
-            var res = data;
-            var dataClone = data;
+        getIdentifyCode: function getIdentifyCode() {
+            var _this2 = this;
 
-            var _loop = function _loop(argu) {
-                if (argumentObj[argu].length > 0) {
-                    res = dataClone.filter(function (d) {
-                        return d[argu].indexOf(argumentObj[argu]) > -1;
-                    });
-                    dataClone = res;
+            this.hasGetIdentifyCode = true;
+            this.$refs['userForm'].validate(function (valid) {
+                if (valid) {
+                    _this2.canGetIdentifyCode = true;
+                    var timeLast = 60;
+                    var timer = setInterval(function () {
+                        if (timeLast >= 0) {
+                            _this2.gettingIdentifyCodeBtnContent = timeLast + '秒后重试';
+                            timeLast -= 1;
+                        } else {
+                            clearInterval(timer);
+                            _this2.gettingIdentifyCodeBtnContent = '获取验证码';
+                            _this2.canGetIdentifyCode = false;
+                        }
+                    }, 1000);
+                    _this2.inputCodeVisible = true;
+                    // you can write ajax request here
                 }
-            };
-
-            for (var argu in argumentObj) {
-                _loop(argu);
+            });
+        },
+        showEditPassword: function showEditPassword() {
+            this.editPasswordModal = true;
+        },
+        cancelEditUserInfor: function cancelEditUserInfor() {
+            this.$store.commit('removeTag', 'ownspace_index');
+            localStorage.pageOpenedList = JSON.stringify(this.$store.state.app.pageOpenedList);
+            var lastPageName = '';
+            if (this.$store.state.app.pageOpenedList.length > 1) {
+                lastPageName = this.$store.state.app.pageOpenedList[1].name;
+            } else {
+                lastPageName = this.$store.state.app.pageOpenedList[0].name;
             }
-            return res;
+            this.$router.push({
+                name: lastPageName
+            });
         },
-        handleSearch1: function handleSearch1() {
-            this.data1 = this.initTable1;
-            this.data1 = this.search(this.data1, { name: this.searchConName1 });
+        saveEdit: function saveEdit() {
+            var _this3 = this;
+
+            this.$refs['userForm'].validate(function (valid) {
+                if (valid) {
+                    if (_this3.phoneHasChanged && _this3.userForm.cellphone !== _this3.initPhone) {
+                        // 手机号码修改过了而且修改之后的手机号和原来的不一样
+                        if (_this3.hasGetIdentifyCode) {
+                            // 判断是否点了获取验证码
+                            if (_this3.identifyCodeRight) {
+                                // 判断验证码是否正确
+                                _this3.saveInfoAjax();
+                            } else {
+                                _this3.$Message.error('验证码错误，请重新输入');
+                            }
+                        } else {
+                            _this3.$Message.warning('请先点击获取验证码');
+                        }
+                    } else {
+                        _this3.saveInfoAjax();
+                    }
+                }
+            });
         },
-        handleSearch2: function handleSearch2() {
-            this.data2 = this.initTable2;
-            this.data2 = this.search(this.data2, { name: this.searchConName2, tel: this.searchConTel2 });
+        cancelEditPass: function cancelEditPass() {
+            this.editPasswordModal = false;
         },
-        handleSearch3: function handleSearch3() {
-            this.data3 = this.initTable3;
-            this.data3 = this.search(this.data3, { name: this.searchConName3 });
+        saveEditPass: function saveEditPass() {
+            var _this4 = this;
+
+            this.$refs['editPasswordForm'].validate(function (valid) {
+                if (valid) {
+                    _this4.savePassLoading = true;
+                    // you can write ajax request here
+                }
+            });
         },
-        handleCancel3: function handleCancel3() {
-            this.data3 = this.initTable3;
+        init: function init() {
+            this.userForm.name = 'Lison';
+            this.userForm.cellphone = '17712345678';
+            this.initPhone = '17712345678';
+            this.userForm.company = 'TalkingData';
+            this.userForm.department = '可视化部门';
+        },
+        cancelInputCodeBox: function cancelInputCodeBox() {
+            this.inputCodeVisible = false;
+            this.userForm.cellphone = this.initPhone;
+        },
+        submitCode: function submitCode() {
+            var _this5 = this;
+
+            var vm = this;
+            vm.checkIdentifyCodeLoading = true;
+            if (this.securityCode.length === 0) {
+                this.$Message.error('请填写短信验证码');
+            } else {
+                setTimeout(function () {
+                    _this5.$Message.success('验证码正确');
+                    _this5.inputCodeVisible = false;
+                    _this5.checkIdentifyCodeLoading = false;
+                }, 1000);
+            }
+        },
+        hasChangePhone: function hasChangePhone() {
+            this.phoneHasChanged = true;
+            this.hasGetIdentifyCode = false;
+            this.identifyCodeRight = false;
+        },
+        saveInfoAjax: function saveInfoAjax() {
+            var _this6 = this;
+
+            this.save_loading = true;
+            setTimeout(function () {
+                _this6.$Message.success('保存成功');
+                _this6.save_loading = false;
+            }, 1000);
         }
     },
     mounted: function mounted() {
@@ -224,67 +362,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /***/ }),
 
-/***/ 797:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return columns1; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return searchTable1; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return searchTable2; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return searchTable3; });
-var columns1 = [{
-    key: 'name',
-    title: '姓名'
-}, {
-    key: 'tel',
-    title: '电话号码'
-}];
-
-var searchTable1 = [{
-    name: 'Aresn',
-    tel: '17712345678'
-}, {
-    name: 'Lison',
-    tel: '17787654321'
-}, {
-    name: 'Lili',
-    tel: '12212345678'
-}, {
-    name: 'Lucy',
-    tel: '13312345678'
-}];
-
-var searchTable2 = [{
-    name: 'Aresn',
-    tel: '17712345678'
-}, {
-    name: 'Lison',
-    tel: '17787654321'
-}, {
-    name: 'Lili',
-    tel: '12212345678'
-}, {
-    name: 'Lucy',
-    tel: '13312345678'
-}];
-
-var searchTable3 = [{
-    name: 'Aresn',
-    tel: '17712345678'
-}, {
-    name: 'Lison',
-    tel: '17787654321'
-}, {
-    name: 'Lili',
-    tel: '12212345678'
-}, {
-    name: 'Lucy',
-    tel: '13312345678'
-}];
-
-/***/ }),
-
-/***/ 798:
+/***/ 673:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -294,61 +372,324 @@ var render = function() {
   return _c(
     "div",
     [
+      _c("Card", [
+        _c(
+          "p",
+          { attrs: { slot: "title" }, slot: "title" },
+          [
+            _c("Icon", { attrs: { type: "person" } }),
+            _vm._v("\n            个人信息\n        ")
+          ],
+          1
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          [
+            _c(
+              "Form",
+              {
+                ref: "userForm",
+                attrs: {
+                  model: _vm.userForm,
+                  "label-width": 100,
+                  "label-position": "right",
+                  rules: _vm.inforValidate
+                }
+              },
+              [
+                _c(
+                  "FormItem",
+                  { attrs: { label: "用户姓名：", prop: "name" } },
+                  [
+                    _c(
+                      "div",
+                      {
+                        staticStyle: { display: "inline-block", width: "300px" }
+                      },
+                      [
+                        _c("Input", {
+                          model: {
+                            value: _vm.userForm.name,
+                            callback: function($$v) {
+                              _vm.$set(_vm.userForm, "name", $$v)
+                            },
+                            expression: "userForm.name"
+                          }
+                        })
+                      ],
+                      1
+                    )
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "FormItem",
+                  { attrs: { label: "用户手机：", prop: "cellphone" } },
+                  [
+                    _c(
+                      "div",
+                      {
+                        staticStyle: { display: "inline-block", width: "204px" }
+                      },
+                      [
+                        _c("Input", {
+                          on: { "on-keydown": _vm.hasChangePhone },
+                          model: {
+                            value: _vm.userForm.cellphone,
+                            callback: function($$v) {
+                              _vm.$set(_vm.userForm, "cellphone", $$v)
+                            },
+                            expression: "userForm.cellphone"
+                          }
+                        })
+                      ],
+                      1
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticStyle: {
+                          display: "inline-block",
+                          position: "relative"
+                        }
+                      },
+                      [
+                        _c(
+                          "Button",
+                          {
+                            attrs: { disabled: _vm.canGetIdentifyCode },
+                            on: { click: _vm.getIdentifyCode }
+                          },
+                          [_vm._v(_vm._s(_vm.gettingIdentifyCodeBtnContent))]
+                        ),
+                        _vm._v(" "),
+                        _vm.inputCodeVisible
+                          ? _c(
+                              "div",
+                              {
+                                staticClass: "own-space-input-identifycode-con"
+                              },
+                              [
+                                _c(
+                                  "div",
+                                  {
+                                    staticStyle: {
+                                      "background-color": "white",
+                                      "z-index": "110",
+                                      margin: "10px"
+                                    }
+                                  },
+                                  [
+                                    _c("Input", {
+                                      attrs: {
+                                        placeholder: "请填写短信验证码"
+                                      },
+                                      model: {
+                                        value: _vm.securityCode,
+                                        callback: function($$v) {
+                                          _vm.securityCode = $$v
+                                        },
+                                        expression: "securityCode"
+                                      }
+                                    }),
+                                    _vm._v(" "),
+                                    _c(
+                                      "div",
+                                      {
+                                        staticStyle: {
+                                          "margin-top": "10px",
+                                          "text-align": "right"
+                                        }
+                                      },
+                                      [
+                                        _c(
+                                          "Button",
+                                          {
+                                            attrs: { type: "ghost" },
+                                            on: {
+                                              click: _vm.cancelInputCodeBox
+                                            }
+                                          },
+                                          [_vm._v("取消")]
+                                        ),
+                                        _vm._v(" "),
+                                        _c(
+                                          "Button",
+                                          {
+                                            attrs: {
+                                              type: "primary",
+                                              loading:
+                                                _vm.checkIdentifyCodeLoading
+                                            },
+                                            on: { click: _vm.submitCode }
+                                          },
+                                          [_vm._v("确定")]
+                                        )
+                                      ],
+                                      1
+                                    )
+                                  ],
+                                  1
+                                )
+                              ]
+                            )
+                          : _vm._e()
+                      ],
+                      1
+                    )
+                  ]
+                ),
+                _vm._v(" "),
+                _c("FormItem", { attrs: { label: "公司：" } }, [
+                  _c("span", [_vm._v(_vm._s(_vm.userForm.company))])
+                ]),
+                _vm._v(" "),
+                _c("FormItem", { attrs: { label: "部门：" } }, [
+                  _c("span", [_vm._v(_vm._s(_vm.userForm.department))])
+                ]),
+                _vm._v(" "),
+                _c(
+                  "FormItem",
+                  { attrs: { label: "登录密码：" } },
+                  [
+                    _c(
+                      "Button",
+                      {
+                        attrs: { type: "text", size: "small" },
+                        on: { click: _vm.showEditPassword }
+                      },
+                      [_vm._v("修改密码")]
+                    )
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  [
+                    _c(
+                      "Button",
+                      {
+                        staticStyle: { width: "100px" },
+                        attrs: { type: "text" },
+                        on: { click: _vm.cancelEditUserInfor }
+                      },
+                      [_vm._v("取消")]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "Button",
+                      {
+                        staticStyle: { width: "100px" },
+                        attrs: { type: "primary", loading: _vm.save_loading },
+                        on: { click: _vm.saveEdit }
+                      },
+                      [_vm._v("保存")]
+                    )
+                  ],
+                  1
+                )
+              ],
+              1
+            )
+          ],
+          1
+        )
+      ]),
+      _vm._v(" "),
       _c(
-        "Row",
-        { attrs: { gutter: 10 } },
+        "Modal",
+        {
+          attrs: { closable: false, "mask-closable": false, width: 500 },
+          model: {
+            value: _vm.editPasswordModal,
+            callback: function($$v) {
+              _vm.editPasswordModal = $$v
+            },
+            expression: "editPasswordModal"
+          }
+        },
         [
           _c(
-            "Col",
-            { attrs: { span: "8" } },
+            "h3",
+            {
+              staticStyle: { color: "#2D8CF0" },
+              attrs: { slot: "header" },
+              slot: "header"
+            },
+            [_vm._v("修改密码")]
+          ),
+          _vm._v(" "),
+          _c(
+            "Form",
+            {
+              ref: "editPasswordForm",
+              attrs: {
+                model: _vm.editPasswordForm,
+                "label-width": 100,
+                "label-position": "right",
+                rules: _vm.passwordValidate
+              }
+            },
             [
               _c(
-                "Card",
+                "FormItem",
+                {
+                  attrs: {
+                    label: "原密码",
+                    prop: "oldPass",
+                    error: _vm.oldPassError
+                  }
+                },
                 [
-                  _c(
-                    "p",
-                    { attrs: { slot: "title" }, slot: "title" },
-                    [
-                      _c("Icon", { attrs: { type: "pinpoint" } }),
-                      _vm._v(
-                        "\n                    一个条件搜索\n                "
-                      )
-                    ],
-                    1
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "Row",
-                    [
-                      _c("Input", {
-                        staticStyle: { width: "200px" },
-                        attrs: {
-                          icon: "search",
-                          placeholder: "请输入姓名搜索..."
-                        },
-                        on: { "on-change": _vm.handleSearch1 },
-                        model: {
-                          value: _vm.searchConName1,
-                          callback: function($$v) {
-                            _vm.searchConName1 = $$v
-                          },
-                          expression: "searchConName1"
-                        }
-                      })
-                    ],
-                    1
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "Row",
-                    { staticClass: "margin-top-10 searchable-table-con1" },
-                    [
-                      _c("Table", {
-                        attrs: { columns: _vm.columns1, data: _vm.data1 }
-                      })
-                    ],
-                    1
-                  )
+                  _c("Input", {
+                    attrs: { placeholder: "请输入现在使用的密码" },
+                    model: {
+                      value: _vm.editPasswordForm.oldPass,
+                      callback: function($$v) {
+                        _vm.$set(_vm.editPasswordForm, "oldPass", $$v)
+                      },
+                      expression: "editPasswordForm.oldPass"
+                    }
+                  })
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "FormItem",
+                { attrs: { label: "新密码", prop: "newPass" } },
+                [
+                  _c("Input", {
+                    attrs: { placeholder: "请输入新密码，至少6位字符" },
+                    model: {
+                      value: _vm.editPasswordForm.newPass,
+                      callback: function($$v) {
+                        _vm.$set(_vm.editPasswordForm, "newPass", $$v)
+                      },
+                      expression: "editPasswordForm.newPass"
+                    }
+                  })
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "FormItem",
+                { attrs: { label: "确认新密码", prop: "rePass" } },
+                [
+                  _c("Input", {
+                    attrs: { placeholder: "请再次输入新密码" },
+                    model: {
+                      value: _vm.editPasswordForm.rePass,
+                      callback: function($$v) {
+                        _vm.$set(_vm.editPasswordForm, "rePass", $$v)
+                      },
+                      expression: "editPasswordForm.rePass"
+                    }
+                  })
                 ],
                 1
               )
@@ -357,153 +698,22 @@ var render = function() {
           ),
           _vm._v(" "),
           _c(
-            "Col",
-            { attrs: { span: "8" } },
+            "div",
+            { attrs: { slot: "footer" }, slot: "footer" },
             [
               _c(
-                "Card",
-                [
-                  _c(
-                    "p",
-                    { attrs: { slot: "title" }, slot: "title" },
-                    [
-                      _c("Icon", { attrs: { type: "help-buoy" } }),
-                      _vm._v(
-                        "\n                    多个条件搜索\n                "
-                      )
-                    ],
-                    1
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "Row",
-                    [
-                      _c("Input", {
-                        staticStyle: { width: "200px" },
-                        attrs: {
-                          icon: "search",
-                          placeholder: "请输入姓名搜搜..."
-                        },
-                        on: { "on-change": _vm.handleSearch2 },
-                        model: {
-                          value: _vm.searchConName2,
-                          callback: function($$v) {
-                            _vm.searchConName2 = $$v
-                          },
-                          expression: "searchConName2"
-                        }
-                      }),
-                      _vm._v(" "),
-                      _c("Input", {
-                        staticStyle: { width: "200px" },
-                        attrs: {
-                          icon: "search",
-                          placeholder: "请输入手机号搜搜..."
-                        },
-                        on: { "on-change": _vm.handleSearch2 },
-                        model: {
-                          value: _vm.searchConTel2,
-                          callback: function($$v) {
-                            _vm.searchConTel2 = $$v
-                          },
-                          expression: "searchConTel2"
-                        }
-                      })
-                    ],
-                    1
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "Row",
-                    { staticClass: "margin-top-10 searchable-table-con1" },
-                    [
-                      _c("Table", {
-                        attrs: { columns: _vm.columns1, data: _vm.data2 }
-                      })
-                    ],
-                    1
-                  )
-                ],
-                1
-              )
-            ],
-            1
-          ),
-          _vm._v(" "),
-          _c(
-            "Col",
-            { attrs: { span: "8" } },
-            [
+                "Button",
+                { attrs: { type: "text" }, on: { click: _vm.cancelEditPass } },
+                [_vm._v("取消")]
+              ),
+              _vm._v(" "),
               _c(
-                "Card",
-                [
-                  _c(
-                    "p",
-                    { attrs: { slot: "title" }, slot: "title" },
-                    [
-                      _c("Icon", { attrs: { type: "mouse" } }),
-                      _vm._v(
-                        "\n                    点击搜索进行搜索\n                "
-                      )
-                    ],
-                    1
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "Row",
-                    [
-                      _c("Input", {
-                        staticStyle: { width: "200px" },
-                        attrs: { placeholder: "请输入姓名搜搜..." },
-                        model: {
-                          value: _vm.searchConName3,
-                          callback: function($$v) {
-                            _vm.searchConName3 = $$v
-                          },
-                          expression: "searchConName3"
-                        }
-                      }),
-                      _vm._v(" "),
-                      _c(
-                        "span",
-                        {
-                          staticStyle: { margin: "0 10px" },
-                          on: { click: _vm.handleSearch3 }
-                        },
-                        [
-                          _c(
-                            "Button",
-                            { attrs: { type: "primary", icon: "search" } },
-                            [_vm._v("搜索")]
-                          )
-                        ],
-                        1
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "Button",
-                        {
-                          attrs: { type: "ghost" },
-                          on: { click: _vm.handleCancel3 }
-                        },
-                        [_vm._v("取消")]
-                      )
-                    ],
-                    1
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "Row",
-                    { staticClass: "margin-top-10 searchable-table-con1" },
-                    [
-                      _c("Table", {
-                        attrs: { columns: _vm.columns1, data: _vm.data3 }
-                      })
-                    ],
-                    1
-                  )
-                ],
-                1
+                "Button",
+                {
+                  attrs: { type: "primary", loading: _vm.savePassLoading },
+                  on: { click: _vm.saveEditPass }
+                },
+                [_vm._v("保存")]
               )
             ],
             1
@@ -521,7 +731,7 @@ module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-1e8f4f06", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-75160885", module.exports)
   }
 }
 

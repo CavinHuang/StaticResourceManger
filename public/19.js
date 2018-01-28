@@ -1,18 +1,18 @@
 webpackJsonp([19],{
 
-/***/ 113:
+/***/ 124:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(670)
+  __webpack_require__(747)
 }
 var normalizeComponent = __webpack_require__(1)
 /* script */
-var __vue_script__ = __webpack_require__(672)
+var __vue_script__ = __webpack_require__(749)
 /* template */
-var __vue_template__ = __webpack_require__(673)
+var __vue_template__ = __webpack_require__(750)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -29,7 +29,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources\\assets\\js\\views\\own-space\\own-space.vue"
+Component.options.__file = "resources\\assets\\js\\views\\my-components\\file-upload\\file-upload.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -38,9 +38,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-75160885", Component.options)
+    hotAPI.createRecord("data-v-4aef1c34", Component.options)
   } else {
-    hotAPI.reload("data-v-75160885", Component.options)
+    hotAPI.reload("data-v-4aef1c34", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -52,23 +52,23 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 670:
+/***/ 747:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(671);
+var content = __webpack_require__(748);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(5)("663f2bae", content, false);
+var update = __webpack_require__(5)("9b8156dc", content, false);
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-75160885\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../node_modules/less-loader/index.js!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./own-space.vue", function() {
-     var newContent = require("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-75160885\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../node_modules/less-loader/index.js!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./own-space.vue");
+   module.hot.accept("!!../../../../../../node_modules/css-loader/index.js!../../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-4aef1c34\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../../node_modules/less-loader/index.js!../../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./file-upload.vue", function() {
+     var newContent = require("!!../../../../../../node_modules/css-loader/index.js!../../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-4aef1c34\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../../node_modules/less-loader/index.js!../../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./file-upload.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -79,7 +79,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 671:
+/***/ 748:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(2)(false);
@@ -87,14 +87,14 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, "\n.own-space-btn-box {\n  margin-bottom: 10px;\n}\n.own-space-btn-box button {\n  padding-left: 0;\n}\n.own-space-btn-box button span {\n  color: #2D8CF0;\n  -webkit-transition: all .2s;\n  transition: all .2s;\n}\n.own-space-btn-box button span:hover {\n  color: #0C25F1;\n  -webkit-transition: all .2s;\n  transition: all .2s;\n}\n.own-space-tra {\n  width: 10px;\n  height: 10px;\n  -webkit-transform: rotate(45deg);\n          transform: rotate(45deg);\n  position: absolute;\n  top: 50%;\n  margin-top: -6px;\n  left: -3px;\n  -webkit-box-shadow: 0 0 2px 3px rgba(0, 0, 0, 0.1);\n          box-shadow: 0 0 2px 3px rgba(0, 0, 0, 0.1);\n  background-color: white;\n  z-index: 100;\n}\n.own-space-input-identifycode-con {\n  position: absolute;\n  width: 200px;\n  height: 100px;\n  right: -220px;\n  top: 50%;\n  margin-top: -50px;\n  border-radius: 4px;\n  -webkit-box-shadow: 0 0 2px 3px rgba(0, 0, 0, 0.1);\n          box-shadow: 0 0 2px 3px rgba(0, 0, 0, 0.1);\n}\n", ""]);
+exports.push([module.i, "\n.margin-top-8 {\n  margin-top: 8px;\n}\n.margin-top-10 {\n  margin-top: 10px;\n}\n.margin-top-20 {\n  margin-top: 20px;\n}\n.margin-left-10 {\n  margin-left: 10px;\n}\n.margin-bottom-10 {\n  margin-bottom: 10px;\n}\n.margin-bottom-100 {\n  margin-bottom: 100px;\n}\n.margin-right-10 {\n  margin-right: 10px;\n}\n.padding-left-6 {\n  padding-left: 6px;\n}\n.padding-left-8 {\n  padding-left: 5px;\n}\n.padding-left-10 {\n  padding-left: 10px;\n}\n.padding-left-20 {\n  padding-left: 20px;\n}\n.height-100 {\n  height: 100%;\n}\n.height-120px {\n  height: 100px;\n}\n.height-200px {\n  height: 200px;\n}\n.height-492px {\n  height: 492px;\n}\n.height-460px {\n  height: 460px;\n}\n.line-gray {\n  height: 0;\n  border-bottom: 2px solid #dcdcdc;\n}\n.notwrap {\n  word-break: keep-all;\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis;\n}\n.padding-left-5 {\n  padding-left: 10px;\n}\n[v-cloak] {\n  display: none;\n}\n.admin-upload-list {\n  display: inline-block;\n  width: 60px;\n  height: 60px;\n  text-align: center;\n  line-height: 60px;\n  border: 1px solid transparent;\n  border-radius: 4px;\n  overflow: hidden;\n  background: #fff;\n  position: relative;\n  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);\n          box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);\n  margin-right: 4px;\n}\n.admin-upload-list img {\n  width: 100%;\n  height: 100%;\n}\n.admin-upload-list-cover {\n  display: none;\n  position: absolute;\n  top: 0;\n  bottom: 0;\n  left: 0;\n  right: 0;\n  background: rgba(0, 0, 0, 0.6);\n}\n.admin-upload-list:hover .admin-upload-list-cover {\n  display: block;\n}\n.admin-upload-list-cover i {\n  color: #fff;\n  font-size: 20px;\n  cursor: pointer;\n  margin: 0 2px;\n}\n", ""]);
 
 // exports
 
 
 /***/ }),
 
-/***/ 672:
+/***/ 749:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -177,192 +177,188 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-    name: 'ownspace_index',
+    name: 'file-upload',
     data: function data() {
-        var _this = this;
-
-        var validePhone = function validePhone(rule, value, callback) {
-            var re = /^1[0-9]{10}$/;
-            if (!re.test(value)) {
-                callback(new Error('请输入正确格式的手机号'));
-            } else {
-                callback();
-            }
-        };
-        var valideRePassword = function valideRePassword(rule, value, callback) {
-            if (value !== _this.editPasswordForm.newPass) {
-                callback(new Error('两次输入密码不一致'));
-            } else {
-                callback();
-            }
-        };
         return {
-            userForm: {
-                name: '',
-                cellphone: '',
-                company: '',
-                department: ''
-            },
-            uid: '', // 登录用户的userId
-            securityCode: '', // 验证码
-            phoneHasChanged: false, // 是否编辑了手机
-            save_loading: false,
-            identifyError: '', // 验证码错误
-            editPasswordModal: false, // 修改密码模态框显示
-            savePassLoading: false,
-            oldPassError: '',
-            identifyCodeRight: false, // 验证码是否正确
-            hasGetIdentifyCode: false, // 是否点了获取验证码
-            canGetIdentifyCode: false, // 是否可点获取验证码
-            checkIdentifyCodeLoading: false,
-            inforValidate: {
-                name: [{ required: true, message: '请输入姓名', trigger: 'blur' }],
-                cellphone: [{ required: true, message: '请输入手机号码' }, { validator: validePhone }]
-            },
-            editPasswordForm: {
-                oldPass: '',
-                newPass: '',
-                rePass: ''
-            },
-            passwordValidate: {
-                oldPass: [{ required: true, message: '请输入原密码', trigger: 'blur' }],
-                newPass: [{ required: true, message: '请输入新密码', trigger: 'blur' }, { min: 6, message: '请至少输入6个字符', trigger: 'blur' }, { max: 32, message: '最多输入32个字符', trigger: 'blur' }],
-                rePass: [{ required: true, message: '请再次输入新密码', trigger: 'blur' }, { validator: valideRePassword, trigger: 'blur' }]
-            },
-            inputCodeVisible: false, // 显示填写验证码box
-            initPhone: '',
-            gettingIdentifyCodeBtnContent: '获取验证码' // “获取验证码”按钮的文字
+            defaultList: [{
+                'name': 'a42bdcc1178e62b4694c830f028db5c0',
+                'url': 'https://o5wwk8baw.qnssl.com/a42bdcc1178e62b4694c830f028db5c0/avatar'
+            }, {
+                'name': 'bc7521e033abdd1e92222d733590f104',
+                'url': 'https://o5wwk8baw.qnssl.com/bc7521e033abdd1e92222d733590f104/avatar'
+            }],
+            imgName: '',
+            visible: false,
+            uploadList: []
         };
     },
 
     methods: {
-        getIdentifyCode: function getIdentifyCode() {
-            var _this2 = this;
-
-            this.hasGetIdentifyCode = true;
-            this.$refs['userForm'].validate(function (valid) {
-                if (valid) {
-                    _this2.canGetIdentifyCode = true;
-                    var timeLast = 60;
-                    var timer = setInterval(function () {
-                        if (timeLast >= 0) {
-                            _this2.gettingIdentifyCodeBtnContent = timeLast + '秒后重试';
-                            timeLast -= 1;
-                        } else {
-                            clearInterval(timer);
-                            _this2.gettingIdentifyCodeBtnContent = '获取验证码';
-                            _this2.canGetIdentifyCode = false;
-                        }
-                    }, 1000);
-                    _this2.inputCodeVisible = true;
-                    // you can write ajax request here
-                }
+        handleFormatError: function handleFormatError(file) {
+            this.$Notice.warning({
+                title: '文件格式不正确',
+                desc: '文件 ' + file.name + ' 格式不正确，请选择图片文件。'
             });
         },
-        showEditPassword: function showEditPassword() {
-            this.editPasswordModal = true;
+        handleBeforeUpload: function handleBeforeUpload(file) {
+            this.$Notice.warning({
+                title: '文件准备上传',
+                desc: '文件 ' + file.name + ' 准备上传。'
+            });
         },
-        cancelEditUserInfor: function cancelEditUserInfor() {
-            this.$store.commit('removeTag', 'ownspace_index');
-            localStorage.pageOpenedList = JSON.stringify(this.$store.state.app.pageOpenedList);
-            var lastPageName = '';
-            if (this.$store.state.app.pageOpenedList.length > 1) {
-                lastPageName = this.$store.state.app.pageOpenedList[1].name;
-            } else {
-                lastPageName = this.$store.state.app.pageOpenedList[0].name;
+        handleProgress: function handleProgress(event, file) {
+            this.$Notice.info({
+                title: '文件正在上传',
+                desc: '文件 ' + file.name + ' 正在上传。'
+            });
+        },
+        handleSuccess: function handleSuccess(evnet, file) {
+            this.$Notice.success({
+                title: '文件上传成功',
+                desc: '文件 ' + file.name + ' 上传成功。'
+            });
+        },
+        handleError: function handleError(event, file) {
+            this.$Notice.error({
+                title: '文件上传成功',
+                desc: '文件 ' + file.name + ' 上传失败。'
+            });
+        },
+        handleView: function handleView(name) {
+            this.imgName = name;
+            this.visible = true;
+        },
+        handleRemove: function handleRemove(file) {
+            // 从 upload 实例删除数据
+            var fileList = this.$refs.upload.fileList;
+            this.$refs.upload.fileList.splice(fileList.indexOf(file), 1);
+        },
+        handleSuccess2: function handleSuccess2(res, file) {
+            // 因为上传过程为实例，这里模拟添加 url
+            file.url = 'https://o5wwk8baw.qnssl.com/7eb99afb9d5f317c912f08b5212fd69a/avatar';
+            file.name = '7eb99afb9d5f317c912f08b5212fd69a';
+        },
+        handleFormatError2: function handleFormatError2(file) {
+            this.$Notice.warning({
+                title: '文件格式不正确',
+                desc: '文件 ' + file.name + ' 格式不正确，请上传 jpg 或 png 格式的图片。'
+            });
+        },
+        handleMaxSize: function handleMaxSize(file) {
+            this.$Notice.warning({
+                title: '超出文件大小限制',
+                desc: '文件 ' + file.name + ' 太大，不能超过 2M。'
+            });
+        },
+        handleBeforeUpload2: function handleBeforeUpload2() {
+            var check = this.uploadList.length < 5;
+            if (!check) {
+                this.$Notice.warning({
+                    title: '最多只能上传 5 张图片。'
+                });
             }
-            this.$router.push({
-                name: lastPageName
-            });
-        },
-        saveEdit: function saveEdit() {
-            var _this3 = this;
-
-            this.$refs['userForm'].validate(function (valid) {
-                if (valid) {
-                    if (_this3.phoneHasChanged && _this3.userForm.cellphone !== _this3.initPhone) {
-                        // 手机号码修改过了而且修改之后的手机号和原来的不一样
-                        if (_this3.hasGetIdentifyCode) {
-                            // 判断是否点了获取验证码
-                            if (_this3.identifyCodeRight) {
-                                // 判断验证码是否正确
-                                _this3.saveInfoAjax();
-                            } else {
-                                _this3.$Message.error('验证码错误，请重新输入');
-                            }
-                        } else {
-                            _this3.$Message.warning('请先点击获取验证码');
-                        }
-                    } else {
-                        _this3.saveInfoAjax();
-                    }
-                }
-            });
-        },
-        cancelEditPass: function cancelEditPass() {
-            this.editPasswordModal = false;
-        },
-        saveEditPass: function saveEditPass() {
-            var _this4 = this;
-
-            this.$refs['editPasswordForm'].validate(function (valid) {
-                if (valid) {
-                    _this4.savePassLoading = true;
-                    // you can write ajax request here
-                }
-            });
-        },
-        init: function init() {
-            this.userForm.name = 'Lison';
-            this.userForm.cellphone = '17712345678';
-            this.initPhone = '17712345678';
-            this.userForm.company = 'TalkingData';
-            this.userForm.department = '可视化部门';
-        },
-        cancelInputCodeBox: function cancelInputCodeBox() {
-            this.inputCodeVisible = false;
-            this.userForm.cellphone = this.initPhone;
-        },
-        submitCode: function submitCode() {
-            var _this5 = this;
-
-            var vm = this;
-            vm.checkIdentifyCodeLoading = true;
-            if (this.securityCode.length === 0) {
-                this.$Message.error('请填写短信验证码');
-            } else {
-                setTimeout(function () {
-                    _this5.$Message.success('验证码正确');
-                    _this5.inputCodeVisible = false;
-                    _this5.checkIdentifyCodeLoading = false;
-                }, 1000);
-            }
-        },
-        hasChangePhone: function hasChangePhone() {
-            this.phoneHasChanged = true;
-            this.hasGetIdentifyCode = false;
-            this.identifyCodeRight = false;
-        },
-        saveInfoAjax: function saveInfoAjax() {
-            var _this6 = this;
-
-            this.save_loading = true;
-            setTimeout(function () {
-                _this6.$Message.success('保存成功');
-                _this6.save_loading = false;
-            }, 1000);
+            return check;
         }
     },
     mounted: function mounted() {
-        this.init();
+        this.uploadList = this.$refs.upload.fileList;
     }
 });
 
 /***/ }),
 
-/***/ 673:
+/***/ 750:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -372,195 +368,21 @@ var render = function() {
   return _c(
     "div",
     [
-      _c("Card", [
-        _c(
-          "p",
-          { attrs: { slot: "title" }, slot: "title" },
-          [
-            _c("Icon", { attrs: { type: "person" } }),
-            _vm._v("\n            个人信息\n        ")
-          ],
-          1
-        ),
-        _vm._v(" "),
-        _c(
-          "div",
-          [
-            _c(
-              "Form",
-              {
-                ref: "userForm",
-                attrs: {
-                  model: _vm.userForm,
-                  "label-width": 100,
-                  "label-position": "right",
-                  rules: _vm.inforValidate
-                }
-              },
-              [
+      _c(
+        "Row",
+        [
+          _c(
+            "Col",
+            { attrs: { span: "8" } },
+            [
+              _c("Card", [
                 _c(
-                  "FormItem",
-                  { attrs: { label: "用户姓名：", prop: "name" } },
+                  "p",
+                  { attrs: { slot: "title" }, slot: "title" },
                   [
-                    _c(
-                      "div",
-                      {
-                        staticStyle: { display: "inline-block", width: "300px" }
-                      },
-                      [
-                        _c("Input", {
-                          model: {
-                            value: _vm.userForm.name,
-                            callback: function($$v) {
-                              _vm.$set(_vm.userForm, "name", $$v)
-                            },
-                            expression: "userForm.name"
-                          }
-                        })
-                      ],
-                      1
-                    )
-                  ]
-                ),
-                _vm._v(" "),
-                _c(
-                  "FormItem",
-                  { attrs: { label: "用户手机：", prop: "cellphone" } },
-                  [
-                    _c(
-                      "div",
-                      {
-                        staticStyle: { display: "inline-block", width: "204px" }
-                      },
-                      [
-                        _c("Input", {
-                          on: { "on-keydown": _vm.hasChangePhone },
-                          model: {
-                            value: _vm.userForm.cellphone,
-                            callback: function($$v) {
-                              _vm.$set(_vm.userForm, "cellphone", $$v)
-                            },
-                            expression: "userForm.cellphone"
-                          }
-                        })
-                      ],
-                      1
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "div",
-                      {
-                        staticStyle: {
-                          display: "inline-block",
-                          position: "relative"
-                        }
-                      },
-                      [
-                        _c(
-                          "Button",
-                          {
-                            attrs: { disabled: _vm.canGetIdentifyCode },
-                            on: { click: _vm.getIdentifyCode }
-                          },
-                          [_vm._v(_vm._s(_vm.gettingIdentifyCodeBtnContent))]
-                        ),
-                        _vm._v(" "),
-                        _vm.inputCodeVisible
-                          ? _c(
-                              "div",
-                              {
-                                staticClass: "own-space-input-identifycode-con"
-                              },
-                              [
-                                _c(
-                                  "div",
-                                  {
-                                    staticStyle: {
-                                      "background-color": "white",
-                                      "z-index": "110",
-                                      margin: "10px"
-                                    }
-                                  },
-                                  [
-                                    _c("Input", {
-                                      attrs: {
-                                        placeholder: "请填写短信验证码"
-                                      },
-                                      model: {
-                                        value: _vm.securityCode,
-                                        callback: function($$v) {
-                                          _vm.securityCode = $$v
-                                        },
-                                        expression: "securityCode"
-                                      }
-                                    }),
-                                    _vm._v(" "),
-                                    _c(
-                                      "div",
-                                      {
-                                        staticStyle: {
-                                          "margin-top": "10px",
-                                          "text-align": "right"
-                                        }
-                                      },
-                                      [
-                                        _c(
-                                          "Button",
-                                          {
-                                            attrs: { type: "ghost" },
-                                            on: {
-                                              click: _vm.cancelInputCodeBox
-                                            }
-                                          },
-                                          [_vm._v("取消")]
-                                        ),
-                                        _vm._v(" "),
-                                        _c(
-                                          "Button",
-                                          {
-                                            attrs: {
-                                              type: "primary",
-                                              loading:
-                                                _vm.checkIdentifyCodeLoading
-                                            },
-                                            on: { click: _vm.submitCode }
-                                          },
-                                          [_vm._v("确定")]
-                                        )
-                                      ],
-                                      1
-                                    )
-                                  ],
-                                  1
-                                )
-                              ]
-                            )
-                          : _vm._e()
-                      ],
-                      1
-                    )
-                  ]
-                ),
-                _vm._v(" "),
-                _c("FormItem", { attrs: { label: "公司：" } }, [
-                  _c("span", [_vm._v(_vm._s(_vm.userForm.company))])
-                ]),
-                _vm._v(" "),
-                _c("FormItem", { attrs: { label: "部门：" } }, [
-                  _c("span", [_vm._v(_vm._s(_vm.userForm.department))])
-                ]),
-                _vm._v(" "),
-                _c(
-                  "FormItem",
-                  { attrs: { label: "登录密码：" } },
-                  [
-                    _c(
-                      "Button",
-                      {
-                        attrs: { type: "text", size: "small" },
-                        on: { click: _vm.showEditPassword }
-                      },
-                      [_vm._v("修改密码")]
+                    _c("Icon", { attrs: { type: "ios-cloud-upload-outline" } }),
+                    _vm._v(
+                      "\n                    基本上传功能\n                "
                     )
                   ],
                   1
@@ -568,156 +390,533 @@ var render = function() {
                 _vm._v(" "),
                 _c(
                   "div",
+                  { staticClass: "height-120px" },
                   [
                     _c(
-                      "Button",
+                      "Row",
                       {
-                        staticStyle: { width: "100px" },
-                        attrs: { type: "text" },
-                        on: { click: _vm.cancelEditUserInfor }
+                        staticClass: "height-100",
+                        attrs: {
+                          type: "flex",
+                          justify: "center",
+                          align: "middle"
+                        }
                       },
-                      [_vm._v("取消")]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "Button",
-                      {
-                        staticStyle: { width: "100px" },
-                        attrs: { type: "primary", loading: _vm.save_loading },
-                        on: { click: _vm.saveEdit }
-                      },
-                      [_vm._v("保存")]
+                      [
+                        _c(
+                          "Upload",
+                          {
+                            attrs: {
+                              action: "//jsonplaceholder.typicode.com/posts/"
+                            }
+                          },
+                          [
+                            _c(
+                              "Button",
+                              {
+                                attrs: {
+                                  type: "ghost",
+                                  icon: "ios-cloud-upload-outline"
+                                }
+                              },
+                              [_vm._v("上传文件")]
+                            )
+                          ],
+                          1
+                        )
+                      ],
+                      1
                     )
                   ],
                   1
                 )
-              ],
-              1
-            )
-          ],
-          1
-        )
-      ]),
-      _vm._v(" "),
-      _c(
-        "Modal",
-        {
-          attrs: { closable: false, "mask-closable": false, width: 500 },
-          model: {
-            value: _vm.editPasswordModal,
-            callback: function($$v) {
-              _vm.editPasswordModal = $$v
-            },
-            expression: "editPasswordModal"
-          }
-        },
-        [
-          _c(
-            "h3",
-            {
-              staticStyle: { color: "#2D8CF0" },
-              attrs: { slot: "header" },
-              slot: "header"
-            },
-            [_vm._v("修改密码")]
-          ),
-          _vm._v(" "),
-          _c(
-            "Form",
-            {
-              ref: "editPasswordForm",
-              attrs: {
-                model: _vm.editPasswordForm,
-                "label-width": 100,
-                "label-position": "right",
-                rules: _vm.passwordValidate
-              }
-            },
-            [
-              _c(
-                "FormItem",
-                {
-                  attrs: {
-                    label: "原密码",
-                    prop: "oldPass",
-                    error: _vm.oldPassError
-                  }
-                },
-                [
-                  _c("Input", {
-                    attrs: { placeholder: "请输入现在使用的密码" },
-                    model: {
-                      value: _vm.editPasswordForm.oldPass,
-                      callback: function($$v) {
-                        _vm.$set(_vm.editPasswordForm, "oldPass", $$v)
-                      },
-                      expression: "editPasswordForm.oldPass"
-                    }
-                  })
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "FormItem",
-                { attrs: { label: "新密码", prop: "newPass" } },
-                [
-                  _c("Input", {
-                    attrs: { placeholder: "请输入新密码，至少6位字符" },
-                    model: {
-                      value: _vm.editPasswordForm.newPass,
-                      callback: function($$v) {
-                        _vm.$set(_vm.editPasswordForm, "newPass", $$v)
-                      },
-                      expression: "editPasswordForm.newPass"
-                    }
-                  })
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "FormItem",
-                { attrs: { label: "确认新密码", prop: "rePass" } },
-                [
-                  _c("Input", {
-                    attrs: { placeholder: "请再次输入新密码" },
-                    model: {
-                      value: _vm.editPasswordForm.rePass,
-                      callback: function($$v) {
-                        _vm.$set(_vm.editPasswordForm, "rePass", $$v)
-                      },
-                      expression: "editPasswordForm.rePass"
-                    }
-                  })
-                ],
-                1
-              )
+              ])
             ],
             1
           ),
           _vm._v(" "),
           _c(
-            "div",
-            { attrs: { slot: "footer" }, slot: "footer" },
+            "Col",
+            { staticClass: "padding-left-10", attrs: { span: "8" } },
             [
-              _c(
-                "Button",
-                { attrs: { type: "text" }, on: { click: _vm.cancelEditPass } },
-                [_vm._v("取消")]
-              ),
-              _vm._v(" "),
-              _c(
-                "Button",
-                {
-                  attrs: { type: "primary", loading: _vm.savePassLoading },
-                  on: { click: _vm.saveEditPass }
-                },
-                [_vm._v("保存")]
-              )
+              _c("Card", [
+                _c(
+                  "p",
+                  { attrs: { slot: "title" }, slot: "title" },
+                  [
+                    _c("Icon", { attrs: { type: "ios-copy-outline" } }),
+                    _vm._v(
+                      "\n                    可多选的上传\n                "
+                    )
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  { staticClass: "height-120px" },
+                  [
+                    _c(
+                      "Row",
+                      {
+                        staticClass: "height-100",
+                        attrs: {
+                          type: "flex",
+                          justify: "center",
+                          align: "middle"
+                        }
+                      },
+                      [
+                        _c(
+                          "Upload",
+                          {
+                            attrs: {
+                              multiple: "",
+                              action: "//jsonplaceholder.typicode.com/posts/"
+                            }
+                          },
+                          [
+                            _c("span", [_vm._v("多选文件上传  ")]),
+                            _vm._v(" "),
+                            _c(
+                              "Button",
+                              {
+                                attrs: {
+                                  type: "ghost",
+                                  icon: "ios-cloud-upload-outline"
+                                }
+                              },
+                              [_vm._v("上传文件")]
+                            )
+                          ],
+                          1
+                        )
+                      ],
+                      1
+                    )
+                  ],
+                  1
+                )
+              ])
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c(
+            "Col",
+            { staticClass: "padding-left-10", attrs: { span: "8" } },
+            [
+              _c("Card", [
+                _c(
+                  "p",
+                  { attrs: { slot: "title" }, slot: "title" },
+                  [
+                    _c("Icon", { attrs: { type: "upload" } }),
+                    _vm._v(
+                      "\n                    可限制文件类型\n                "
+                    )
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  { staticClass: "height-120px" },
+                  [
+                    _c(
+                      "Row",
+                      {
+                        staticClass: "height-100",
+                        attrs: {
+                          type: "flex",
+                          justify: "center",
+                          align: "middle"
+                        }
+                      },
+                      [
+                        _c(
+                          "Upload",
+                          {
+                            attrs: {
+                              action: "//jsonplaceholder.typicode.com/posts/",
+                              format: [
+                                "jpg",
+                                "png",
+                                "jpeg",
+                                "gif",
+                                "bmp",
+                                "svg"
+                              ],
+                              "on-format-error": _vm.handleFormatError
+                            }
+                          },
+                          [
+                            _c("span", [_vm._v("选择图片上传  ")]),
+                            _vm._v(" "),
+                            _c(
+                              "Button",
+                              {
+                                attrs: {
+                                  type: "ghost",
+                                  icon: "ios-cloud-upload-outline"
+                                }
+                              },
+                              [_vm._v("上传文件")]
+                            )
+                          ],
+                          1
+                        )
+                      ],
+                      1
+                    )
+                  ],
+                  1
+                )
+              ])
             ],
             1
           )
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "div",
+        { staticClass: "margin-top-10" },
+        [
+          _c("Col", { attrs: { span: "8" } }, [
+            _c(
+              "div",
+              [
+                _c("Card", [
+                  _c(
+                    "p",
+                    { attrs: { slot: "title" }, slot: "title" },
+                    [
+                      _c("Icon", { attrs: { type: "android-funnel" } }),
+                      _vm._v(
+                        "\n                        可监听上传各个阶段\n                    "
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    { staticClass: "height-200px" },
+                    [
+                      _c(
+                        "Row",
+                        {
+                          staticClass: "height-100",
+                          attrs: {
+                            type: "flex",
+                            justify: "center",
+                            align: "middle"
+                          }
+                        },
+                        [
+                          _c(
+                            "div",
+                            {
+                              staticStyle: {
+                                display: "block",
+                                width: "100%",
+                                "text-align": "center"
+                              }
+                            },
+                            [
+                              _c(
+                                "Upload",
+                                {
+                                  attrs: {
+                                    action:
+                                      "//jsonplaceholder.typicode.com/posts/",
+                                    "on-format-error": _vm.handleFormatError,
+                                    "before-upload": _vm.handleBeforeUpload,
+                                    "on-progress": _vm.handleProgress,
+                                    "on-success": _vm.handleSuccess,
+                                    "on-error": _vm.handleError
+                                  }
+                                },
+                                [
+                                  _c("span", [_vm._v("请选择文件  ")]),
+                                  _vm._v(" "),
+                                  _c(
+                                    "Button",
+                                    {
+                                      attrs: {
+                                        type: "ghost",
+                                        icon: "ios-cloud-upload-outline"
+                                      }
+                                    },
+                                    [_vm._v("上传文件")]
+                                  )
+                                ],
+                                1
+                              )
+                            ],
+                            1
+                          )
+                        ]
+                      )
+                    ],
+                    1
+                  )
+                ])
+              ],
+              1
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              { staticClass: "margin-top-10" },
+              [
+                _c("Card", [
+                  _c(
+                    "p",
+                    { attrs: { slot: "title" }, slot: "title" },
+                    [
+                      _c("Icon", { attrs: { type: "android-hand" } }),
+                      _vm._v(
+                        "\n                        可拖拽上传\n                    "
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    { staticClass: "height-200px" },
+                    [
+                      _c(
+                        "Upload",
+                        {
+                          attrs: {
+                            multiple: "",
+                            type: "drag",
+                            action: "//jsonplaceholder.typicode.com/posts/"
+                          }
+                        },
+                        [
+                          _c(
+                            "div",
+                            {
+                              staticStyle: {
+                                padding: "60px 0",
+                                height: "200px"
+                              }
+                            },
+                            [
+                              _c("Icon", {
+                                staticStyle: { color: "#3399ff" },
+                                attrs: { type: "ios-cloud-upload", size: "52" }
+                              }),
+                              _vm._v(" "),
+                              _c("p", [_vm._v("点击或将文件拖拽到这里上传")])
+                            ],
+                            1
+                          )
+                        ]
+                      )
+                    ],
+                    1
+                  )
+                ])
+              ],
+              1
+            )
+          ]),
+          _vm._v(" "),
+          _c("Col", { attrs: { span: "16" } }, [
+            _c(
+              "div",
+              { staticClass: "padding-left-10" },
+              [
+                _c("Card", [
+                  _c(
+                    "p",
+                    { attrs: { slot: "title" }, slot: "title" },
+                    [
+                      _c("Icon", { attrs: { type: "ios-analytics" } }),
+                      _vm._v(
+                        "\n                        综合实例\n                    "
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    { staticClass: "height-492px" },
+                    [
+                      _c(
+                        "Col",
+                        { attrs: { span: "8" } },
+                        [
+                          _c(
+                            "Card",
+                            [
+                              _c(
+                                "Upload",
+                                {
+                                  ref: "upload",
+                                  staticStyle: {
+                                    display: "inline-block",
+                                    width: "58px"
+                                  },
+                                  attrs: {
+                                    "show-upload-list": false,
+                                    "default-file-list": _vm.defaultList,
+                                    "on-success": _vm.handleSuccess2,
+                                    format: ["jpg", "jpeg", "png"],
+                                    "max-size": 2048,
+                                    "on-format-error": _vm.handleFormatError2,
+                                    "on-exceeded-size": _vm.handleMaxSize,
+                                    "before-upload": _vm.handleBeforeUpload2,
+                                    multiple: "",
+                                    type: "drag",
+                                    action:
+                                      "//jsonplaceholder.typicode.com/posts/"
+                                  }
+                                },
+                                [
+                                  _c(
+                                    "div",
+                                    {
+                                      staticStyle: {
+                                        width: "58px",
+                                        height: "58px",
+                                        "line-height": "58px"
+                                      }
+                                    },
+                                    [
+                                      _c("Icon", {
+                                        attrs: { type: "camera", size: "20" }
+                                      })
+                                    ],
+                                    1
+                                  )
+                                ]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "Modal",
+                                {
+                                  attrs: { title: "查看图片" },
+                                  model: {
+                                    value: _vm.visible,
+                                    callback: function($$v) {
+                                      _vm.visible = $$v
+                                    },
+                                    expression: "visible"
+                                  }
+                                },
+                                [
+                                  _vm.visible
+                                    ? _c("img", {
+                                        staticStyle: { width: "100%" },
+                                        attrs: {
+                                          src:
+                                            "https://o5wwk8baw.qnssl.com/" +
+                                            _vm.imgName +
+                                            "/large"
+                                        }
+                                      })
+                                    : _vm._e()
+                                ]
+                              )
+                            ],
+                            1
+                          )
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "Col",
+                        {
+                          staticClass: "padding-left-10",
+                          attrs: { span: "16" }
+                        },
+                        [
+                          _c("Card", [
+                            _c(
+                              "div",
+                              { staticClass: "height-460px" },
+                              _vm._l(_vm.uploadList, function(item) {
+                                return _c(
+                                  "div",
+                                  {
+                                    key: item.url,
+                                    staticClass: "admin-upload-list"
+                                  },
+                                  [
+                                    item.status === "finished"
+                                      ? [
+                                          _c("img", {
+                                            attrs: { src: item.url }
+                                          }),
+                                          _vm._v(" "),
+                                          _c(
+                                            "div",
+                                            {
+                                              staticClass:
+                                                "admin-upload-list-cover"
+                                            },
+                                            [
+                                              _c("Icon", {
+                                                attrs: {
+                                                  type: "ios-eye-outline"
+                                                },
+                                                nativeOn: {
+                                                  click: function($event) {
+                                                    _vm.handleView(item.name)
+                                                  }
+                                                }
+                                              }),
+                                              _vm._v(" "),
+                                              _c("Icon", {
+                                                attrs: {
+                                                  type: "ios-trash-outline"
+                                                },
+                                                nativeOn: {
+                                                  click: function($event) {
+                                                    _vm.handleRemove(item)
+                                                  }
+                                                }
+                                              })
+                                            ],
+                                            1
+                                          )
+                                        ]
+                                      : [
+                                          item.showProgress
+                                            ? _c("Progress", {
+                                                attrs: {
+                                                  percent: item.percentage,
+                                                  "hide-info": ""
+                                                }
+                                              })
+                                            : _vm._e()
+                                        ]
+                                  ],
+                                  2
+                                )
+                              })
+                            )
+                          ])
+                        ],
+                        1
+                      )
+                    ],
+                    1
+                  )
+                ])
+              ],
+              1
+            )
+          ])
         ],
         1
       )
@@ -731,7 +930,7 @@ module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-75160885", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-4aef1c34", module.exports)
   }
 }
 

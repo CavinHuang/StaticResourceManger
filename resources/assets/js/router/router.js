@@ -66,6 +66,17 @@ export const otherRouter = {
 
 // 作为Main组件的子页面展示并且在左侧菜单显示的路由写在appRouter里
 export const appRouter = [
+  {
+    name: 'static-resource',
+    icon: 'cube',
+    path: '/static-resource',
+    title: '静态资源管理',
+    component: Main,
+    children: [
+      {path: '/css', title: '样式资源管理', name: 'static-resource-css', icon: 'social-css3-outline', component: resolve => {require(['../views/static-resource/css.vue'], resolve)}},
+      {path: '/js', title: 'JS资源管理', name: 'static-resource-js', icon: 'social-javascript-outline', component: resolve => {require(['../views/static-resource/js.vue'], resolve)}}
+    ]
+  },
     {
         path: '/access',
         icon: 'key',
@@ -210,7 +221,8 @@ export const appRouter = [
         children: [
             { path: 'index', title: '错误页面', name: 'errorpage_index', component: resolve => { require(['../views/error-page/error-page.vue'], resolve); } }
         ]
-    }
+    },
+
 ];
 
 // 所有上面定义的路由都要写在下面的routers里

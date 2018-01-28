@@ -1,24 +1,24 @@
 webpackJsonp([44],{
 
-/***/ 141:
+/***/ 130:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(812)
+  __webpack_require__(783)
 }
 var normalizeComponent = __webpack_require__(1)
 /* script */
-var __vue_script__ = __webpack_require__(814)
+var __vue_script__ = __webpack_require__(785)
 /* template */
-var __vue_template__ = __webpack_require__(818)
+var __vue_template__ = __webpack_require__(792)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
 var __vue_styles__ = injectStyle
 /* scopeId */
-var __vue_scopeId__ = "data-v-ec30fcee"
+var __vue_scopeId__ = null
 /* moduleIdentifier (server only) */
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
@@ -29,7 +29,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources\\assets\\js\\views\\tables\\exportable-table.vue"
+Component.options.__file = "resources\\assets\\js\\views\\tables\\editable-table.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -38,9 +38,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-ec30fcee", Component.options)
+    hotAPI.createRecord("data-v-8abfa442", Component.options)
   } else {
-    hotAPI.reload("data-v-ec30fcee", Component.options)
+    hotAPI.reload("data-v-8abfa442", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -52,23 +52,23 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 812:
+/***/ 783:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(813);
+var content = __webpack_require__(784);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(6)("36d4218e", content, false);
+var update = __webpack_require__(5)("22bfe2e8", content, false);
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-ec30fcee\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../../node_modules/less-loader/index.js!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./exportable-table.vue", function() {
-     var newContent = require("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-ec30fcee\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../../node_modules/less-loader/index.js!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./exportable-table.vue");
+   module.hot.accept("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-8abfa442\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../node_modules/less-loader/index.js!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./editable-table.vue", function() {
+     var newContent = require("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-8abfa442\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../node_modules/less-loader/index.js!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./editable-table.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -79,29 +79,29 @@ if(false) {
 
 /***/ }),
 
-/***/ 813:
+/***/ 784:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(3)(false);
+exports = module.exports = __webpack_require__(2)(false);
 // imports
 
 
 // module
-exports.push([module.i, "\n.margin-top-8[data-v-ec30fcee] {\n  margin-top: 8px;\n}\n.margin-top-10[data-v-ec30fcee] {\n  margin-top: 10px;\n}\n.margin-top-20[data-v-ec30fcee] {\n  margin-top: 20px;\n}\n.margin-left-10[data-v-ec30fcee] {\n  margin-left: 10px;\n}\n.margin-bottom-10[data-v-ec30fcee] {\n  margin-bottom: 10px;\n}\n.margin-bottom-100[data-v-ec30fcee] {\n  margin-bottom: 100px;\n}\n.margin-right-10[data-v-ec30fcee] {\n  margin-right: 10px;\n}\n.padding-left-6[data-v-ec30fcee] {\n  padding-left: 6px;\n}\n.padding-left-8[data-v-ec30fcee] {\n  padding-left: 5px;\n}\n.padding-left-10[data-v-ec30fcee] {\n  padding-left: 10px;\n}\n.padding-left-20[data-v-ec30fcee] {\n  padding-left: 20px;\n}\n.height-100[data-v-ec30fcee] {\n  height: 100%;\n}\n.height-120px[data-v-ec30fcee] {\n  height: 100px;\n}\n.height-200px[data-v-ec30fcee] {\n  height: 200px;\n}\n.height-492px[data-v-ec30fcee] {\n  height: 492px;\n}\n.height-460px[data-v-ec30fcee] {\n  height: 460px;\n}\n.line-gray[data-v-ec30fcee] {\n  height: 0;\n  border-bottom: 2px solid #dcdcdc;\n}\n.notwrap[data-v-ec30fcee] {\n  word-break: keep-all;\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis;\n}\n.padding-left-5[data-v-ec30fcee] {\n  padding-left: 10px;\n}\n[v-cloak][data-v-ec30fcee] {\n  display: none;\n}\n.dragging-tip-enter-active[data-v-ec30fcee] {\n  opacity: 1;\n  -webkit-transition: opacity .3s;\n  transition: opacity .3s;\n}\n.dragging-tip-enter[data-v-ec30fcee],\n.dragging-tip-leave-to[data-v-ec30fcee] {\n  opacity: 0;\n  -webkit-transition: opacity 0.3s;\n  transition: opacity 0.3s;\n}\n.dragging-tip-con[data-v-ec30fcee] {\n  display: block;\n  text-align: center;\n  width: 100%;\n  height: 50px;\n}\n.dragging-tip-con span[data-v-ec30fcee] {\n  font-size: 18px;\n}\n.record-tip-con[data-v-ec30fcee] {\n  display: block;\n  width: 100%;\n  height: 292px;\n  overflow: auto;\n}\n.record-item[data-v-ec30fcee] {\n  -webkit-box-sizing: content-box;\n          box-sizing: content-box;\n  display: block;\n  overflow: hidden;\n  height: 24px;\n  line-height: 24px;\n  padding: 8px 10px;\n  border-bottom: 1px dashed gainsboro;\n}\n.record-tip-con span[data-v-ec30fcee] {\n  font-size: 14px;\n}\n.edittable-test-con[data-v-ec30fcee] {\n  height: 160px;\n}\n.edittable-table-height-con[data-v-ec30fcee] {\n  height: 190px;\n}\n.edittable-con-1[data-v-ec30fcee] {\n  -webkit-box-sizing: content-box;\n          box-sizing: content-box;\n  padding: 15px 0 0;\n  height: 196px;\n}\n.edittable-table-get-currentdata-con[data-v-ec30fcee] {\n  height: 190px !important;\n}\n.exportable-table-download-con1[data-v-ec30fcee] {\n  padding: 16px 0 16px 20px;\n  border-bottom: 1px dashed #c3c3c3;\n  margin-bottom: 16px;\n}\n.exportable-table-download-con2[data-v-ec30fcee] {\n  padding-left: 20px;\n}\n.show-image[data-v-ec30fcee] {\n  padding: 20px 0px;\n}\n.show-image img[data-v-ec30fcee] {\n  display: block;\n  width: 100%;\n  height: auto;\n}\n.searchable-table-con1[data-v-ec30fcee] {\n  height: 230px !important;\n}\n", ""]);
+exports.push([module.i, "\n.margin-top-8 {\n  margin-top: 8px;\n}\n.margin-top-10 {\n  margin-top: 10px;\n}\n.margin-top-20 {\n  margin-top: 20px;\n}\n.margin-left-10 {\n  margin-left: 10px;\n}\n.margin-bottom-10 {\n  margin-bottom: 10px;\n}\n.margin-bottom-100 {\n  margin-bottom: 100px;\n}\n.margin-right-10 {\n  margin-right: 10px;\n}\n.padding-left-6 {\n  padding-left: 6px;\n}\n.padding-left-8 {\n  padding-left: 5px;\n}\n.padding-left-10 {\n  padding-left: 10px;\n}\n.padding-left-20 {\n  padding-left: 20px;\n}\n.height-100 {\n  height: 100%;\n}\n.height-120px {\n  height: 100px;\n}\n.height-200px {\n  height: 200px;\n}\n.height-492px {\n  height: 492px;\n}\n.height-460px {\n  height: 460px;\n}\n.line-gray {\n  height: 0;\n  border-bottom: 2px solid #dcdcdc;\n}\n.notwrap {\n  word-break: keep-all;\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis;\n}\n.padding-left-5 {\n  padding-left: 10px;\n}\n[v-cloak] {\n  display: none;\n}\n.dragging-tip-enter-active {\n  opacity: 1;\n  -webkit-transition: opacity .3s;\n  transition: opacity .3s;\n}\n.dragging-tip-enter,\n.dragging-tip-leave-to {\n  opacity: 0;\n  -webkit-transition: opacity 0.3s;\n  transition: opacity 0.3s;\n}\n.dragging-tip-con {\n  display: block;\n  text-align: center;\n  width: 100%;\n  height: 50px;\n}\n.dragging-tip-con span {\n  font-size: 18px;\n}\n.record-tip-con {\n  display: block;\n  width: 100%;\n  height: 292px;\n  overflow: auto;\n}\n.record-item {\n  -webkit-box-sizing: content-box;\n          box-sizing: content-box;\n  display: block;\n  overflow: hidden;\n  height: 24px;\n  line-height: 24px;\n  padding: 8px 10px;\n  border-bottom: 1px dashed gainsboro;\n}\n.record-tip-con span {\n  font-size: 14px;\n}\n.edittable-test-con {\n  height: 160px;\n}\n.edittable-table-height-con {\n  height: 190px;\n}\n.edittable-con-1 {\n  -webkit-box-sizing: content-box;\n          box-sizing: content-box;\n  padding: 15px 0 0;\n  height: 196px;\n}\n.edittable-table-get-currentdata-con {\n  height: 190px !important;\n}\n.exportable-table-download-con1 {\n  padding: 16px 0 16px 20px;\n  border-bottom: 1px dashed #c3c3c3;\n  margin-bottom: 16px;\n}\n.exportable-table-download-con2 {\n  padding-left: 20px;\n}\n.show-image {\n  padding: 20px 0px;\n}\n.show-image img {\n  display: block;\n  width: 100%;\n  height: auto;\n}\n.searchable-table-con1 {\n  height: 230px !important;\n}\n", ""]);
 
 // exports
 
 
 /***/ }),
 
-/***/ 814:
+/***/ 785:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__data_table2csv_js__ = __webpack_require__(815);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__data_table2excel_js__ = __webpack_require__(816);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__libs_table2excel_js__ = __webpack_require__(817);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_canEditTable_vue__ = __webpack_require__(786);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_canEditTable_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__components_canEditTable_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_table_data_js__ = __webpack_require__(791);
 //
 //
 //
@@ -173,563 +173,714 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-    name: 'exportable-table',
+    name: 'editable-table',
+    components: {
+        canEditTable: __WEBPACK_IMPORTED_MODULE_0__components_canEditTable_vue___default.a
+    },
     data: function data() {
         return {
-            columnsCsv: __WEBPACK_IMPORTED_MODULE_0__data_table2csv_js__["a" /* csvColumns */],
-            csvData: __WEBPACK_IMPORTED_MODULE_0__data_table2csv_js__["b" /* table2csvData */],
-            table2excelData: __WEBPACK_IMPORTED_MODULE_1__data_table2excel_js__["b" /* table2excelData */],
-            excelColumns: __WEBPACK_IMPORTED_MODULE_1__data_table2excel_js__["a" /* excelColumns */],
-            rowNum: __WEBPACK_IMPORTED_MODULE_0__data_table2csv_js__["b" /* table2csvData */].length,
-            colNum: __WEBPACK_IMPORTED_MODULE_0__data_table2csv_js__["a" /* csvColumns */].length,
-            selectMinRow: 1,
-            selectMaxRow: __WEBPACK_IMPORTED_MODULE_0__data_table2csv_js__["b" /* table2csvData */].length,
-            selectMinCol: 1,
-            selectMaxCol: __WEBPACK_IMPORTED_MODULE_0__data_table2csv_js__["a" /* csvColumns */].length,
-            maxRow: 0,
-            minRow: 1,
-            maxCol: 0,
-            minCol: 1,
-            csvFileName: '',
-            excelFileName: '',
-            tableExcel: {},
-            fontSize: 16
+            columnsList: [],
+            tableData: [],
+            editInlineColumns: [],
+            editInlineData: [],
+            editIncellColumns: [],
+            editIncellData: [],
+            editInlineAndCellColumn: [],
+            editInlineAndCellData: [],
+            showCurrentColumns: [],
+            showCurrentTableData: false
         };
     },
 
     methods: {
-        exportData: function exportData(type) {
+        getData: function getData() {
+            this.columnsList = __WEBPACK_IMPORTED_MODULE_1__components_table_data_js__["a" /* default */].table1Columns;
+            this.tableData = __WEBPACK_IMPORTED_MODULE_1__components_table_data_js__["a" /* default */].table1Data;
+            this.editInlineColumns = __WEBPACK_IMPORTED_MODULE_1__components_table_data_js__["a" /* default */].editInlineColumns;
+            this.editInlineData = __WEBPACK_IMPORTED_MODULE_1__components_table_data_js__["a" /* default */].editInlineData;
+            this.editIncellColumns = __WEBPACK_IMPORTED_MODULE_1__components_table_data_js__["a" /* default */].editIncellColumns;
+            this.editIncellData = __WEBPACK_IMPORTED_MODULE_1__components_table_data_js__["a" /* default */].editIncellData;
+            this.editInlineAndCellColumn = __WEBPACK_IMPORTED_MODULE_1__components_table_data_js__["a" /* default */].editInlineAndCellColumn;
+            this.editInlineAndCellData = __WEBPACK_IMPORTED_MODULE_1__components_table_data_js__["a" /* default */].editInlineAndCellData;
+            this.showCurrentColumns = __WEBPACK_IMPORTED_MODULE_1__components_table_data_js__["a" /* default */].showCurrentColumns;
+        },
+        handleNetConnect: function handleNetConnect(state) {
+            this.breakConnect = state;
+        },
+        handleLowSpeed: function handleLowSpeed(state) {
+            this.lowNetSpeed = state;
+        },
+        getCurrentData: function getCurrentData() {
+            this.showCurrentTableData = true;
+        },
+        handleDel: function handleDel(val, index) {
+            this.$Message.success('删除了第' + (index + 1) + '行数据');
+        },
+        handleCellChange: function handleCellChange(val, index, key) {
+            this.$Message.success('修改了第 ' + (index + 1) + ' 行列名为 ' + key + ' 的数据');
+        },
+        handleChange: function handleChange(val, index) {
+            this.$Message.success('修改了第' + (index + 1) + '行数据');
+        }
+    },
+    created: function created() {
+        this.getData();
+    }
+});
+
+/***/ }),
+
+/***/ 786:
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(787)
+}
+var normalizeComponent = __webpack_require__(1)
+/* script */
+var __vue_script__ = __webpack_require__(789)
+/* template */
+var __vue_template__ = __webpack_require__(790)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources\\assets\\js\\views\\tables\\components\\canEditTable.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-87a363a0", Component.options)
+  } else {
+    hotAPI.reload("data-v-87a363a0", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+
+/***/ 787:
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(788);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(5)("bc1e3080", content, false);
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../../../../node_modules/css-loader/index.js!../../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-87a363a0\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../../node_modules/less-loader/index.js!../../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./canEditTable.vue", function() {
+     var newContent = require("!!../../../../../../node_modules/css-loader/index.js!../../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-87a363a0\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../../node_modules/less-loader/index.js!../../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./canEditTable.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ 788:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(2)(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n.show-edit-btn {\n  display: none;\n  margin-left: -10px;\n}\n.ivu-table-cell:hover .show-edit-btn {\n  display: inline-block;\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ 789:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+var editButton = function editButton(vm, h, currentRow, index) {
+    return h('Button', {
+        props: {
+            type: currentRow.editting ? 'success' : 'primary',
+            loading: currentRow.saving
+        },
+        style: {
+            margin: '0 5px'
+        },
+        on: {
+            'click': function click() {
+                if (!currentRow.editting) {
+                    if (currentRow.edittingCell) {
+                        for (var name in currentRow.edittingCell) {
+                            currentRow.edittingCell[name] = false;
+                            vm.edittingStore[index].edittingCell[name] = false;
+                        }
+                    }
+                    vm.edittingStore[index].editting = true;
+                    vm.thisTableData = JSON.parse(JSON.stringify(vm.edittingStore));
+                } else {
+                    vm.edittingStore[index].saving = true;
+                    vm.thisTableData = JSON.parse(JSON.stringify(vm.edittingStore));
+                    var edittingRow = vm.edittingStore[index];
+                    edittingRow.editting = false;
+                    edittingRow.saving = false;
+                    vm.thisTableData = JSON.parse(JSON.stringify(vm.edittingStore));
+                    vm.$emit('input', vm.handleBackdata(vm.thisTableData));
+                    vm.$emit('on-change', vm.handleBackdata(vm.thisTableData), index);
+                }
+            }
+        }
+    }, currentRow.editting ? '保存' : '编辑');
+};
+var deleteButton = function deleteButton(vm, h, currentRow, index) {
+    return h('Poptip', {
+        props: {
+            confirm: true,
+            title: '您确定要删除这条数据吗?',
+            transfer: true
+        },
+        on: {
+            'on-ok': function onOk() {
+                vm.thisTableData.splice(index, 1);
+                vm.$emit('input', vm.handleBackdata(vm.thisTableData));
+                vm.$emit('on-delete', vm.handleBackdata(vm.thisTableData), index);
+            }
+        }
+    }, [h('Button', {
+        style: {
+            margin: '0 5px'
+        },
+        props: {
+            type: 'error',
+            placement: 'top'
+        }
+    }, '删除')]);
+};
+var incellEditBtn = function incellEditBtn(vm, h, param) {
+    if (vm.hoverShow) {
+        return h('div', {
+            'class': {
+                'show-edit-btn': vm.hoverShow
+            }
+        }, [h('Button', {
+            props: {
+                type: 'text',
+                icon: 'edit'
+            },
+            on: {
+                click: function click(event) {
+                    vm.edittingStore[param.index].edittingCell[param.column.key] = true;
+                    vm.thisTableData = JSON.parse(JSON.stringify(vm.edittingStore));
+                }
+            }
+        })]);
+    } else {
+        return h('Button', {
+            props: {
+                type: 'text',
+                icon: 'edit'
+            },
+            on: {
+                click: function click(event) {
+                    vm.edittingStore[param.index].edittingCell[param.column.key] = true;
+                    vm.thisTableData = JSON.parse(JSON.stringify(vm.edittingStore));
+                }
+            }
+        });
+    }
+};
+var saveIncellEditBtn = function saveIncellEditBtn(vm, h, param) {
+    return h('Button', {
+        props: {
+            type: 'text',
+            icon: 'checkmark'
+        },
+        on: {
+            click: function click(event) {
+                vm.edittingStore[param.index].edittingCell[param.column.key] = false;
+                vm.thisTableData = JSON.parse(JSON.stringify(vm.edittingStore));
+                vm.$emit('input', vm.handleBackdata(vm.thisTableData));
+                vm.$emit('on-cell-change', vm.handleBackdata(vm.thisTableData), param.index, param.column.key);
+            }
+        }
+    });
+};
+var cellInput = function cellInput(vm, h, param, item) {
+    return h('Input', {
+        props: {
+            type: 'text',
+            value: vm.edittingStore[param.index][item.key]
+        },
+        on: {
+            'on-change': function onChange(event) {
+                var key = item.key;
+                vm.edittingStore[param.index][key] = event.target.value;
+            }
+        }
+    });
+};
+/* harmony default export */ __webpack_exports__["default"] = ({
+    name: 'canEditTable',
+    props: {
+        refs: String,
+        columnsList: Array,
+        value: Array,
+        url: String,
+        editIncell: {
+            type: Boolean,
+            default: false
+        },
+        hoverShow: {
+            type: Boolean,
+            default: false
+        }
+    },
+    data: function data() {
+        return {
+            columns: [],
+            thisTableData: [],
+            edittingStore: []
+        };
+    },
+    created: function created() {
+        this.init();
+    },
+
+    methods: {
+        init: function init() {
             var _this = this;
 
-            if (type === 1) {
-                this.$refs.tableCsv.exportCsv({
-                    filename: '原始数据'
-                });
-            } else if (type === 2) {
-                this.$refs.tableCsv.exportCsv({
-                    filename: '排序和过滤后的数据',
-                    original: false
-                });
-            } else if (type === 3) {
-                this.$refs.tableCsv.exportCsv({
-                    filename: this.csvFileName,
-                    columns: this.columnsCsv.filter(function (col, index) {
-                        return index >= _this.selectMinCol - 1 && index <= _this.selectMaxCol - 1;
-                    }),
-                    data: this.csvData.filter(function (data, index) {
-                        return index >= _this.selectMinRow - 1 && index <= _this.selectMaxRow - 1;
-                    })
-                });
-            }
+            var vm = this;
+            var editableCell = this.columnsList.filter(function (item) {
+                if (item.editable) {
+                    if (item.editable === true) {
+                        return item;
+                    }
+                }
+            });
+            var cloneData = JSON.parse(JSON.stringify(this.value));
+            var res = [];
+            res = cloneData.map(function (item, index) {
+                var isEditting = false;
+                if (_this.thisTableData[index]) {
+                    if (_this.thisTableData[index].editting) {
+                        isEditting = true;
+                    } else {
+                        for (var cell in _this.thisTableData[index].edittingCell) {
+                            if (_this.thisTableData[index].edittingCell[cell] === true) {
+                                isEditting = true;
+                            }
+                        }
+                    }
+                }
+                if (isEditting) {
+                    return _this.thisTableData[index];
+                } else {
+                    _this.$set(item, 'editting', false);
+                    var edittingCell = {};
+                    editableCell.forEach(function (item) {
+                        edittingCell[item.key] = false;
+                    });
+                    _this.$set(item, 'edittingCell', edittingCell);
+                    return item;
+                }
+            });
+            this.thisTableData = res;
+            this.edittingStore = JSON.parse(JSON.stringify(this.thisTableData));
+            this.columnsList.forEach(function (item) {
+                if (item.editable) {
+                    item.render = function (h, param) {
+                        var currentRow = _this.thisTableData[param.index];
+                        if (!currentRow.editting) {
+                            if (_this.editIncell) {
+                                return h('Row', {
+                                    props: {
+                                        type: 'flex',
+                                        align: 'middle',
+                                        justify: 'center'
+                                    }
+                                }, [h('Col', {
+                                    props: {
+                                        span: '22'
+                                    }
+                                }, [!currentRow.edittingCell[param.column.key] ? h('span', currentRow[item.key]) : cellInput(_this, h, param, item)]), h('Col', {
+                                    props: {
+                                        span: '2'
+                                    }
+                                }, [currentRow.edittingCell[param.column.key] ? saveIncellEditBtn(_this, h, param) : incellEditBtn(_this, h, param)])]);
+                            } else {
+                                return h('span', currentRow[item.key]);
+                            }
+                        } else {
+                            return h('Input', {
+                                props: {
+                                    type: 'text',
+                                    value: currentRow[item.key]
+                                },
+                                on: {
+                                    'on-change': function onChange(event) {
+                                        var key = param.column.key;
+                                        vm.edittingStore[param.index][key] = event.target.value;
+                                    }
+                                }
+                            });
+                        }
+                    };
+                }
+                if (item.handle) {
+                    item.render = function (h, param) {
+                        var currentRowData = _this.thisTableData[param.index];
+                        if (item.handle.length === 2) {
+                            return h('div', [editButton(_this, h, currentRowData, param.index), deleteButton(_this, h, currentRowData, param.index)]);
+                        } else if (item.handle.length === 1) {
+                            if (item.handle[0] === 'edit') {
+                                return h('div', [editButton(_this, h, currentRowData, param.index)]);
+                            } else {
+                                return h('div', [deleteButton(_this, h, currentRowData, param.index)]);
+                            }
+                        }
+                    };
+                }
+            });
         },
-        exportExcel: function exportExcel() {
-            __WEBPACK_IMPORTED_MODULE_2__libs_table2excel_js__["a" /* default */].transform(this.$refs.tableExcel, 'hrefToExportTable', this.excelFileName);
+        handleBackdata: function handleBackdata(data) {
+            var clonedData = JSON.parse(JSON.stringify(data));
+            clonedData.forEach(function (item) {
+                delete item.editting;
+                delete item.edittingCell;
+                delete item.saving;
+            });
+            return clonedData;
+        }
+    },
+    watch: {
+        value: function value(data) {
+            this.init();
         }
     }
 });
 
 /***/ }),
 
-/***/ 815:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ 790:
+/***/ (function(module, exports, __webpack_require__) {
 
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return table2csvData; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return csvColumns; });
-var table2csvData = [{
-    'name': '推广名称1',
-    'fav': 0,
-    'show': 7302,
-    'weak': 5627,
-    'signin': 1563,
-    'click': 4254,
-    'active': 1438,
-    'day7': 274,
-    'day30': 285,
-    'tomorrow': 1727,
-    'day': 558,
-    'week': 4440,
-    'month': 5610
-}, {
-    'name': '推广名称2',
-    'fav': 0,
-    'show': 4720,
-    'weak': 4086,
-    'signin': 3792,
-    'click': 8690,
-    'active': 8470,
-    'day7': 8172,
-    'day30': 5197,
-    'tomorrow': 1684,
-    'day': 2593,
-    'week': 2507,
-    'month': 1537
-}, {
-    'name': '推广名称3',
-    'fav': 0,
-    'show': 7181,
-    'weak': 8007,
-    'signin': 8477,
-    'click': 1879,
-    'active': 16,
-    'day7': 2249,
-    'day30': 3450,
-    'tomorrow': 377,
-    'day': 1561,
-    'week': 3219,
-    'month': 1588
-}, {
-    'name': '推广名称4',
-    'fav': 0,
-    'show': 9911,
-    'weak': 8976,
-    'signin': 8807,
-    'click': 8050,
-    'active': 7668,
-    'day7': 1547,
-    'day30': 2357,
-    'tomorrow': 7278,
-    'day': 5309,
-    'week': 1655,
-    'month': 9043
-}, {
-    'name': '推广名称5',
-    'fav': 0,
-    'show': 934,
-    'weak': 1394,
-    'signin': 6463,
-    'click': 5278,
-    'active': 9256,
-    'day7': 209,
-    'day30': 3563,
-    'tomorrow': 8285,
-    'day': 1230,
-    'week': 4840,
-    'month': 9908
-}, {
-    'name': '推广名称6',
-    'fav': 0,
-    'show': 6856,
-    'weak': 1608,
-    'signin': 457,
-    'click': 4949,
-    'active': 2909,
-    'day7': 4525,
-    'day30': 6171,
-    'tomorrow': 1920,
-    'day': 1966,
-    'week': 904,
-    'month': 6851
-}, {
-    'name': '推广名称7',
-    'fav': 0,
-    'show': 5107,
-    'weak': 6407,
-    'signin': 4166,
-    'click': 7970,
-    'active': 1002,
-    'day7': 8701,
-    'day30': 9040,
-    'tomorrow': 7632,
-    'day': 4061,
-    'week': 4359,
-    'month': 3676
-}];
-
-var csvColumns = [{
-    'title': '名称',
-    'key': 'name',
-    'fixed': 'left',
-    'width': 200
-}, {
-    'title': '展示',
-    'key': 'show',
-    'width': 150,
-    'sortable': true,
-    filters: [{
-        label: '大于4000',
-        value: 1
-    }, {
-        label: '小于4000',
-        value: 2
-    }],
-    filterMultiple: false,
-    filterMethod: function filterMethod(value, row) {
-        if (value === 1) {
-            return row.show > 4000;
-        } else if (value === 2) {
-            return row.show < 4000;
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    [
+      _c("Table", {
+        ref: _vm.refs,
+        attrs: {
+          columns: _vm.columnsList,
+          data: _vm.thisTableData,
+          border: "",
+          "disabled-hover": ""
         }
-    }
-}, {
-    'title': '唤醒',
-    'key': 'weak',
-    'width': 150,
-    'sortable': true
-}, {
-    'title': '登录',
-    'key': 'signin',
-    'width': 150,
-    'sortable': true
-}, {
-    'title': '点击',
-    'key': 'click',
-    'width': 150,
-    'sortable': true
-}, {
-    'title': '激活',
-    'key': 'active',
-    'width': 150,
-    'sortable': true
-}, {
-    'title': '7日留存',
-    'key': 'day7',
-    'width': 150,
-    'sortable': true
-}, {
-    'title': '30日留存',
-    'key': 'day30',
-    'width': 150,
-    'sortable': true
-}, {
-    'title': '次日留存',
-    'key': 'tomorrow',
-    'width': 150,
-    'sortable': true
-}, {
-    'title': '日活跃',
-    'key': 'day',
-    'width': 150,
-    'sortable': true
-}, {
-    'title': '周活跃',
-    'key': 'week',
-    'width': 150,
-    'sortable': true
-}, {
-    'title': '月活跃',
-    'key': 'month',
-    'width': 150,
-    'sortable': true
-}];
+      })
+    ],
+    1
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-87a363a0", module.exports)
+  }
+}
 
 /***/ }),
 
-/***/ 816:
+/***/ 791:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return table2excelData; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return excelColumns; });
-var table2excelData = [{
-    'name': '推广名称1',
-    'fav': 0,
-    'show': 7302,
-    'weak': 5627,
-    'signin': 1563,
-    'click': 4254,
-    'active': 1438,
-    'day7': 274,
-    'day30': 285,
-    'tomorrow': 1727,
-    'day': 558,
-    'week': 4440,
-    'month': 5610
+/* unused harmony export table1Columns */
+/* unused harmony export table1Data */
+/* unused harmony export editInlineColumns */
+/* unused harmony export editInlineData */
+/* unused harmony export editIncellColumns */
+/* unused harmony export editIncellData */
+/* unused harmony export editInlineAndCellColumn */
+/* unused harmony export editInlineAndCellData */
+/* unused harmony export showCurrentColumns */
+var table1Columns = [{
+    title: '序号',
+    type: 'index',
+    width: 80,
+    align: 'center'
 }, {
-    'name': '推广名称2',
-    'fav': 0,
-    'show': 4720,
-    'weak': 4086,
-    'signin': 3792,
-    'click': 8690,
-    'active': 8470,
-    'day7': 8172,
-    'day30': 5197,
-    'tomorrow': 1684,
-    'day': 2593,
-    'week': 2507,
-    'month': 1537
+    title: '姓名',
+    align: 'center',
+    key: 'name',
+    editable: true
 }, {
-    'name': '推广名称3',
-    'fav': 0,
-    'show': 7181,
-    'weak': 8007,
-    'signin': 8477,
-    'click': 1879,
-    'active': 16,
-    'day7': 2249,
-    'day30': 3450,
-    'tomorrow': 377,
-    'day': 1561,
-    'week': 3219,
-    'month': 1588
+    title: '性别',
+    align: 'center',
+    key: 'sex'
 }, {
-    'name': '推广名称4',
-    'fav': 0,
-    'show': 9911,
-    'weak': 8976,
-    'signin': 8807,
-    'click': 8050,
-    'active': 7668,
-    'day7': 1547,
-    'day30': 2357,
-    'tomorrow': 7278,
-    'day': 5309,
-    'week': 1655,
-    'month': 9043
+    title: '岗位',
+    align: 'center',
+    key: 'work',
+    editable: true
 }, {
-    'name': '推广名称5',
-    'fav': 0,
-    'show': 934,
-    'weak': 1394,
-    'signin': 6463,
-    'click': 5278,
-    'active': 9256,
-    'day7': 209,
-    'day30': 3563,
-    'tomorrow': 8285,
-    'day': 1230,
-    'week': 4840,
-    'month': 9908
-}, {
-    'name': '推广名称6',
-    'fav': 0,
-    'show': 6856,
-    'weak': 1608,
-    'signin': 457,
-    'click': 4949,
-    'active': 2909,
-    'day7': 4525,
-    'day30': 6171,
-    'tomorrow': 1920,
-    'day': 1966,
-    'week': 904,
-    'month': 6851
-}, {
-    'name': '推广名称7',
-    'fav': 0,
-    'show': 5107,
-    'weak': 6407,
-    'signin': 4166,
-    'click': 7970,
-    'active': 1002,
-    'day7': 8701,
-    'day30': 9040,
-    'tomorrow': 7632,
-    'day': 4061,
-    'week': 4359,
-    'month': 3676
-}, {
-    'name': '推广名称8',
-    'fav': 0,
-    'show': 5107,
-    'weak': 6407,
-    'signin': 4166,
-    'click': 7970,
-    'active': 1002,
-    'day7': 8701,
-    'day30': 9040,
-    'tomorrow': 7632,
-    'day': 4061,
-    'week': 4359,
-    'month': 3676
-}, {
-    'name': '推广名称9',
-    'fav': 0,
-    'show': 5107,
-    'weak': 6407,
-    'signin': 4166,
-    'click': 7970,
-    'active': 1002,
-    'day7': 8701,
-    'day30': 9040,
-    'tomorrow': 7632,
-    'day': 4061,
-    'week': 4359,
-    'month': 3676
-}, {
-    'name': '推广名称10',
-    'fav': 0,
-    'show': 5107,
-    'weak': 6407,
-    'signin': 4166,
-    'click': 7970,
-    'active': 1002,
-    'day7': 8701,
-    'day30': 9040,
-    'tomorrow': 7632,
-    'day': 4061,
-    'week': 4359,
-    'month': 3676
+    title: '操作',
+    align: 'center',
+    width: 120,
+    key: 'handle',
+    handle: ['delete']
 }];
 
-var excelColumns = [{
-    'title': '名称',
-    'key': 'name'
+var table1Data = [{
+    name: 'Aresn',
+    sex: '男',
+    work: '前端开发'
 }, {
-    'title': '展示',
-    'key': 'show',
-    'sortable': true,
-    filters: [{
-        label: '大于4000',
-        value: 1
-    }, {
-        label: '小于4000',
-        value: 2
-    }],
-    filterMultiple: false,
-    filterMethod: function filterMethod(value, row) {
-        if (value === 1) {
-            return row.show > 4000;
-        } else if (value === 2) {
-            return row.show < 4000;
-        }
-    }
+    name: 'Lison',
+    sex: '男',
+    work: '前端开发'
 }, {
-    'title': '唤醒',
-    'key': 'weak',
-    'sortable': true
-}, {
-    'title': '登录',
-    'key': 'signin',
-    'sortable': true
-}, {
-    'title': '点击',
-    'key': 'click',
-    'sortable': true
-}, {
-    'title': '激活',
-    'key': 'active',
-    'sortable': true
-}, {
-    'title': '30日留存',
-    'key': 'day30',
-    'sortable': true
-}, {
-    'title': '月活跃',
-    'key': 'month',
-    'sortable': true
+    name: 'lisa',
+    sex: '女',
+    work: '程序员鼓励师'
 }];
 
-/***/ }),
+var editInlineColumns = [{
+    title: '序号',
+    type: 'index',
+    width: 80,
+    align: 'center'
+}, {
+    title: '姓名',
+    align: 'center',
+    key: 'name',
+    width: 90,
+    editable: true
+}, {
+    title: '性别',
+    align: 'center',
+    key: 'sex'
+}, {
+    title: '岗位',
+    align: 'center',
+    key: 'work',
+    width: 150,
+    editable: true
+}, {
+    title: '操作',
+    align: 'center',
+    width: 190,
+    key: 'handle',
+    handle: ['edit', 'delete']
+}];
 
-/***/ 817:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+var editInlineData = [{
+    name: 'Aresn',
+    sex: '男',
+    work: '前端开发'
+}, {
+    name: 'Lison',
+    sex: '男',
+    work: '前端开发'
+}, {
+    name: 'lisa',
+    sex: '女',
+    work: '程序员鼓励师'
+}];
 
-"use strict";
-var idTmr;
-function getExplorer() {
-    var explorer = window.navigator.userAgent;
-    if (explorer.indexOf('MSIE') >= 0) {
-        // ie
-        return 'ie';
-    } else if (explorer.indexOf('Firefox') >= 0) {
-        // firefox
-        return 'Firefox';
-    } else if (explorer.indexOf('Chrome') >= 0) {
-        // Chrome
-        return 'Chrome';
-    } else if (explorer.indexOf('Opera') >= 0) {
-        // Opera
-        return 'Opera';
-    } else if (explorer.indexOf('Safari') >= 0) {
-        // Safari
-        return 'Safari';
-    };
+var editIncellColumns = [{
+    title: '序号',
+    type: 'index',
+    width: 80,
+    align: 'center'
+}, {
+    title: '姓名',
+    align: 'center',
+    key: 'name',
+    width: 120,
+    editable: true
+}, {
+    title: '性别',
+    align: 'center',
+    key: 'sex'
+}, {
+    title: '岗位',
+    align: 'center',
+    width: 160,
+    key: 'work',
+    editable: true
+}, {
+    title: '操作',
+    align: 'center',
+    width: 120,
+    key: 'handle',
+    handle: ['delete']
+}];
+
+var editIncellData = [{
+    name: 'Aresn',
+    sex: '男',
+    work: '前端开发'
+}, {
+    name: 'Lison',
+    sex: '男',
+    work: '前端开发'
+}, {
+    name: 'lisa',
+    sex: '女',
+    work: '程序员鼓励师'
+}];
+
+var editInlineAndCellColumn = [{
+    title: '序号',
+    type: 'index',
+    width: 80,
+    align: 'center'
+}, {
+    title: '姓名',
+    align: 'center',
+    key: 'name',
+    width: 300,
+    editable: true
+}, {
+    title: '性别',
+    align: 'center',
+    key: 'sex'
+}, {
+    title: '岗位',
+    align: 'center',
+    width: 300,
+    key: 'work',
+    editable: true
+}, {
+    title: '操作',
+    align: 'center',
+    width: 200,
+    key: 'handle',
+    handle: ['edit', 'delete']
+}];
+
+var editInlineAndCellData = [{
+    name: 'Aresn',
+    sex: '男',
+    work: '前端开发'
+}, {
+    name: 'Lison',
+    sex: '男',
+    work: '前端开发'
+}, {
+    name: 'lisa',
+    sex: '女',
+    work: '程序员鼓励师'
+}];
+
+var showCurrentColumns = [{
+    title: '序号',
+    type: 'index',
+    width: 80,
+    align: 'center'
+}, {
+    title: '姓名',
+    align: 'center',
+    key: 'name',
+    width: 300,
+    editable: true
+}, {
+    title: '性别',
+    align: 'center',
+    key: 'sex'
+}, {
+    title: '岗位',
+    align: 'center',
+    width: 300,
+    key: 'work',
+    editable: true
+}];
+
+var tableData = {
+    table1Columns: table1Columns,
+    table1Data: table1Data,
+    editInlineColumns: editInlineColumns,
+    editInlineData: editInlineData,
+    editIncellColumns: editIncellColumns,
+    editIncellData: editIncellData,
+    editInlineAndCellColumn: editInlineAndCellColumn,
+    editInlineAndCellData: editInlineAndCellData,
+    showCurrentColumns: showCurrentColumns
 };
-function tranform(table, aId, name) {
-    var tableHead = table.$children[0].$el;
-    var tableBody = table.$children[1].$el;
-    var tableInnerHTML = '<thead><tr>';
-    if (table.$children.length !== 1) {
-        var len = tableBody.rows.length;
-        var i = -1;
-        while (i < len) {
-            if (i === -1) {
-                Array.from(tableHead.rows[0].children).forEach(function (td) {
-                    tableInnerHTML = tableInnerHTML + '<th>' + td.children[0].children[0].innerHTML + '</th>';
-                });
-                tableInnerHTML += '</tr><thead><tbody>';
-            } else {
-                tableInnerHTML += '<tr>';
-                Array.from(tableBody.rows[i].children).forEach(function (td) {
-                    tableInnerHTML = tableInnerHTML + '<td>' + td.children[0].children[0].innerHTML + '</td>';
-                });
-                tableInnerHTML += '</tr>';
-            }
-            i++;
-        }
-        tableInnerHTML += '</tbody>';
-    }
 
-    if (getExplorer() !== 'Safari' && name.substr(-1, 4) !== '.xls') {
-        name += '.xls';
-    }
-
-    if (getExplorer() === 'ie') {
-        var curTbl = table;
-        var oXL = new ActiveXObject('Excel.Application');
-        var oWB = oXL.Workbooks.Add();
-        var xlsheet = oWB.Worksheets(1);
-        var sel = document.body.createTextRange();
-        sel.moveToElementText(curTbl);
-        sel.select();
-        sel.execCommand('Copy');
-        xlsheet.Paste();
-        oXL.Visible = true;
-
-        try {
-            var fname = oXL.Application.GetSaveAsFilename('Excel.xls', 'Excel Spreadsheets (*.xls), *.xls');
-        } catch (e) {
-            print('Nested catch caught ' + e);
-        } finally {
-            oWB.SaveAs(fname);
-            // oWB.Close(savechanges = false);
-            oXL.Quit();
-            oXL = null;
-            idTmr = setInterval(Cleanup(), 1);
-        }
-    } else {
-        tableToExcel(tableInnerHTML, aId, name);
-    }
-}
-function Cleanup() {
-    window.clearInterval(idTmr);
-    // CollectGarbage();
-}
-var tableToExcel = function () {
-    var uri = 'data:application/vnd.ms-excel;base64,';
-    var template = '<html><head><meta charset="UTF-8"></head><body><table>{table}</table></body></html>';
-    var base64 = function base64(s) {
-        return window.btoa(unescape(encodeURIComponent(s)));
-    };
-    var format = function format(s, c) {
-        return s.replace(/{(\w+)}/g, function (m, p) {
-            return c[p];
-        });
-    };
-    return function (table, aId, name) {
-        var ctx = { worksheet: name || 'Worksheet', table: table };
-        document.getElementById(aId).href = uri + base64(format(template, ctx));
-        document.getElementById(aId).download = name;
-        document.getElementById(aId).click();
-    };
-}();
-
-var table2excel = {};
-
-table2excel.transform = tranform;
-
-/* harmony default export */ __webpack_exports__["a"] = (table2excel);
+/* harmony default export */ __webpack_exports__["a"] = (tableData);
 
 /***/ }),
 
-/***/ 818:
+/***/ 792:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -743,224 +894,57 @@ var render = function() {
         "Row",
         [
           _c(
-            "Card",
+            "Col",
+            { attrs: { span: "6" } },
             [
-              _c(
-                "h4",
-                { attrs: { slot: "title" }, slot: "title" },
-                [
-                  _c("Icon", { attrs: { type: "android-archive" } }),
+              _c("Card", [
+                _c(
+                  "p",
+                  { attrs: { slot: "title" }, slot: "title" },
+                  [
+                    _c("Icon", { attrs: { type: "load-b" } }),
+                    _vm._v("\n                    简单说明\n                ")
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _c("div", { staticClass: "edittable-test-con" }, [
                   _vm._v(
-                    "\n                导出表格数据到 .Csv 文件\n            "
+                    "\n                    可编辑单元格可配置可编辑的列，可设置编辑整行的可编辑单元格，也可配置单个编辑可编辑单元格，也可两种形式同时可用。可配置单元格内编辑的图标显示方式。\n                "
                   )
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "Row",
-                [
-                  _c(
-                    "Col",
-                    { attrs: { span: "18" } },
-                    [
-                      _c("Table", {
-                        ref: "tableCsv",
-                        attrs: {
-                          columns: _vm.columnsCsv,
-                          data: _vm.csvData,
-                          size: "small"
-                        }
-                      })
-                    ],
-                    1
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "Col",
-                    { staticClass: "padding-left-10", attrs: { span: "6" } },
-                    [
-                      _c(
-                        "div",
-                        { staticClass: "exportable-table-download-con1" },
-                        [
-                          _c(
-                            "span",
-                            { staticStyle: { "margin-right": "16px" } },
-                            [
-                              _c(
-                                "Button",
-                                {
-                                  attrs: { type: "primary", size: "large" },
-                                  on: {
-                                    click: function($event) {
-                                      _vm.exportData(1)
-                                    }
-                                  }
-                                },
-                                [
-                                  _c("Icon", {
-                                    attrs: { type: "ios-download-outline" }
-                                  }),
-                                  _vm._v(" 导出原始数据")
-                                ],
-                                1
-                              )
-                            ],
-                            1
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "Button",
-                            {
-                              attrs: { type: "primary", size: "large" },
-                              on: {
-                                click: function($event) {
-                                  _vm.exportData(2)
-                                }
-                              }
-                            },
-                            [
-                              _c("Icon", {
-                                attrs: { type: "ios-download-outline" }
-                              }),
-                              _vm._v(" 导出排序和过滤后的数据")
-                            ],
-                            1
-                          )
-                        ],
-                        1
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "div",
-                        { staticClass: "exportable-table-download-con2" },
-                        [
-                          _c(
-                            "div",
-                            [
-                              _c("span", [_vm._v("选取行范围： ")]),
-                              _c("InputNumber", {
-                                attrs: { min: 1, max: _vm.selectMaxRow },
-                                model: {
-                                  value: _vm.selectMinRow,
-                                  callback: function($$v) {
-                                    _vm.selectMinRow = $$v
-                                  },
-                                  expression: "selectMinRow"
-                                }
-                              }),
-                              _vm._v(" "),
-                              _c("span", [_vm._v("  -  ")]),
-                              _vm._v(" "),
-                              _c("InputNumber", {
-                                attrs: {
-                                  min: _vm.selectMinRow,
-                                  max: _vm.rowNum
-                                },
-                                model: {
-                                  value: _vm.selectMaxRow,
-                                  callback: function($$v) {
-                                    _vm.selectMaxRow = $$v
-                                  },
-                                  expression: "selectMaxRow"
-                                }
-                              })
-                            ],
-                            1
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "div",
-                            { staticClass: "margin-top-10" },
-                            [
-                              _c("span", [_vm._v("选取列范围： ")]),
-                              _c("InputNumber", {
-                                attrs: { min: 1, max: _vm.selectMaxCol },
-                                model: {
-                                  value: _vm.selectMinCol,
-                                  callback: function($$v) {
-                                    _vm.selectMinCol = $$v
-                                  },
-                                  expression: "selectMinCol"
-                                }
-                              }),
-                              _vm._v(" "),
-                              _c("span", [_vm._v("  -  ")]),
-                              _vm._v(" "),
-                              _c("InputNumber", {
-                                attrs: {
-                                  min: _vm.selectMinCol,
-                                  max: _vm.colNum
-                                },
-                                model: {
-                                  value: _vm.selectMaxCol,
-                                  callback: function($$v) {
-                                    _vm.selectMaxCol = $$v
-                                  },
-                                  expression: "selectMaxCol"
-                                }
-                              })
-                            ],
-                            1
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "div",
-                            { staticClass: "margin-top-10" },
-                            [
-                              _c("span", [_vm._v("输入文件名：")]),
-                              _vm._v(" "),
-                              _c("Input", {
-                                staticStyle: { width: "190px" },
-                                attrs: {
-                                  icon: "document",
-                                  placeholder: "请输入文件名"
-                                },
-                                model: {
-                                  value: _vm.csvFileName,
-                                  callback: function($$v) {
-                                    _vm.csvFileName = $$v
-                                  },
-                                  expression: "csvFileName"
-                                }
-                              })
-                            ],
-                            1
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "div",
-                            { staticClass: "margin-top-20" },
-                            [
-                              _c(
-                                "Button",
-                                {
-                                  attrs: { type: "primary", size: "large" },
-                                  on: {
-                                    click: function($event) {
-                                      _vm.exportData(3)
-                                    }
-                                  }
-                                },
-                                [
-                                  _c("Icon", {
-                                    attrs: { type: "ios-download-outline" }
-                                  }),
-                                  _vm._v(" 导出自定义数据")
-                                ],
-                                1
-                              )
-                            ],
-                            1
-                          )
-                        ]
-                      )
-                    ]
-                  )
-                ],
-                1
-              )
+                ])
+              ])
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c(
+            "Col",
+            { staticClass: "padding-left-10", attrs: { span: "18" } },
+            [
+              _c("Card", [
+                _c(
+                  "div",
+                  { staticClass: "edittable-con-1" },
+                  [
+                    _c("can-edit-table", {
+                      attrs: {
+                        refs: "table1",
+                        "columns-list": _vm.columnsList
+                      },
+                      on: { "on-delete": _vm.handleDel },
+                      model: {
+                        value: _vm.tableData,
+                        callback: function($$v) {
+                          _vm.tableData = $$v
+                        },
+                        expression: "tableData"
+                      }
+                    })
+                  ],
+                  1
+                )
+              ])
             ],
             1
           )
@@ -973,95 +957,211 @@ var render = function() {
         { staticClass: "margin-top-10" },
         [
           _c(
-            "Card",
+            "Col",
+            { attrs: { span: "12" } },
+            [
+              _c("Card", [
+                _c(
+                  "p",
+                  { attrs: { slot: "title" }, slot: "title" },
+                  [
+                    _c("Icon", { attrs: { type: "android-remove" } }),
+                    _vm._v(
+                      "\n                    可编辑单元行\n                "
+                    )
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  { staticClass: "edittable-table-height-con" },
+                  [
+                    _c("can-edit-table", {
+                      attrs: {
+                        refs: "table2",
+                        "columns-list": _vm.editInlineColumns
+                      },
+                      model: {
+                        value: _vm.editInlineData,
+                        callback: function($$v) {
+                          _vm.editInlineData = $$v
+                        },
+                        expression: "editInlineData"
+                      }
+                    })
+                  ],
+                  1
+                )
+              ])
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c(
+            "Col",
+            { staticClass: "padding-left-10", attrs: { span: "12" } },
+            [
+              _c("Card", [
+                _c(
+                  "p",
+                  { attrs: { slot: "title" }, slot: "title" },
+                  [
+                    _c("Icon", { attrs: { type: "android-more-horizontal" } }),
+                    _vm._v(
+                      "\n                    可编辑单元格(鼠标移入显示编辑单元格按钮)\n                "
+                    )
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  { staticClass: "edittable-table-height-con" },
+                  [
+                    _c("can-edit-table", {
+                      attrs: {
+                        refs: "table3",
+                        "hover-show": true,
+                        "edit-incell": true,
+                        "columns-list": _vm.editIncellColumns
+                      },
+                      model: {
+                        value: _vm.editIncellData,
+                        callback: function($$v) {
+                          _vm.editIncellData = $$v
+                        },
+                        expression: "editIncellData"
+                      }
+                    })
+                  ],
+                  1
+                )
+              ])
+            ],
+            1
+          )
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "Row",
+        { staticClass: "margin-top-10" },
+        [
+          _c(
+            "Col",
+            { attrs: { span: "24" } },
             [
               _c(
-                "h4",
-                { attrs: { slot: "title" }, slot: "title" },
-                [
-                  _c("Icon", { attrs: { type: "android-archive" } }),
-                  _vm._v(
-                    "\n                导出表格数据到 .Xls 文件 (Excel)\n            "
-                  )
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "Row",
+                "Card",
                 [
                   _c(
-                    "Col",
-                    { attrs: { span: "18" } },
+                    "p",
+                    { attrs: { slot: "title" }, slot: "title" },
                     [
-                      _c("Table", {
-                        ref: "tableExcel",
-                        attrs: {
-                          columns: _vm.excelColumns,
-                          height: "390px",
-                          data: _vm.table2excelData,
-                          size: "small"
-                        }
-                      })
+                      _c("Icon", { attrs: { type: "ios-keypad" } }),
+                      _vm._v(
+                        "\n                     单元行和单元格两种方式编辑(始终显示编辑单元格按钮)\n                "
+                      )
                     ],
                     1
                   ),
                   _vm._v(" "),
                   _c(
-                    "Col",
-                    { staticClass: "padding-left-10", attrs: { span: "6" } },
+                    "Row",
+                    { attrs: { gutter: 10 } },
                     [
                       _c(
-                        "div",
-                        { staticClass: "margin-top-10 margin-left-10" },
+                        "Col",
+                        { attrs: { span: "2" } },
                         [
-                          _c("span", [_vm._v("输入文件名：")]),
-                          _vm._v(" "),
-                          _c("Input", {
-                            staticStyle: { width: "190px" },
-                            attrs: {
-                              icon: "document",
-                              placeholder: "请输入文件名"
+                          _c(
+                            "Row",
+                            {
+                              staticClass:
+                                "edittable-table-get-currentdata-con",
+                              attrs: {
+                                type: "flex",
+                                justify: "center",
+                                align: "middle"
+                              }
                             },
-                            model: {
-                              value: _vm.excelFileName,
-                              callback: function($$v) {
-                                _vm.excelFileName = $$v
-                              },
-                              expression: "excelFileName"
-                            }
-                          })
+                            [
+                              _c(
+                                "Button",
+                                {
+                                  attrs: { type: "primary" },
+                                  on: { click: _vm.getCurrentData }
+                                },
+                                [_vm._v("当前数据")]
+                              )
+                            ],
+                            1
+                          )
                         ],
                         1
                       ),
                       _vm._v(" "),
+                      _c("Col", { attrs: { span: "22" } }, [
+                        _c(
+                          "div",
+                          { staticClass: "edittable-table-height-con" },
+                          [
+                            _c("can-edit-table", {
+                              attrs: {
+                                refs: "table4",
+                                editIncell: true,
+                                "columns-list": _vm.editInlineAndCellColumn
+                              },
+                              on: {
+                                "on-cell-change": _vm.handleCellChange,
+                                "on-change": _vm.handleChange
+                              },
+                              model: {
+                                value: _vm.editInlineAndCellData,
+                                callback: function($$v) {
+                                  _vm.editInlineAndCellData = $$v
+                                },
+                                expression: "editInlineAndCellData"
+                              }
+                            })
+                          ],
+                          1
+                        )
+                      ]),
+                      _vm._v(" "),
                       _c(
-                        "div",
-                        { staticClass: "margin-left-10 margin-top-20" },
+                        "Modal",
+                        {
+                          attrs: { width: 900 },
+                          model: {
+                            value: _vm.showCurrentTableData,
+                            callback: function($$v) {
+                              _vm.showCurrentTableData = $$v
+                            },
+                            expression: "showCurrentTableData"
+                          }
+                        },
                         [
-                          _c("a", {
-                            staticStyle: {
-                              postion: "absolute",
-                              left: "-10px",
-                              top: "-10px",
-                              width: "0px",
-                              height: "0px"
+                          _c("can-edit-table", {
+                            attrs: {
+                              refs: "table5",
+                              "columns-list": _vm.showCurrentColumns
                             },
-                            attrs: { id: "hrefToExportTable" }
-                          }),
-                          _vm._v(" "),
-                          _c(
-                            "Button",
-                            {
-                              attrs: { type: "primary", size: "large" },
-                              on: { click: _vm.exportExcel }
-                            },
-                            [_vm._v("下载表格数据")]
-                          )
+                            model: {
+                              value: _vm.editInlineAndCellData,
+                              callback: function($$v) {
+                                _vm.editInlineAndCellData = $$v
+                              },
+                              expression: "editInlineAndCellData"
+                            }
+                          })
                         ],
                         1
                       )
-                    ]
+                    ],
+                    1
                   )
                 ],
                 1
@@ -1082,7 +1182,7 @@ module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-ec30fcee", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-8abfa442", module.exports)
   }
 }
 

@@ -130,7 +130,7 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -189,11 +189,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     data: function data() {
         return {
             form: {
-                userName: 'iview_admin',
+                email: '',
                 password: ''
             },
             rules: {
-                userName: [{ required: true, message: '账号不能为空', trigger: 'blur' }],
+                email: [{ required: true, message: '账号不能为空', trigger: 'blur' }],
                 password: [{ required: true, message: '密码不能为空', trigger: 'blur' }]
             }
         };
@@ -205,16 +205,28 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
             this.$refs.loginForm.validate(function (valid) {
                 if (valid) {
-                    __WEBPACK_IMPORTED_MODULE_0_js_cookie___default.a.set('user', _this.form.userName);
-                    __WEBPACK_IMPORTED_MODULE_0_js_cookie___default.a.set('password', _this.form.password);
-                    _this.$store.commit('setAvator', 'https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3448484253,3685836170&fm=27&gp=0.jpg');
-                    if (_this.form.userName === 'iview_admin') {
-                        __WEBPACK_IMPORTED_MODULE_0_js_cookie___default.a.set('access', 0);
-                    } else {
-                        __WEBPACK_IMPORTED_MODULE_0_js_cookie___default.a.set('access', 1);
-                    }
-                    _this.$router.push({
-                        name: 'home_index'
+                    _this.$axios.post('/api/auth/login', _this.form).then(function (res) {
+                        console.log(res);
+                        if (res.status == 200 && res.data.success == 1) {
+                            __WEBPACK_IMPORTED_MODULE_0_js_cookie___default.a.set('user', _this.form.userName);
+                            __WEBPACK_IMPORTED_MODULE_0_js_cookie___default.a.set('password', _this.form.password);
+
+                            _this.$store.dispatch('logined', res.data.data.token_type + ' ' + res.data.data.access_token);
+
+                            _this.$store.commit('setAvator', 'https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3448484253,3685836170&fm=27&gp=0.jpg');
+                            /*if (this.form.userName === 'iview_admin') {
+                              Cookies.set('access', 0);
+                            } else {
+                              Cookies.set('access', 1);
+                            }*/
+                            _this.$Message.success('恭喜您，登录成功!', 2);
+
+                            setTimeout(function () {
+                                _this.$router.push({ path: '/home' });
+                            }, 2000);
+                        } else {
+                            _this.$Message.error(res.data.msg);
+                        }
                     });
                 }
             });
@@ -283,11 +295,11 @@ var render = function() {
                           {
                             attrs: { placeholder: "请输入用户名" },
                             model: {
-                              value: _vm.form.userName,
+                              value: _vm.form.email,
                               callback: function($$v) {
-                                _vm.$set(_vm.form, "userName", $$v)
+                                _vm.$set(_vm.form, "email", $$v)
                               },
-                              expression: "form.userName"
+                              expression: "form.email"
                             }
                           },
                           [

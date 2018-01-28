@@ -13,7 +13,7 @@
                 <div class="form-con">
                     <Form ref="loginForm" :model="form" :rules="rules">
                         <FormItem prop="userName">
-                            <Input v-model="form.userName" placeholder="请输入用户名">
+                            <Input v-model="form.email" placeholder="请输入用户名">
                                 <span slot="prepend">
                                     <Icon :size="16" type="person"></Icon>
                                 </span>
@@ -43,11 +43,11 @@ export default {
     data () {
         return {
             form: {
-                userName: 'iview_admin',
+                email: '',
                 password: ''
             },
             rules: {
-                userName: [
+              email: [
                     { required: true, message: '账号不能为空', trigger: 'blur' }
                 ],
                 password: [
@@ -60,17 +60,29 @@ export default {
         handleSubmit () {
             this.$refs.loginForm.validate((valid) => {
                 if (valid) {
-                    Cookies.set('user', this.form.userName);
-                    Cookies.set('password', this.form.password);
-                    this.$store.commit('setAvator', 'https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3448484253,3685836170&fm=27&gp=0.jpg');
-                    if (this.form.userName === 'iview_admin') {
-                        Cookies.set('access', 0);
-                    } else {
-                        Cookies.set('access', 1);
-                    }
-                    this.$router.push({
-                        name: 'home_index'
-                    });
+                    this.$axios.post('/api/auth/login', this.form).then(res => {
+                      console.log(res)
+                      if(res.status == 200 && res.data.success == 1) {
+                        Cookies.set('user', this.form.userName);
+                        Cookies.set('password', this.form.password);
+                        
+                        this.$store.dispatch('logined', res.data.data.token_type + ' ' + res.data.data.access_token)
+                        
+                        this.$store.commit('setAvator', 'https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3448484253,3685836170&fm=27&gp=0.jpg');
+                        /*if (this.form.userName === 'iview_admin') {
+                          Cookies.set('access', 0);
+                        } else {
+                          Cookies.set('access', 1);
+                        }*/
+                        this.$Message.success('恭喜您，登录成功!', 2)
+                        
+                        setTimeout(() => {
+                          this.$router.push({path: '/home'});
+                        }, 2000)
+                      }else{
+                        this.$Message.error(res.data.msg);
+                      }
+                    })
                 }
             });
         }
