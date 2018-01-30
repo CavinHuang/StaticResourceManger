@@ -3,7 +3,9 @@ import axios from 'axios'
 
 const user = {
   state: {
-    name: null,
+    id: null,
+    username: null,
+    email: null,
     avatar: null,
     mobile: null,
     token: null,
@@ -25,7 +27,9 @@ const user = {
     },
     // 登录成功后拉取用户的信息存储到本地
     profile(state, data) {
-      state.name = data.name
+      state.id = data.id
+      state.username = data.username
+      state.email = data.email
       state.mobile = data.mobile
       state.avatar = data.avatar
       state.remark = data.remark
@@ -76,7 +80,8 @@ const user = {
     profile({commit}) {
       return new Promise(function (resolve, reject) {
         axios.get('/api/profile', {}).then(respond => {
-          if (respond.status == 200) {
+          if (respond.success == 1) {
+
             commit('profile', respond.data)
             resolve()
           } else {

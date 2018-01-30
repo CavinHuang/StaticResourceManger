@@ -1,18 +1,18 @@
 webpackJsonp([5],{
 
-/***/ 126:
+/***/ 131:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(758)
+  __webpack_require__(785)
 }
 var normalizeComponent = __webpack_require__(1)
 /* script */
-var __vue_script__ = __webpack_require__(760)
+var __vue_script__ = __webpack_require__(787)
 /* template */
-var __vue_template__ = __webpack_require__(767)
+var __vue_template__ = __webpack_require__(794)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -52,13 +52,13 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 758:
+/***/ 785:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(759);
+var content = __webpack_require__(786);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -79,7 +79,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 759:
+/***/ 786:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(2)(false);
@@ -94,12 +94,12 @@ exports.push([module.i, "\n.split-pane-con[data-v-083e2a5c] {\n  width: 100%;\n 
 
 /***/ }),
 
-/***/ 760:
+/***/ 787:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__split_pane__ = __webpack_require__(761);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__split_pane__ = __webpack_require__(788);
 //
 //
 //
@@ -168,11 +168,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /***/ }),
 
-/***/ 761:
+/***/ 788:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__split_pane_vue__ = __webpack_require__(762);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__split_pane_vue__ = __webpack_require__(789);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__split_pane_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__split_pane_vue__);
 
 
@@ -180,19 +180,19 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /***/ }),
 
-/***/ 762:
+/***/ 789:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(763)
+  __webpack_require__(790)
 }
 var normalizeComponent = __webpack_require__(1)
 /* script */
-var __vue_script__ = __webpack_require__(765)
+var __vue_script__ = __webpack_require__(792)
 /* template */
-var __vue_template__ = __webpack_require__(766)
+var __vue_template__ = __webpack_require__(793)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -232,13 +232,13 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 763:
+/***/ 790:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(764);
+var content = __webpack_require__(791);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -259,7 +259,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 764:
+/***/ 791:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(2)(false);
@@ -274,7 +274,7 @@ exports.push([module.i, "\n.split-pane {\n  position: relative;\n}\n.split-pane-
 
 /***/ }),
 
-/***/ 765:
+/***/ 792:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -429,7 +429,7 @@ var oneOf = function oneOf(ele, targetArr) {
 
 /***/ }),
 
-/***/ 766:
+/***/ 793:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -536,7 +536,7 @@ if (false) {
 
 /***/ }),
 
-/***/ 767:
+/***/ 794:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {

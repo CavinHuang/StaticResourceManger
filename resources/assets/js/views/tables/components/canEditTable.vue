@@ -4,7 +4,7 @@
 
 <template>
     <div>
-        <Table :ref="refs" :columns="columnsList" :data="thisTableData" border disabled-hover></Table>
+        <Table :ref="refs" :columns="columnsList" @on-selection-change="OnSelectionChange" @on-select-all="OnSelectionAll" @on-select="OnSelect" :data="thisTableData" border disabled-hover></Table>
     </div>
 </template>
 
@@ -277,6 +277,15 @@ export default {
                 delete item.saving;
             });
             return clonedData;
+        },
+        OnSelectionChange(selection){
+          this.$emit('on-selection-change', selection)
+        },
+        OnSelectionAll(selection){
+          this.$emit('on-selection-all', selection)
+        },
+        OnSelect(selection, raw){
+          this.$emit('on-select', {selection:selection, raw: raw})
         }
     },
     watch: {

@@ -1,19 +1,19 @@
 webpackJsonp([12],{
 
-/***/ 109:
+/***/ 124:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(327)
-  __webpack_require__(329)
+  __webpack_require__(728)
+  __webpack_require__(730)
 }
 var normalizeComponent = __webpack_require__(1)
 /* script */
-var __vue_script__ = __webpack_require__(331)
+var __vue_script__ = __webpack_require__(732)
 /* template */
-var __vue_template__ = __webpack_require__(332)
+var __vue_template__ = __webpack_require__(733)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -30,7 +30,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources\\assets\\js\\views\\login.vue"
+Component.options.__file = "resources\\assets\\js\\views\\my-components\\text-editor\\text-editor.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -39,9 +39,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-653a9168", Component.options)
+    hotAPI.createRecord("data-v-18e6eb9c", Component.options)
   } else {
-    hotAPI.reload("data-v-653a9168", Component.options)
+    hotAPI.reload("data-v-18e6eb9c", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -53,23 +53,23 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 327:
+/***/ 728:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(328);
+var content = __webpack_require__(729);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(5)("dae9493e", content, false);
+var update = __webpack_require__(5)("761b1f95", content, false);
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-653a9168\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/less-loader/index.js!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./login.vue", function() {
-     var newContent = require("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-653a9168\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/less-loader/index.js!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./login.vue");
+   module.hot.accept("!!../../../../../../node_modules/css-loader/index.js!../../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-18e6eb9c\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../../node_modules/less-loader/index.js!../../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./text-editor.vue", function() {
+     var newContent = require("!!../../../../../../node_modules/css-loader/index.js!../../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-18e6eb9c\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../../node_modules/less-loader/index.js!../../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./text-editor.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -80,7 +80,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 328:
+/***/ 729:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(2)(false);
@@ -88,30 +88,30 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, "\n.login {\n  width: 100%;\n  height: 100%;\n  background-image: url('https://file.iviewui.com/iview-admin/login_bg.jpg');\n  background-size: cover;\n  background-position: center;\n  position: relative;\n}\n.login-con {\n  position: absolute;\n  right: 160px;\n  top: 50%;\n  -webkit-transform: translateY(-60%);\n          transform: translateY(-60%);\n  width: 300px;\n}\n.login-con-header {\n  font-size: 16px;\n  font-weight: 300;\n  text-align: center;\n  padding: 30px 0;\n}\n.login-con .form-con {\n  padding: 10px 0 0;\n}\n.login-con .login-tip {\n  font-size: 10px;\n  text-align: center;\n  color: #c3c3c3;\n}\n", ""]);
+exports.push([module.i, "\n.demo-spin-icon-load {\n  -webkit-animation: ani-demo-spin 1s linear infinite;\n          animation: ani-demo-spin 1s linear infinite;\n}\n@-webkit-keyframes ani-demo-spin {\nfrom {\n    -webkit-transform: rotate(0deg);\n            transform: rotate(0deg);\n}\n50% {\n    -webkit-transform: rotate(180deg);\n            transform: rotate(180deg);\n}\nto {\n    -webkit-transform: rotate(360deg);\n            transform: rotate(360deg);\n}\n}\n@keyframes ani-demo-spin {\nfrom {\n    -webkit-transform: rotate(0deg);\n            transform: rotate(0deg);\n}\n50% {\n    -webkit-transform: rotate(180deg);\n            transform: rotate(180deg);\n}\nto {\n    -webkit-transform: rotate(360deg);\n            transform: rotate(360deg);\n}\n}\n", ""]);
 
 // exports
 
 
 /***/ }),
 
-/***/ 329:
+/***/ 730:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(330);
+var content = __webpack_require__(731);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(5)("597a8531", content, false);
+var update = __webpack_require__(5)("b75e2ef6", content, false);
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-653a9168\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=1!./login.vue", function() {
-     var newContent = require("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-653a9168\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=1!./login.vue");
+   module.hot.accept("!!../../../../../../node_modules/css-loader/index.js!../../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-18e6eb9c\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=1!./text-editor.vue", function() {
+     var newContent = require("!!../../../../../../node_modules/css-loader/index.js!../../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-18e6eb9c\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=1!./text-editor.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -122,7 +122,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 330:
+/***/ 731:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(2)(false);
@@ -130,43 +130,18 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
 
 /***/ }),
 
-/***/ 331:
+/***/ 732:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_js_cookie__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_js_cookie___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_js_cookie__);
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 //
 //
 //
@@ -184,59 +159,63 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 
-
+//import tinymce from 'tinymce/tinymce';
 /* harmony default export */ __webpack_exports__["default"] = ({
+    name: 'text-editor',
     data: function data() {
         return {
-            form: {
-                email: '',
-                password: ''
-            },
-            rules: {
-                email: [{ required: true, message: '账号不能为空', trigger: 'blur' }],
-                password: [{ required: true, message: '密码不能为空', trigger: 'blur' }]
-            }
+            spinShow: true
         };
     },
 
     methods: {
-        handleSubmit: function handleSubmit() {
+        init: function init() {
             var _this = this;
 
-            this.$refs.loginForm.validate(function (valid) {
-                if (valid) {
-                    _this.$axios.post('/api/auth/login', _this.form).then(function (res) {
-                        console.log(res);
-                        if (res.status == 200 && res.data.success == 1) {
-                            __WEBPACK_IMPORTED_MODULE_0_js_cookie___default.a.set('user', _this.form.userName);
-                            __WEBPACK_IMPORTED_MODULE_0_js_cookie___default.a.set('password', _this.form.password);
-
-                            _this.$store.dispatch('logined', res.data.data.token_type + ' ' + res.data.data.access_token);
-
-                            _this.$store.commit('setAvator', 'https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3448484253,3685836170&fm=27&gp=0.jpg');
-                            /*if (this.form.userName === 'iview_admin') {
-                              Cookies.set('access', 0);
-                            } else {
-                              Cookies.set('access', 1);
-                            }*/
-                            _this.$Message.success('恭喜您，登录成功!', 2);
-
-                            setTimeout(function () {
-                                _this.$router.push({ path: '/home' });
-                            }, 2000);
-                        } else {
-                            _this.$Message.error(res.data.msg);
-                        }
-                    });
-                }
+            this.$nextTick(function () {
+                var vm = _this;
+                var height = document.body.offsetHeight - 300;
+                window.tinymce.init({
+                    selector: '#tinymceEditer',
+                    branding: false,
+                    elementpath: false,
+                    height: height,
+                    language: 'zh_CN',
+                    menubar: 'edit insert view format table tools',
+                    plugins: ['advlist autolink lists link image charmap print preview hr anchor pagebreak imagetools', 'searchreplace visualblocks visualchars code fullpage', 'insertdatetime media nonbreaking save table contextmenu directionality', 'emoticons paste textcolor colorpicker textpattern imagetools codesample'],
+                    toolbar1: ' newnote print preview | undo redo | insert | styleselect | forecolor backcolor bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image emoticons media codesample',
+                    autosave_interval: '20s',
+                    image_advtab: true,
+                    table_default_styles: {
+                        width: '100%',
+                        borderCollapse: 'collapse'
+                    },
+                    setup: function setup(editor) {
+                        editor.on('init', function (e) {
+                            vm.spinShow = false;
+                            if (localStorage.editorContent) {
+                                tinymce.get('tinymceEditer').setContent(localStorage.editorContent);
+                            }
+                        });
+                        editor.on('keydown', function (e) {
+                            localStorage.editorContent = tinymce.get('tinymceEditer').getContent();
+                        });
+                    }
+                });
             });
         }
+    },
+    mounted: function mounted() {
+        this.init();
+    },
+    destroyed: function destroyed() {
+        tinymce.get('tinymceEditer').destroy();
     }
 });
 
 /***/ }),
 
-/***/ 332:
+/***/ 733:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -245,145 +224,31 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "div",
-    {
-      staticClass: "login",
-      on: {
-        keydown: function($event) {
-          if (
-            !("button" in $event) &&
-            _vm._k($event.keyCode, "enter", 13, $event.key)
-          ) {
-            return null
-          }
-          _vm.handleSubmit($event)
-        }
-      }
-    },
     [
-      _c(
-        "div",
-        { staticClass: "login-con" },
-        [
-          _c("Card", { attrs: { bordered: false } }, [
-            _c(
-              "p",
-              { attrs: { slot: "title" }, slot: "title" },
-              [
-                _c("Icon", { attrs: { type: "log-in" } }),
-                _vm._v("\n                欢迎登录\n            ")
-              ],
-              1
-            ),
-            _vm._v(" "),
-            _c(
-              "div",
-              { staticClass: "form-con" },
-              [
-                _c(
-                  "Form",
-                  {
-                    ref: "loginForm",
-                    attrs: { model: _vm.form, rules: _vm.rules }
-                  },
-                  [
-                    _c(
-                      "FormItem",
-                      { attrs: { prop: "userName" } },
-                      [
-                        _c(
-                          "Input",
-                          {
-                            attrs: { placeholder: "请输入用户名" },
-                            model: {
-                              value: _vm.form.email,
-                              callback: function($$v) {
-                                _vm.$set(_vm.form, "email", $$v)
-                              },
-                              expression: "form.email"
-                            }
-                          },
-                          [
-                            _c(
-                              "span",
-                              { attrs: { slot: "prepend" }, slot: "prepend" },
-                              [
-                                _c("Icon", {
-                                  attrs: { size: 16, type: "person" }
-                                })
-                              ],
-                              1
-                            )
-                          ]
-                        )
-                      ],
-                      1
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "FormItem",
-                      { attrs: { prop: "password" } },
-                      [
-                        _c(
-                          "Input",
-                          {
-                            attrs: {
-                              type: "password",
-                              placeholder: "请输入密码"
-                            },
-                            model: {
-                              value: _vm.form.password,
-                              callback: function($$v) {
-                                _vm.$set(_vm.form, "password", $$v)
-                              },
-                              expression: "form.password"
-                            }
-                          },
-                          [
-                            _c(
-                              "span",
-                              { attrs: { slot: "prepend" }, slot: "prepend" },
-                              [
-                                _c("Icon", {
-                                  attrs: { size: 14, type: "locked" }
-                                })
-                              ],
-                              1
-                            )
-                          ]
-                        )
-                      ],
-                      1
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "FormItem",
-                      [
-                        _c(
-                          "Button",
-                          {
-                            attrs: { type: "primary", long: "" },
-                            on: { click: _vm.handleSubmit }
-                          },
-                          [_vm._v("登录")]
-                        )
-                      ],
-                      1
-                    )
-                  ],
-                  1
-                ),
-                _vm._v(" "),
-                _c("p", { staticClass: "login-tip" }, [
-                  _vm._v("输入任意用户名和密码即可")
-                ])
-              ],
-              1
-            )
-          ])
-        ],
-        1
-      )
-    ]
+      _c("Card", { attrs: { shadow: "" } }, [
+        _c("textarea", {
+          staticClass: "tinymce-textarea",
+          attrs: { id: "tinymceEditer" }
+        })
+      ]),
+      _vm._v(" "),
+      _vm.spinShow
+        ? _c(
+            "Spin",
+            { attrs: { fix: "" } },
+            [
+              _c("Icon", {
+                staticClass: "demo-spin-icon-load",
+                attrs: { type: "load-c", size: "18" }
+              }),
+              _vm._v(" "),
+              _c("div", [_vm._v("加载组件中...")])
+            ],
+            1
+          )
+        : _vm._e()
+    ],
+    1
   )
 }
 var staticRenderFns = []
@@ -392,7 +257,7 @@ module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-653a9168", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-18e6eb9c", module.exports)
   }
 }
 

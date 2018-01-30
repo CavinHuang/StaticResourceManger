@@ -9,7 +9,7 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 class User extends Authenticatable implements JWTSubject
 {
     use Notifiable;
-
+    protected $table = 'admin_user';
     /**
      * The attributes that are mass assignable.
      *

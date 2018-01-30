@@ -13,7 +13,7 @@
                 <div class="form-con">
                     <Form ref="loginForm" :model="form" :rules="rules">
                         <FormItem prop="userName">
-                            <Input v-model="form.email" placeholder="请输入用户名">
+                            <Input v-model="form.username" placeholder="请输入用户名">
                                 <span slot="prepend">
                                     <Icon :size="16" type="person"></Icon>
                                 </span>
@@ -43,11 +43,11 @@ export default {
     data () {
         return {
             form: {
-                email: '',
+                username: '',
                 password: ''
             },
             rules: {
-              email: [
+              username: [
                     { required: true, message: '账号不能为空', trigger: 'blur' }
                 ],
                 password: [
@@ -62,11 +62,11 @@ export default {
                 if (valid) {
                     this.$axios.post('/api/auth/login', this.form).then(res => {
                       console.log(res)
-                      if(res.status == 200 && res.data.success == 1) {
-                        Cookies.set('user', this.form.userName);
+                      if(res.success == 1) {
+                        Cookies.set('user', this.form.username);
                         Cookies.set('password', this.form.password);
                         
-                        this.$store.dispatch('logined', res.data.data.token_type + ' ' + res.data.data.access_token)
+                        this.$store.dispatch('logined', res.data.token_type + ' ' + res.data.access_token)
                         
                         this.$store.commit('setAvator', 'https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3448484253,3685836170&fm=27&gp=0.jpg');
                         /*if (this.form.userName === 'iview_admin') {
@@ -80,7 +80,7 @@ export default {
                           this.$router.push({path: '/home'});
                         }, 2000)
                       }else{
-                        this.$Message.error(res.data.msg);
+                        this.$Message.error(res.msg);
                       }
                     })
                 }

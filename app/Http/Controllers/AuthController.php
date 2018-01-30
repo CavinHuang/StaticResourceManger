@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-class AuthController extends Controller
+class AuthController extends \App\Http\Controllers\common\Controller
 {
 
 

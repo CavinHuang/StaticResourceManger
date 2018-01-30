@@ -1,19 +1,19 @@
 webpackJsonp([13],{
 
-/***/ 117:
+/***/ 110:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(691)
-  __webpack_require__(693)
+  __webpack_require__(338)
+  __webpack_require__(340)
 }
 var normalizeComponent = __webpack_require__(1)
 /* script */
-var __vue_script__ = __webpack_require__(695)
+var __vue_script__ = __webpack_require__(342)
 /* template */
-var __vue_template__ = __webpack_require__(696)
+var __vue_template__ = __webpack_require__(343)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -30,7 +30,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources\\assets\\js\\views\\access\\access.vue"
+Component.options.__file = "resources\\assets\\js\\views\\login.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -39,9 +39,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-75880e3f", Component.options)
+    hotAPI.createRecord("data-v-653a9168", Component.options)
   } else {
-    hotAPI.reload("data-v-75880e3f", Component.options)
+    hotAPI.reload("data-v-653a9168", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -53,23 +53,23 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 691:
+/***/ 338:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(692);
+var content = __webpack_require__(339);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(5)("270491b6", content, false);
+var update = __webpack_require__(5)("dae9493e", content, false);
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-75880e3f\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../node_modules/less-loader/index.js!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./access.vue", function() {
-     var newContent = require("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-75880e3f\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../node_modules/less-loader/index.js!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./access.vue");
+   module.hot.accept("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-653a9168\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/less-loader/index.js!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./login.vue", function() {
+     var newContent = require("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-653a9168\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/less-loader/index.js!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./login.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -80,7 +80,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 692:
+/***/ 339:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(2)(false);
@@ -88,30 +88,30 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, "\n.margin-top-8 {\n  margin-top: 8px;\n}\n.margin-top-10 {\n  margin-top: 10px;\n}\n.margin-top-20 {\n  margin-top: 20px;\n}\n.margin-left-10 {\n  margin-left: 10px;\n}\n.margin-bottom-10 {\n  margin-bottom: 10px;\n}\n.margin-bottom-100 {\n  margin-bottom: 100px;\n}\n.margin-right-10 {\n  margin-right: 10px;\n}\n.padding-left-6 {\n  padding-left: 6px;\n}\n.padding-left-8 {\n  padding-left: 5px;\n}\n.padding-left-10 {\n  padding-left: 10px;\n}\n.padding-left-20 {\n  padding-left: 20px;\n}\n.height-100 {\n  height: 100%;\n}\n.height-120px {\n  height: 100px;\n}\n.height-200px {\n  height: 200px;\n}\n.height-492px {\n  height: 492px;\n}\n.height-460px {\n  height: 460px;\n}\n.line-gray {\n  height: 0;\n  border-bottom: 2px solid #dcdcdc;\n}\n.notwrap {\n  word-break: keep-all;\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis;\n}\n.padding-left-5 {\n  padding-left: 10px;\n}\n[v-cloak] {\n  display: none;\n}\n.access-user-con {\n  height: 200px;\n}\n.access-current-user-con {\n  text-align: center;\n  padding-top: 10px;\n}\n.access-current-user-con img {\n  display: block;\n  width: 100px;\n  height: 100px;\n  border: 2px solid #dddde2;\n  border-radius: 50%;\n  margin: 0px auto 10px;\n}\n.access-current-user-con p {\n  display: block;\n  padding: 20px 0 0;\n}\n.access-current-user-con p b {\n  margin: 0 10px;\n  color: #2d8cf0;\n}\n.access-change-access-con-row {\n  height: 200px;\n}\n", ""]);
+exports.push([module.i, "\n.login {\n  width: 100%;\n  height: 100%;\n  background-image: url('https://file.iviewui.com/iview-admin/login_bg.jpg');\n  background-size: cover;\n  background-position: center;\n  position: relative;\n}\n.login-con {\n  position: absolute;\n  right: 160px;\n  top: 50%;\n  -webkit-transform: translateY(-60%);\n          transform: translateY(-60%);\n  width: 300px;\n}\n.login-con-header {\n  font-size: 16px;\n  font-weight: 300;\n  text-align: center;\n  padding: 30px 0;\n}\n.login-con .form-con {\n  padding: 10px 0 0;\n}\n.login-con .login-tip {\n  font-size: 10px;\n  text-align: center;\n  color: #c3c3c3;\n}\n", ""]);
 
 // exports
 
 
 /***/ }),
 
-/***/ 693:
+/***/ 340:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(694);
+var content = __webpack_require__(341);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(5)("621a47aa", content, false);
+var update = __webpack_require__(5)("597a8531", content, false);
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-75880e3f\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=1!./access.vue", function() {
-     var newContent = require("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-75880e3f\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=1!./access.vue");
+   module.hot.accept("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-653a9168\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=1!./login.vue", function() {
+     var newContent = require("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-653a9168\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=1!./login.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -122,7 +122,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 694:
+/***/ 341:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(2)(false);
@@ -130,14 +130,14 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
 
 /***/ }),
 
-/***/ 695:
+/***/ 342:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -183,44 +183,60 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
-//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-    name: 'access_index',
     data: function data() {
         return {
-            accessCode: parseInt(__WEBPACK_IMPORTED_MODULE_0_js_cookie___default.a.get('access')),
-            switchValue: parseInt(__WEBPACK_IMPORTED_MODULE_0_js_cookie___default.a.get('access')) === 1
+            form: {
+                username: '',
+                password: ''
+            },
+            rules: {
+                username: [{ required: true, message: '账号不能为空', trigger: 'blur' }],
+                password: [{ required: true, message: '密码不能为空', trigger: 'blur' }]
+            }
         };
     },
 
-    computed: {
-        avatorPath: function avatorPath() {
-            return localStorage.avatorImgPath;
-        }
-    },
     methods: {
-        changeAccess: function changeAccess(res) {
-            if (res) {
-                this.accessCode = 1;
-                __WEBPACK_IMPORTED_MODULE_0_js_cookie___default.a.set('access', 1);
-            } else {
-                this.accessCode = 0;
-                __WEBPACK_IMPORTED_MODULE_0_js_cookie___default.a.set('access', 0);
-            }
-            this.$store.commit('updateMenulist');
+        handleSubmit: function handleSubmit() {
+            var _this = this;
+
+            this.$refs.loginForm.validate(function (valid) {
+                if (valid) {
+                    _this.$axios.post('/api/auth/login', _this.form).then(function (res) {
+                        console.log(res);
+                        if (res.success == 1) {
+                            __WEBPACK_IMPORTED_MODULE_0_js_cookie___default.a.set('user', _this.form.username);
+                            __WEBPACK_IMPORTED_MODULE_0_js_cookie___default.a.set('password', _this.form.password);
+
+                            _this.$store.dispatch('logined', res.data.token_type + ' ' + res.data.access_token);
+
+                            _this.$store.commit('setAvator', 'https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3448484253,3685836170&fm=27&gp=0.jpg');
+                            /*if (this.form.userName === 'iview_admin') {
+                              Cookies.set('access', 0);
+                            } else {
+                              Cookies.set('access', 1);
+                            }*/
+                            _this.$Message.success('恭喜您，登录成功!', 2);
+
+                            setTimeout(function () {
+                                _this.$router.push({ path: '/home' });
+                            }, 2000);
+                        } else {
+                            _this.$Message.error(res.msg);
+                        }
+                    });
+                }
+            });
         }
     }
 });
 
 /***/ }),
 
-/***/ 696:
+/***/ 343:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -229,131 +245,145 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "div",
-    { staticClass: "access" },
+    {
+      staticClass: "login",
+      on: {
+        keydown: function($event) {
+          if (
+            !("button" in $event) &&
+            _vm._k($event.keyCode, "enter", 13, $event.key)
+          ) {
+            return null
+          }
+          _vm.handleSubmit($event)
+        }
+      }
+    },
     [
       _c(
-        "Row",
+        "div",
+        { staticClass: "login-con" },
         [
-          _c(
-            "Col",
-            { attrs: { span: "8" } },
-            [
-              _c("Card", [
+          _c("Card", { attrs: { bordered: false } }, [
+            _c(
+              "p",
+              { attrs: { slot: "title" }, slot: "title" },
+              [
+                _c("Icon", { attrs: { type: "log-in" } }),
+                _vm._v("\n                欢迎登录\n            ")
+              ],
+              1
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              { staticClass: "form-con" },
+              [
                 _c(
-                  "p",
-                  { attrs: { slot: "title" }, slot: "title" },
-                  [
-                    _c("Icon", { attrs: { type: "android-contact" } }),
-                    _vm._v("\n                    当前用户\n                ")
-                  ],
-                  1
-                ),
-                _vm._v(" "),
-                _c(
-                  "div",
-                  { staticClass: "access-user-con access-current-user-con" },
-                  [
-                    _c("img", { attrs: { src: _vm.avatorPath, alt: "" } }),
-                    _vm._v(" "),
-                    _c("p", [
-                      _vm._v("当前用户权限值:"),
-                      _c("b", [_vm._v(_vm._s(_vm.accessCode))])
-                    ])
-                  ]
-                )
-              ])
-            ],
-            1
-          ),
-          _vm._v(" "),
-          _c(
-            "Col",
-            { staticClass: "padding-left-10", attrs: { span: "16" } },
-            [
-              _c("Card", [
-                _c(
-                  "p",
-                  { attrs: { slot: "title" }, slot: "title" },
-                  [
-                    _c("Icon", { attrs: { type: "android-contacts" } }),
-                    _vm._v(
-                      "\n                    不同权限用户的不同菜单\n                "
-                    )
-                  ],
-                  1
-                ),
-                _vm._v(" "),
-                _c(
-                  "div",
-                  { staticClass: "access-user-con access-change-access-con" },
+                  "Form",
+                  {
+                    ref: "loginForm",
+                    attrs: { model: _vm.form, rules: _vm.rules }
+                  },
                   [
                     _c(
-                      "Col",
-                      { attrs: { span: "8" } },
+                      "FormItem",
+                      { attrs: { prop: "userName" } },
                       [
                         _c(
-                          "Row",
+                          "Input",
                           {
-                            staticClass: "access-change-access-con-row",
-                            attrs: {
-                              type: "flex",
-                              justify: "center",
-                              align: "middle"
+                            attrs: { placeholder: "请输入用户名" },
+                            model: {
+                              value: _vm.form.username,
+                              callback: function($$v) {
+                                _vm.$set(_vm.form, "username", $$v)
+                              },
+                              expression: "form.username"
                             }
                           },
                           [
-                            _c("i-switch", {
-                              attrs: { value: _vm.switchValue, size: "large" },
-                              on: { "on-change": _vm.changeAccess }
-                            })
-                          ],
-                          1
+                            _c(
+                              "span",
+                              { attrs: { slot: "prepend" }, slot: "prepend" },
+                              [
+                                _c("Icon", {
+                                  attrs: { size: 16, type: "person" }
+                                })
+                              ],
+                              1
+                            )
+                          ]
                         )
                       ],
                       1
                     ),
                     _vm._v(" "),
                     _c(
-                      "Col",
-                      { staticClass: "padding-left-10", attrs: { span: "16" } },
+                      "FormItem",
+                      { attrs: { prop: "password" } },
                       [
                         _c(
-                          "Row",
+                          "Input",
                           {
-                            staticClass: "access-change-access-con-row",
                             attrs: {
-                              type: "flex",
-                              justify: "center",
-                              align: "middle"
+                              type: "password",
+                              placeholder: "请输入密码"
+                            },
+                            model: {
+                              value: _vm.form.password,
+                              callback: function($$v) {
+                                _vm.$set(_vm.form, "password", $$v)
+                              },
+                              expression: "form.password"
                             }
                           },
                           [
-                            _c("p", [
-                              _vm._v(
-                                "您可以通过左侧的开关来切换当前用户的权限值，然后您可以观察左侧菜单栏的变化，如果当前用户的权限值是"
-                              ),
-                              _c("b", [_vm._v(" 0 ")]),
-                              _vm._v(
-                                "，则左侧菜单栏会显示’权限测试页‘这一项('权限测试页'只用于测试，点击不会跳转)。"
-                              )
-                            ])
+                            _c(
+                              "span",
+                              { attrs: { slot: "prepend" }, slot: "prepend" },
+                              [
+                                _c("Icon", {
+                                  attrs: { size: 14, type: "locked" }
+                                })
+                              ],
+                              1
+                            )
                           ]
+                        )
+                      ],
+                      1
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "FormItem",
+                      [
+                        _c(
+                          "Button",
+                          {
+                            attrs: { type: "primary", long: "" },
+                            on: { click: _vm.handleSubmit }
+                          },
+                          [_vm._v("登录")]
                         )
                       ],
                       1
                     )
                   ],
                   1
-                )
-              ])
-            ],
-            1
-          )
+                ),
+                _vm._v(" "),
+                _c("p", { staticClass: "login-tip" }, [
+                  _vm._v("输入任意用户名和密码即可")
+                ])
+              ],
+              1
+            )
+          ])
         ],
         1
       )
-    ],
-    1
+    ]
   )
 }
 var staticRenderFns = []
@@ -362,7 +392,7 @@ module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-75880e3f", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-653a9168", module.exports)
   }
 }
 

@@ -1,18 +1,18 @@
 webpackJsonp([30],{
 
-/***/ 118:
+/***/ 108:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(697)
+  __webpack_require__(219)
 }
 var normalizeComponent = __webpack_require__(1)
 /* script */
-var __vue_script__ = __webpack_require__(699)
+var __vue_script__ = __webpack_require__(221)
 /* template */
-var __vue_template__ = __webpack_require__(700)
+var __vue_template__ = __webpack_require__(222)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -29,7 +29,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources\\assets\\js\\views\\access\\access-test.vue"
+Component.options.__file = "resources\\assets\\js\\views\\error-page\\403.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -38,9 +38,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-7ac4b610", Component.options)
+    hotAPI.createRecord("data-v-1def4e3c", Component.options)
   } else {
-    hotAPI.reload("data-v-7ac4b610", Component.options)
+    hotAPI.reload("data-v-1def4e3c", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -52,23 +52,23 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 697:
+/***/ 219:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(698);
+var content = __webpack_require__(220);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(5)("0db73da4", content, false);
+var update = __webpack_require__(5)("0fc0c563", content, false);
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-7ac4b610\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./access-test.vue", function() {
-     var newContent = require("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-7ac4b610\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./access-test.vue");
+   module.hot.accept("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-1def4e3c\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../node_modules/less-loader/index.js!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./403.vue", function() {
+     var newContent = require("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-1def4e3c\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../node_modules/less-loader/index.js!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./403.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -79,7 +79,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 698:
+/***/ 220:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(2)(false);
@@ -87,14 +87,14 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n@-webkit-keyframes error403animation {\n0% {\n    -webkit-transform: rotateZ(0deg);\n            transform: rotateZ(0deg);\n}\n40% {\n    -webkit-transform: rotateZ(-20deg);\n            transform: rotateZ(-20deg);\n}\n45% {\n    -webkit-transform: rotateZ(-15deg);\n            transform: rotateZ(-15deg);\n}\n50% {\n    -webkit-transform: rotateZ(-20deg);\n            transform: rotateZ(-20deg);\n}\n55% {\n    -webkit-transform: rotateZ(-15deg);\n            transform: rotateZ(-15deg);\n}\n60% {\n    -webkit-transform: rotateZ(-20deg);\n            transform: rotateZ(-20deg);\n}\n100% {\n    -webkit-transform: rotateZ(0deg);\n            transform: rotateZ(0deg);\n}\n}\n@keyframes error403animation {\n0% {\n    -webkit-transform: rotateZ(0deg);\n            transform: rotateZ(0deg);\n}\n40% {\n    -webkit-transform: rotateZ(-20deg);\n            transform: rotateZ(-20deg);\n}\n45% {\n    -webkit-transform: rotateZ(-15deg);\n            transform: rotateZ(-15deg);\n}\n50% {\n    -webkit-transform: rotateZ(-20deg);\n            transform: rotateZ(-20deg);\n}\n55% {\n    -webkit-transform: rotateZ(-15deg);\n            transform: rotateZ(-15deg);\n}\n60% {\n    -webkit-transform: rotateZ(-20deg);\n            transform: rotateZ(-20deg);\n}\n100% {\n    -webkit-transform: rotateZ(0deg);\n            transform: rotateZ(0deg);\n}\n}\n.error403-body-con {\n  width: 700px;\n  height: 500px;\n  position: absolute;\n  left: 50%;\n  top: 50%;\n  -webkit-transform: translate(-50%, -50%);\n          transform: translate(-50%, -50%);\n}\n.error403-body-con-title {\n  text-align: center;\n  font-size: 240px;\n  font-weight: 700;\n  color: #2d8cf0;\n  height: 260px;\n  line-height: 260px;\n  margin-top: 40px;\n}\n.error403-body-con-title .error403-0-span {\n  display: inline-block;\n  position: relative;\n  width: 170px;\n  height: 170px;\n  border-radius: 50%;\n  border: 20px solid #ed3f14;\n  color: #ed3f14;\n  margin-right: 10px;\n}\n.error403-body-con-title .error403-0-span i {\n  display: inline-block;\n  font-size: 120px;\n  position: absolute;\n  left: 50%;\n  top: 50%;\n  -webkit-transform: translate(-50%, -50%);\n          transform: translate(-50%, -50%);\n}\n.error403-body-con-title .error403-key-span {\n  display: inline-block;\n  position: relative;\n  width: 100px;\n  height: 190px;\n  border-radius: 50%;\n  margin-right: 10px;\n}\n.error403-body-con-title .error403-key-span i {\n  display: inline-block;\n  font-size: 190px;\n  position: absolute;\n  left: 20px;\n  -webkit-transform: translate(-50%, -60%);\n          transform: translate(-50%, -60%);\n  -webkit-transform-origin: center bottom;\n          transform-origin: center bottom;\n  -webkit-animation: error403animation 2.8s ease 0s infinite;\n          animation: error403animation 2.8s ease 0s infinite;\n}\n.error403-body-con-message {\n  display: block;\n  text-align: center;\n  font-size: 30px;\n  font-weight: 500;\n  letter-spacing: 4px;\n  color: #dddde2;\n}\n.error403-btn-con {\n  text-align: center;\n  padding: 20px 0;\n  margin-bottom: 40px;\n}\n", ""]);
 
 // exports
 
 
 /***/ }),
 
-/***/ 699:
+/***/ 221:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -107,27 +107,98 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
-/* harmony default export */ __webpack_exports__["default"] = ({});
+/* harmony default export */ __webpack_exports__["default"] = ({
+    name: 'Error403',
+    methods: {
+        backPage: function backPage() {
+            this.$router.go(-1);
+        },
+        goHome: function goHome() {
+            this.$router.push({
+                name: 'home_index'
+            });
+        }
+    }
+});
 
 /***/ }),
 
-/***/ 700:
+/***/ 222:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c(
-    "div",
-    [
-      _c("Card", { attrs: { shadow: "" } }, [
-        _c("p", [_vm._v("当前用户的权限值是 0 时，才可以看到这个页面。")])
-      ])
-    ],
-    1
-  )
+  return _c("div", { staticClass: "error403" }, [
+    _c(
+      "div",
+      { staticClass: "error403-body-con" },
+      [
+        _c("Card", [
+          _c("div", { staticClass: "error403-body-con-title" }, [
+            _vm._v("4"),
+            _c(
+              "span",
+              { staticClass: "error403-0-span" },
+              [_c("Icon", { attrs: { type: "android-lock" } })],
+              1
+            ),
+            _c(
+              "span",
+              { staticClass: "error403-key-span" },
+              [_c("Icon", { attrs: { size: "220", type: "ios-bolt" } })],
+              1
+            )
+          ]),
+          _vm._v(" "),
+          _c("p", { staticClass: "error403-body-con-message" }, [
+            _vm._v("You don't have permission")
+          ]),
+          _vm._v(" "),
+          _c(
+            "div",
+            { staticClass: "error403-btn-con" },
+            [
+              _c(
+                "Button",
+                {
+                  staticStyle: { width: "200px" },
+                  attrs: { size: "large", type: "text" },
+                  on: { click: _vm.goHome }
+                },
+                [_vm._v("返回首页")]
+              ),
+              _vm._v(" "),
+              _c(
+                "Button",
+                {
+                  staticStyle: { width: "200px", "margin-left": "40px" },
+                  attrs: { size: "large", type: "primary" },
+                  on: { click: _vm.backPage }
+                },
+                [_vm._v("返回上一页")]
+              )
+            ],
+            1
+          )
+        ])
+      ],
+      1
+    )
+  ])
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -135,7 +206,7 @@ module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-7ac4b610", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-1def4e3c", module.exports)
   }
 }
 

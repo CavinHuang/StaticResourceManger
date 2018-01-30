@@ -35,8 +35,7 @@ class RefreshToken extends BaseMiddleware
         $this->auth->parseToken()->authenticate();
         return $next($request);
       }catch (\Exception $e){
-        dd($e);
-        throw new UnauthorizedHttpException('jwt-auth', 'Token已经加入黑名单');
+        throw new UnauthorizedHttpException('jwt-auth', $e->getMessage());
       }
 
       throw new UnauthorizedHttpException('jwt-auth', '未登录');

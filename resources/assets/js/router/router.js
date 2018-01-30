@@ -77,6 +77,17 @@ export const appRouter = [
       {path: '/js', title: 'JS资源管理', name: 'static-resource-js', icon: 'social-javascript-outline', component: resolve => {require(['../views/static-resource/js.vue'], resolve)}}
     ]
   },
+  {
+    name: 'static-project',
+    icon: 'social-buffer',
+    path: '/static-project',
+    title: '项目管理',
+    component: Main,
+    children: [
+      {path: '/list', title: '项目管理', name: 'static-project-list', icon: 'android-globe', component: resolve => {require(['../views/static-resource/project-list.vue'], resolve)}},
+      {path: '/version', title: '版本管理', name: 'static-project-version', icon: 'ios-speedometer-outline', component: resolve => {require(['../views/static-resource/project-version.vue'], resolve)}}
+    ]
+  },
     {
         path: '/access',
         icon: 'key',

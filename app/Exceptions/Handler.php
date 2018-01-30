@@ -5,6 +5,7 @@ namespace App\Exceptions;
 use Exception;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
 use Symfony\Component\HttpKernel\Exception\UnauthorizedHttpException;
+use Illuminate\Validation\ValidationException;
 
 class Handler extends ExceptionHandler
 {
@@ -49,13 +50,14 @@ class Handler extends ExceptionHandler
      */
     public function render($request, Exception $exception)
     {
+
       // 参数验证错误的异常，我们需要返回 400 的 http code 和一句错误信息
       if ($exception instanceof ValidationException) {
-        return response(['error' => array_first(array_collapse($exception->errors()))], 400);
+        return response(['success' => 0, 'error_code' => 'validate_error', 'msg' => array_first(array_collapse($exception->errors()))], 200);
       }
       // 用户认证的异常，我们需要返回 401 的 http code 和错误信息
       if ($exception instanceof UnauthorizedHttpException ) {
-        return response($exception->getMessage(), 401);
+        return response(['success' => 0, 'error_code' => 'unauthorized_error', 'msg' => $exception->getMessage()], 401);
       }
 
       return parent::render($request, $exception);

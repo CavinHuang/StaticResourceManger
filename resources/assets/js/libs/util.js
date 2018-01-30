@@ -247,4 +247,14 @@ util.fullscreenEvent = function (vm) {
 };
 
 
+util.getIdFromData = function (arr) {
+    if(arr.length == 0) return {};
+    let result = [];
+    for (let i = 0; i < arr.length; i ++) {
+        if(!(arr[i] instanceof Object) || !arr[i].hasOwnProperty('id')) continue;
+        result.push(arr[i]['id'])
+    }
+    return result;
+}
+
 export default util;

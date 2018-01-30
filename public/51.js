@@ -1,18 +1,18 @@
 webpackJsonp([51],{
 
-/***/ 129:
+/***/ 124:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(776)
+  __webpack_require__(748)
 }
 var normalizeComponent = __webpack_require__(1)
 /* script */
-var __vue_script__ = __webpack_require__(778)
+var __vue_script__ = __webpack_require__(750)
 /* template */
-var __vue_template__ = __webpack_require__(782)
+var __vue_template__ = __webpack_require__(751)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -29,7 +29,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources\\assets\\js\\views\\tables\\dragable-table.vue"
+Component.options.__file = "resources\\assets\\js\\views\\my-components\\draggable-list\\draggable-list.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -38,9 +38,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-7ab5c8ee", Component.options)
+    hotAPI.createRecord("data-v-6e8c00fa", Component.options)
   } else {
-    hotAPI.reload("data-v-7ab5c8ee", Component.options)
+    hotAPI.reload("data-v-6e8c00fa", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -52,7 +52,7 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 246:
+/***/ 248:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;/**!
@@ -1603,23 +1603,23 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;/**!
 
 /***/ }),
 
-/***/ 776:
+/***/ 748:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(777);
+var content = __webpack_require__(749);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(5)("94682b64", content, false);
+var update = __webpack_require__(5)("75d05d9e", content, false);
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-7ab5c8ee\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../node_modules/less-loader/index.js!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./dragable-table.vue", function() {
-     var newContent = require("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-7ab5c8ee\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../node_modules/less-loader/index.js!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./dragable-table.vue");
+   module.hot.accept("!!../../../../../../node_modules/css-loader/index.js!../../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-6e8c00fa\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../../node_modules/less-loader/index.js!../../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./draggable-list.vue", function() {
+     var newContent = require("!!../../../../../../node_modules/css-loader/index.js!../../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-6e8c00fa\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../../node_modules/less-loader/index.js!../../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./draggable-list.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -1630,7 +1630,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 777:
+/***/ 749:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(2)(false);
@@ -1638,262 +1638,19 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, "\n.margin-top-8 {\n  margin-top: 8px;\n}\n.margin-top-10 {\n  margin-top: 10px;\n}\n.margin-top-20 {\n  margin-top: 20px;\n}\n.margin-left-10 {\n  margin-left: 10px;\n}\n.margin-bottom-10 {\n  margin-bottom: 10px;\n}\n.margin-bottom-100 {\n  margin-bottom: 100px;\n}\n.margin-right-10 {\n  margin-right: 10px;\n}\n.padding-left-6 {\n  padding-left: 6px;\n}\n.padding-left-8 {\n  padding-left: 5px;\n}\n.padding-left-10 {\n  padding-left: 10px;\n}\n.padding-left-20 {\n  padding-left: 20px;\n}\n.height-100 {\n  height: 100%;\n}\n.height-120px {\n  height: 100px;\n}\n.height-200px {\n  height: 200px;\n}\n.height-492px {\n  height: 492px;\n}\n.height-460px {\n  height: 460px;\n}\n.line-gray {\n  height: 0;\n  border-bottom: 2px solid #dcdcdc;\n}\n.notwrap {\n  word-break: keep-all;\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis;\n}\n.padding-left-5 {\n  padding-left: 10px;\n}\n[v-cloak] {\n  display: none;\n}\n.dragging-tip-enter-active {\n  opacity: 1;\n  -webkit-transition: opacity .3s;\n  transition: opacity .3s;\n}\n.dragging-tip-enter,\n.dragging-tip-leave-to {\n  opacity: 0;\n  -webkit-transition: opacity 0.3s;\n  transition: opacity 0.3s;\n}\n.dragging-tip-con {\n  display: block;\n  text-align: center;\n  width: 100%;\n  height: 50px;\n}\n.dragging-tip-con span {\n  font-size: 18px;\n}\n.record-tip-con {\n  display: block;\n  width: 100%;\n  height: 292px;\n  overflow: auto;\n}\n.record-item {\n  -webkit-box-sizing: content-box;\n          box-sizing: content-box;\n  display: block;\n  overflow: hidden;\n  height: 24px;\n  line-height: 24px;\n  padding: 8px 10px;\n  border-bottom: 1px dashed gainsboro;\n}\n.record-tip-con span {\n  font-size: 14px;\n}\n.edittable-test-con {\n  height: 160px;\n}\n.edittable-table-height-con {\n  height: 190px;\n}\n.edittable-con-1 {\n  -webkit-box-sizing: content-box;\n          box-sizing: content-box;\n  padding: 15px 0 0;\n  height: 196px;\n}\n.edittable-table-get-currentdata-con {\n  height: 190px !important;\n}\n.exportable-table-download-con1 {\n  padding: 16px 0 16px 20px;\n  border-bottom: 1px dashed #c3c3c3;\n  margin-bottom: 16px;\n}\n.exportable-table-download-con2 {\n  padding-left: 20px;\n}\n.show-image {\n  padding: 20px 0px;\n}\n.show-image img {\n  display: block;\n  width: 100%;\n  height: auto;\n}\n.searchable-table-con1 {\n  height: 230px !important;\n}\n", ""]);
+exports.push([module.i, "\n.margin-top-8 {\n  margin-top: 8px;\n}\n.margin-top-10 {\n  margin-top: 10px;\n}\n.margin-top-20 {\n  margin-top: 20px;\n}\n.margin-left-10 {\n  margin-left: 10px;\n}\n.margin-bottom-10 {\n  margin-bottom: 10px;\n}\n.margin-bottom-100 {\n  margin-bottom: 100px;\n}\n.margin-right-10 {\n  margin-right: 10px;\n}\n.padding-left-6 {\n  padding-left: 6px;\n}\n.padding-left-8 {\n  padding-left: 5px;\n}\n.padding-left-10 {\n  padding-left: 10px;\n}\n.padding-left-20 {\n  padding-left: 20px;\n}\n.height-100 {\n  height: 100%;\n}\n.height-120px {\n  height: 100px;\n}\n.height-200px {\n  height: 200px;\n}\n.height-492px {\n  height: 492px;\n}\n.height-460px {\n  height: 460px;\n}\n.line-gray {\n  height: 0;\n  border-bottom: 2px solid #dcdcdc;\n}\n.notwrap {\n  word-break: keep-all;\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis;\n}\n.padding-left-5 {\n  padding-left: 10px;\n}\n[v-cloak] {\n  display: none;\n}\n.iview-admin-draggable-list {\n  height: 100%;\n}\n.iview-admin-draggable-list li {\n  padding: 9px;\n  border: 1px solid #e7ebee;\n  border-radius: 3px;\n  margin-bottom: 5px;\n  cursor: pointer;\n  position: relative;\n  -webkit-transition: all .2s;\n  transition: all .2s;\n}\n.iview-admin-draggable-list li:hover {\n  color: #87b4ee;\n  border-color: #87b4ee;\n  -webkit-transition: all .2s;\n  transition: all .2s;\n}\n.iview-admin-draggable-delete {\n  height: 100%;\n  position: absolute;\n  right: -8px;\n  top: 0px;\n  display: none;\n}\n.iview-admin-draggable-list li:hover .iview-admin-draggable-delete {\n  display: block;\n}\n.placeholder-style {\n  display: block !important;\n  color: transparent;\n  border-style: dashed !important;\n}\n.delte-item-animation {\n  opacity: 0;\n  -webkit-transition: all .2s;\n  transition: all .2s;\n}\n.iview-admin-draggable-list {\n  overflow: auto;\n}\n", ""]);
 
 // exports
 
 
 /***/ }),
 
-/***/ 778:
+/***/ 750:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_dragableTable_vue__ = __webpack_require__(779);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_dragableTable_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__components_dragableTable_vue__);
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-
-
-/* harmony default export */ __webpack_exports__["default"] = ({
-    name: 'dragable-table',
-    components: {
-        DragableTable: __WEBPACK_IMPORTED_MODULE_0__components_dragableTable_vue___default.a
-    },
-    data: function data() {
-        return {
-            columnsList: [],
-            tableData: [],
-            table1: {
-                hasDragged: false,
-                isDragging: false,
-                oldIndex: 0,
-                newIndex: 0,
-                draggingRecord: []
-            },
-            table2: {
-                hasDragged: false,
-                isDragging: false,
-                oldIndex: 0,
-                newIndex: 0,
-                chooseRecord: []
-            }
-        };
-    },
-
-    methods: {
-        handleOnstart1: function handleOnstart1(from) {
-            this.table1.oldIndex = from;
-            this.table1.hasDragged = true;
-            this.table1.isDragging = true;
-        },
-        handleOnend1: function handleOnend1(e) {
-            this.table1.isDragging = false;
-            this.table1.draggingRecord.unshift({
-                from: e.from + 1,
-                to: e.to + 1
-            });
-        },
-        handleOnstart2: function handleOnstart2(from) {
-            this.table2.oldIndex = from;
-            this.table2.hasDragged = true;
-            this.table2.isDragging = true;
-        },
-        handleOnend2: function handleOnend2(e) {
-            this.table2.newIndex = e.to;
-            this.table2.isDragging = false;
-        },
-        handleOnchoose2: function handleOnchoose2(from) {
-            this.table2.chooseRecord.unshift(this.tableData[from].todoItem);
-        },
-        getData: function getData() {
-            this.columnsList = [{
-                title: '序号',
-                type: 'index',
-                width: 80,
-                align: 'center'
-            }, {
-                title: '待办事项',
-                key: 'todoItem'
-            }, {
-                title: '备注',
-                key: 'remarks'
-            }, {
-                title: '拖拽',
-                key: 'drag',
-                width: 90,
-                align: 'center',
-                render: function render(h) {
-                    return h('Icon', {
-                        props: {
-                            type: 'arrow-move',
-                            size: 24
-                        }
-                    });
-                }
-            }];
-            this.tableData = [{
-                todoItem: '明天去后海玩',
-                remarks: '估计得加班'
-            }, {
-                todoItem: '后天去和妹子看电影',
-                remarks: '可能没妹子'
-            }, {
-                todoItem: '大后天去吃海天盛筵',
-                remarks: '没钱就不去了'
-            }, {
-                todoItem: '周末去看电影',
-                remarks: '估计得加班'
-            }, {
-                todoItem: '下个月准备回家看父母',
-                remarks: '估计得加班'
-            }, {
-                todoItem: '该买回家的票了',
-                remarks: '可能没票了'
-            }, {
-                todoItem: '过年不回家和父母视频聊天',
-                remarks: '一定要记得'
-            }, {
-                todoItem: '去车站接父母一起在北京过年',
-                remarks: 'love'
-            }];
-        }
-    },
-    created: function created() {
-        // 可在此从服务端获取表格数据
-        this.getData();
-    }
-});
-
-/***/ }),
-
-/***/ 779:
-/***/ (function(module, exports, __webpack_require__) {
-
-var disposed = false
-var normalizeComponent = __webpack_require__(1)
-/* script */
-var __vue_script__ = __webpack_require__(780)
-/* template */
-var __vue_template__ = __webpack_require__(781)
-/* template functional */
-var __vue_template_functional__ = false
-/* styles */
-var __vue_styles__ = null
-/* scopeId */
-var __vue_scopeId__ = null
-/* moduleIdentifier (server only) */
-var __vue_module_identifier__ = null
-var Component = normalizeComponent(
-  __vue_script__,
-  __vue_template__,
-  __vue_template_functional__,
-  __vue_styles__,
-  __vue_scopeId__,
-  __vue_module_identifier__
-)
-Component.options.__file = "resources\\assets\\js\\views\\tables\\components\\dragableTable.vue"
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-231aeb54", Component.options)
-  } else {
-    hotAPI.reload("data-v-231aeb54", Component.options)
-  }
-  module.hot.dispose(function (data) {
-    disposed = true
-  })
-})()}
-
-module.exports = Component.exports
-
-
-/***/ }),
-
-/***/ 780:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_sortablejs__ = __webpack_require__(246);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_sortablejs__ = __webpack_require__(248);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_sortablejs___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_sortablejs__);
 //
 //
@@ -1907,82 +1664,192 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-    name: 'DragableTable',
-    props: {
-        columnsList: Array,
-        value: Array
-    },
-    methods: {
-        startFunc: function startFunc(e) {
-            this.$emit('on-start', e.oldIndex);
-        },
-        endFunc: function endFunc(e) {
-            var movedRow = this.value[e.oldIndex];
-            this.value.splice(e.oldIndex, 1);
-            this.value.splice(e.newIndex, 0, movedRow);
-            this.$emit('on-end', {
-                value: this.value,
-                from: e.oldIndex,
-                to: e.newIndex
-            });
-        },
-        chooseFunc: function chooseFunc(e) {
-            this.$emit('on-choose', e.oldIndex);
-        }
+    name: 'draggable-list',
+    data: function data() {
+        return {
+            todoArray: [{
+                content: '完成iview-admin基本开发'
+            }, {
+                content: '对iview-admin进行性能优化'
+            }, {
+                content: '对iview-admin的细节进行优化'
+            }, {
+                content: '完成iview-admin开发'
+            }, {
+                content: '解决发现的bug'
+            }, {
+                content: '添加更多组件'
+            }, {
+                content: '封装更多图表'
+            }, {
+                content: '增加更多人性化功能'
+            }],
+            doArray: [],
+            shoppingList: [{ name: '香肠' }, { name: '烤鸭' }, { name: '烧鸡' }, { name: '卤煮' }, { name: '酱汁腊肉' }, { name: '松花小肚' }, { name: '白丸子' }, { name: '红丸子' }, { name: '汆丸子' }, { name: '蒸熊掌' }, { name: '蒸羊羔' }, { name: '蒸鹿尾' }, { name: '梅菜扣肉' }, { name: '四喜丸子' }, { name: '酒酿萝卜皮' }, { name: '红烧胖大海' }, { name: '连年有鱼' }],
+            affordList: []
+        };
     },
     mounted: function mounted() {
-        var el = this.$refs.dragable.$children[1].$el.children[1];
+        document.body.ondrop = function (event) {
+            event.preventDefault();
+            event.stopPropagation();
+        };
         var vm = this;
-        __WEBPACK_IMPORTED_MODULE_0_sortablejs___default.a.create(el, {
-            onStart: vm.startFunc,
-            onEnd: vm.endFunc,
-            onChoose: vm.chooseFunc
+        var todoList = document.getElementById('todoList');
+        __WEBPACK_IMPORTED_MODULE_0_sortablejs___default.a.create(todoList, {
+            group: {
+                name: 'list',
+                pull: true
+            },
+            animation: 120,
+            ghostClass: 'placeholder-style',
+            fallbackClass: 'iview-admin-cloned-item',
+            onRemove: function onRemove(event) {
+                vm.doArray.splice(event.newIndex, 0, vm.todoArray[event.item.getAttribute('data-index')]);
+            }
+        });
+        var doList = document.getElementById('doList');
+        __WEBPACK_IMPORTED_MODULE_0_sortablejs___default.a.create(doList, {
+            group: {
+                name: 'list',
+                pull: true
+            },
+            sort: false,
+            filter: '.iview-admin-draggable-delete',
+            animation: 120,
+            fallbackClass: 'iview-admin-cloned-item',
+            onRemove: function onRemove(event) {
+                vm.doArray.splice(event.oldIndex, 1);
+            }
+        });
+        var shoppingList = document.getElementById('shoppingList');
+        __WEBPACK_IMPORTED_MODULE_0_sortablejs___default.a.create(shoppingList, {
+            group: {
+                name: 'list',
+                pull: true
+            },
+            animation: 120,
+            ghostClass: 'placeholder-style',
+            fallbackClass: 'iview-admin-cloned-item',
+            onRemove: function onRemove(event) {
+                vm.affordList.splice(event.newIndex, 0, vm.shoppingList[event.item.getAttribute('data-index')]);
+            }
+        });
+        var affordList = document.getElementById('affordList');
+        __WEBPACK_IMPORTED_MODULE_0_sortablejs___default.a.create(affordList, {
+            group: {
+                name: 'list',
+                pull: true
+            },
+            sort: false,
+            filter: '.iview-admin-draggable-delete',
+            animation: 120,
+            fallbackClass: 'iview-admin-cloned-item',
+            onRemove: function onRemove(event) {
+                vm.affordList.splice(event.oldIndex, 1);
+            }
         });
     }
 });
 
 /***/ }),
 
-/***/ 781:
-/***/ (function(module, exports, __webpack_require__) {
-
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c(
-    "div",
-    [
-      _c("Table", {
-        ref: "dragable",
-        attrs: {
-          columns: _vm.columnsList,
-          data: _vm.value,
-          "highlight-row": "",
-          border: ""
-        }
-      })
-    ],
-    1
-  )
-}
-var staticRenderFns = []
-render._withStripped = true
-module.exports = { render: render, staticRenderFns: staticRenderFns }
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-231aeb54", module.exports)
-  }
-}
-
-/***/ }),
-
-/***/ 782:
+/***/ 751:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -2002,20 +1869,92 @@ var render = function() {
               _c(
                 "Card",
                 [
-                  _c("DragableTable", {
-                    attrs: { "columns-list": _vm.columnsList },
-                    on: {
-                      "on-start": _vm.handleOnstart1,
-                      "on-end": _vm.handleOnend1
-                    },
-                    model: {
-                      value: _vm.tableData,
-                      callback: function($$v) {
-                        _vm.tableData = $$v
-                      },
-                      expression: "tableData"
-                    }
-                  })
+                  _c(
+                    "Row",
+                    [
+                      _c(
+                        "Col",
+                        { attrs: { span: "12" } },
+                        [
+                          _c("Card", { attrs: { "dis-hover": "" } }, [
+                            _c(
+                              "p",
+                              { attrs: { slot: "title" }, slot: "title" },
+                              [
+                                _c("Icon", {
+                                  attrs: { type: "ios-list-outline" }
+                                }),
+                                _vm._v(
+                                  "\n                                本周欲完成任务清单(拖拽到右侧删除)\n                            "
+                                )
+                              ],
+                              1
+                            ),
+                            _vm._v(" "),
+                            _c("div", { staticStyle: { height: "360px" } }, [
+                              _c("ul", {
+                                staticClass: "iview-admin-draggable-list",
+                                attrs: { id: "doList" }
+                              })
+                            ])
+                          ])
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "Col",
+                        {
+                          staticClass: "padding-left-10",
+                          attrs: { span: "12" }
+                        },
+                        [
+                          _c("Card", { attrs: { "dis-hover": "" } }, [
+                            _c(
+                              "p",
+                              { attrs: { slot: "title" }, slot: "title" },
+                              [
+                                _c("Icon", { attrs: { type: "ios-list" } }),
+                                _vm._v(
+                                  "\n                                所剩任务清单(拖拽到左侧添加)\n                            "
+                                )
+                              ],
+                              1
+                            ),
+                            _vm._v(" "),
+                            _c("div", { staticStyle: { height: "360px" } }, [
+                              _c(
+                                "ul",
+                                {
+                                  staticClass: "iview-admin-draggable-list",
+                                  attrs: { id: "todoList" }
+                                },
+                                _vm._l(_vm.todoArray, function(item, index) {
+                                  return _c(
+                                    "li",
+                                    {
+                                      key: index,
+                                      staticClass: "notwrap todolist-item",
+                                      attrs: { "data-index": index }
+                                    },
+                                    [
+                                      _vm._v(
+                                        "\n                                        " +
+                                          _vm._s(item.content) +
+                                          "\n                                    "
+                                      )
+                                    ]
+                                  )
+                                })
+                              )
+                            ])
+                          ])
+                        ],
+                        1
+                      )
+                    ],
+                    1
+                  )
                 ],
                 1
               )
@@ -2025,85 +1964,45 @@ var render = function() {
           _vm._v(" "),
           _c(
             "Col",
-            { staticClass: "padding-left-10 height-100", attrs: { span: "8" } },
+            { staticClass: "padding-left-10", attrs: { span: "8" } },
             [
-              _c(
-                "Card",
-                [
+              _c("Card", [
+                _c(
+                  "p",
+                  { attrs: { slot: "title" }, slot: "title" },
+                  [
+                    _c("Icon", { attrs: { type: "ios-paper-outline" } }),
+                    _vm._v(
+                      "\n                    本周已选任务清单\n                "
+                    )
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _c("div", { staticStyle: { height: "394px" } }, [
                   _c(
-                    "p",
-                    { attrs: { slot: "title" }, slot: "title" },
-                    [
-                      _c("Icon", { attrs: { type: "clipboard" } }),
-                      _vm._v(
-                        "\n                    表格1操作记录( 拖拽 )\n                "
-                      )
-                    ],
-                    1
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "Row",
-                    { staticStyle: { height: "374px" } },
-                    [
-                      _c(
-                        "div",
-                        { staticClass: "dragging-tip-con" },
+                    "ul",
+                    { staticClass: "iview-admin-draggable-list" },
+                    _vm._l(_vm.doArray, function(item, index) {
+                      return _c(
+                        "li",
+                        {
+                          key: index,
+                          staticClass: "notwrap",
+                          attrs: { "data-index": index }
+                        },
                         [
-                          _c(
-                            "transition",
-                            { attrs: { name: "dragging-tip" } },
-                            [
-                              _c(
-                                "span",
-                                {
-                                  directives: [
-                                    {
-                                      name: "show",
-                                      rawName: "v-show",
-                                      value: _vm.table1.isDragging,
-                                      expression: "table1.isDragging"
-                                    }
-                                  ]
-                                },
-                                [_vm._v("您正在拖拽表格1单元行...")]
-                              )
-                            ]
+                          _vm._v(
+                            "\n                            " +
+                              _vm._s(item.content) +
+                              "\n                        "
                           )
-                        ],
-                        1
-                      ),
-                      _vm._v(" "),
-                      _c("Card", [
-                        _c(
-                          "div",
-                          { staticClass: "record-tip-con" },
-                          _vm._l(_vm.table1.draggingRecord, function(
-                            item,
-                            index
-                          ) {
-                            return _c(
-                              "div",
-                              { key: index, staticClass: "record-item" },
-                              [
-                                _vm._v(
-                                  "\n                                拖拽第 " +
-                                    _vm._s(item.from) +
-                                    " 行表格到第 " +
-                                    _vm._s(item.to) +
-                                    " 行\n                            "
-                                )
-                              ]
-                            )
-                          })
-                        )
-                      ])
-                    ],
-                    1
+                        ]
+                      )
+                    })
                   )
-                ],
-                1
-              )
+                ])
+              ])
             ],
             1
           )
@@ -2117,7 +2016,7 @@ var render = function() {
         [
           _c(
             "Col",
-            { staticClass: "height-100", attrs: { span: "8" } },
+            { attrs: { span: "16" } },
             [
               _c(
                 "Card",
@@ -2126,9 +2025,9 @@ var render = function() {
                     "p",
                     { attrs: { slot: "title" }, slot: "title" },
                     [
-                      _c("Icon", { attrs: { type: "clipboard" } }),
+                      _c("Icon", { attrs: { type: "navicon-round" } }),
                       _vm._v(
-                        "\n                    表格2操作记录( 点击和拖拽 )  \n                "
+                        "\n                    可滚动拖拽\n                "
                       )
                     ],
                     1
@@ -2136,66 +2035,61 @@ var render = function() {
                   _vm._v(" "),
                   _c(
                     "Row",
-                    { staticStyle: { height: "374px" } },
                     [
                       _c(
-                        "div",
-                        { staticClass: "dragging-tip-con" },
+                        "Col",
+                        { attrs: { span: "12" } },
                         [
-                          _c(
-                            "transition",
-                            { attrs: { name: "dragging-tip" } },
-                            [
-                              _c(
-                                "span",
-                                {
-                                  directives: [
-                                    {
-                                      name: "show",
-                                      rawName: "v-show",
-                                      value: _vm.table2.hasDragged,
-                                      expression: "table2.hasDragged"
-                                    }
-                                  ]
-                                },
-                                [
-                                  _vm._v(
-                                    "拖拽第 " +
-                                      _vm._s(_vm.table2.oldIndex + 1) +
-                                      " 行表格到第 " +
-                                      _vm._s(_vm.table2.newIndex + 1) +
-                                      " 行"
-                                  )
-                                ]
-                              )
-                            ]
-                          )
+                          _c("Card", { attrs: { "dis-hover": "" } }, [
+                            _c("div", { staticStyle: { height: "360px" } }, [
+                              _c("ul", {
+                                staticClass: "iview-admin-draggable-list",
+                                attrs: { id: "affordList" }
+                              })
+                            ])
+                          ])
                         ],
                         1
                       ),
                       _vm._v(" "),
-                      _c("Card", [
-                        _c(
-                          "div",
-                          { staticClass: "record-tip-con" },
-                          _vm._l(_vm.table2.chooseRecord, function(
-                            item,
-                            index
-                          ) {
-                            return _c(
-                              "div",
-                              { key: index, staticClass: "record-item" },
-                              [
-                                _vm._v(
-                                  "\n                                " +
-                                    _vm._s(item) +
-                                    "\n                            "
-                                )
-                              ]
-                            )
-                          })
-                        )
-                      ])
+                      _c(
+                        "Col",
+                        {
+                          staticClass: "padding-left-10",
+                          attrs: { span: "12" }
+                        },
+                        [
+                          _c("Card", { attrs: { "dis-hover": "" } }, [
+                            _c("div", { staticStyle: { height: "360px" } }, [
+                              _c(
+                                "ul",
+                                {
+                                  staticClass: "iview-admin-draggable-list",
+                                  attrs: { id: "shoppingList" }
+                                },
+                                _vm._l(_vm.shoppingList, function(item, index) {
+                                  return _c(
+                                    "li",
+                                    {
+                                      key: index,
+                                      staticClass: "notwrap todolist-item",
+                                      attrs: { "data-index": index }
+                                    },
+                                    [
+                                      _vm._v(
+                                        "\n                                        好吃的美食--" +
+                                          _vm._s(item.name) +
+                                          "\n                                    "
+                                      )
+                                    ]
+                                  )
+                                })
+                              )
+                            ])
+                          ])
+                        ],
+                        1
+                      )
                     ],
                     1
                   )
@@ -2208,29 +2102,45 @@ var render = function() {
           _vm._v(" "),
           _c(
             "Col",
-            { staticClass: "padding-left-10", attrs: { span: "16" } },
+            { staticClass: "padding-left-10", attrs: { span: "8" } },
             [
-              _c(
-                "Card",
-                [
-                  _c("DragableTable", {
-                    attrs: { refs: "table2", columnsList: _vm.columnsList },
-                    on: {
-                      "on-start": _vm.handleOnstart2,
-                      "on-end": _vm.handleOnend2,
-                      "on-choose": _vm.handleOnchoose2
-                    },
-                    model: {
-                      value: _vm.tableData,
-                      callback: function($$v) {
-                        _vm.tableData = $$v
-                      },
-                      expression: "tableData"
-                    }
-                  })
-                ],
-                1
-              )
+              _c("Card", [
+                _c(
+                  "p",
+                  { attrs: { slot: "title" }, slot: "title" },
+                  [
+                    _c("Icon", { attrs: { type: "android-funnel" } }),
+                    _vm._v(
+                      "\n                    买得起的清单\n                "
+                    )
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _c("div", { staticStyle: { height: "394px" } }, [
+                  _c(
+                    "ul",
+                    { staticClass: "iview-admin-draggable-list" },
+                    _vm._l(_vm.affordList, function(item, index) {
+                      return _c(
+                        "li",
+                        {
+                          key: index,
+                          staticClass: "notwrap",
+                          attrs: { "data-index": index }
+                        },
+                        [
+                          _vm._v(
+                            "\n                            " +
+                              _vm._s(item.name) +
+                              "\n                        "
+                          )
+                        ]
+                      )
+                    })
+                  )
+                ])
+              ])
             ],
             1
           )
@@ -2247,7 +2157,7 @@ module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-7ab5c8ee", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-6e8c00fa", module.exports)
   }
 }
 
