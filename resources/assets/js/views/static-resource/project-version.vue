@@ -144,7 +144,7 @@
         })
       },
       handleDel (val, index) {
-        this.$axios({url:'/api/project',method: 'delete', data: {ids: this.saveTableData[index]['id']}}).then(res => {
+        this.$axios({url:'/api/project_version',method: 'delete', data: {ids: this.saveTableData[index]['id']}}).then(res => {
           if(res.success) {
             this.$Message.success('删除了第' + (index + 1) + '行数据');
             this.saveTableData.splice(index, 1)
@@ -192,7 +192,7 @@
       },
       updateServerData(data){
         return new Promise((resolve, reject) => {
-          this.$axios.post('/api/project', data).then(res => {
+          this.$axios.post('/api/project_version', data).then(res => {
             resolve(res)
           }).catch(e => {
             reject(e)
@@ -239,7 +239,7 @@
       cancel(){},
       deleteAll(){
         let ids = this.selectId.join(',')
-        this.$axios({url:'/api/project',method: 'delete', data: {ids: ids}}).then(res => {
+        this.$axios({url:'/api/project_version',method: 'delete', data: {ids: ids}}).then(res => {
           if(res.success) {
             this.$Message.success('删除了第' + ids + '行数据');
             for(let i = 0; i < this.selectId.length; i++) {

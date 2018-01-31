@@ -1,18 +1,18 @@
 webpackJsonp([37],{
 
-/***/ 122:
+/***/ 125:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(717)
+  __webpack_require__(734)
 }
 var normalizeComponent = __webpack_require__(1)
 /* script */
-var __vue_script__ = __webpack_require__(719)
+var __vue_script__ = __webpack_require__(736)
 /* template */
-var __vue_template__ = __webpack_require__(738)
+var __vue_template__ = __webpack_require__(755)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -52,7 +52,7 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 160:
+/***/ 163:
 /***/ (function(module, exports, __webpack_require__) {
 
 // CodeMirror, copyright (c) by Marijn Haverbeke and others
@@ -9725,7 +9725,7 @@ return CodeMirror$1;
 
 /***/ }),
 
-/***/ 322:
+/***/ 331:
 /***/ (function(module, exports, __webpack_require__) {
 
 // CodeMirror, copyright (c) by Marijn Haverbeke and others
@@ -9733,7 +9733,7 @@ return CodeMirror$1;
 
 (function(mod) {
   if (true) // CommonJS
-    mod(__webpack_require__(160), __webpack_require__(323), __webpack_require__(724));
+    mod(__webpack_require__(163), __webpack_require__(332), __webpack_require__(741));
   else if (typeof define == "function" && define.amd) // AMD
     define(["../../lib/codemirror", "../xml/xml", "../meta"], mod);
   else // Plain browser env
@@ -10593,7 +10593,7 @@ CodeMirror.defineMIME("text/x-markdown", "markdown");
 
 /***/ }),
 
-/***/ 323:
+/***/ 332:
 /***/ (function(module, exports, __webpack_require__) {
 
 // CodeMirror, copyright (c) by Marijn Haverbeke and others
@@ -10601,7 +10601,7 @@ CodeMirror.defineMIME("text/x-markdown", "markdown");
 
 (function(mod) {
   if (true) // CommonJS
-    mod(__webpack_require__(160));
+    mod(__webpack_require__(163));
   else if (typeof define == "function" && define.amd) // AMD
     define(["../../lib/codemirror"], mod);
   else // Plain browser env
@@ -11001,7 +11001,7 @@ if (!CodeMirror.mimeModes.hasOwnProperty("text/html"))
 
 /***/ }),
 
-/***/ 324:
+/***/ 333:
 /***/ (function(module, exports, __webpack_require__) {
 
 // CodeMirror, copyright (c) by Marijn Haverbeke and others
@@ -11018,7 +11018,7 @@ if (!CodeMirror.mimeModes.hasOwnProperty("text/html"))
 
 (function(mod) {
   if (true) // CommonJS
-    mod(__webpack_require__(160));
+    mod(__webpack_require__(163));
   else if (typeof define == "function" && define.amd) // AMD
     define(["../../lib/codemirror"], mod);
   else // Plain browser env
@@ -11098,13 +11098,13 @@ CodeMirror.overlayMode = function(base, overlay, combine) {
 
 /***/ }),
 
-/***/ 717:
+/***/ 734:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(718);
+var content = __webpack_require__(735);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -11125,7 +11125,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 718:
+/***/ 735:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(2)(false);
@@ -11140,14 +11140,14 @@ exports.push([module.i, "\n.margin-top-8 {\n  margin-top: 8px;\n}\n.margin-top-1
 
 /***/ }),
 
-/***/ 719:
+/***/ 736:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_simplemde__ = __webpack_require__(720);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_simplemde__ = __webpack_require__(737);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_simplemde___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_simplemde__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__simplemde_min_css__ = __webpack_require__(736);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__simplemde_min_css__ = __webpack_require__(753);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__simplemde_min_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__simplemde_min_css__);
 //
 //
@@ -11184,24 +11184,24 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /***/ }),
 
-/***/ 720:
+/***/ 737:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /*global require,module*/
 
-var CodeMirror = __webpack_require__(160);
-__webpack_require__(721);
-__webpack_require__(722);
-__webpack_require__(723);
-__webpack_require__(322);
-__webpack_require__(324);
-__webpack_require__(725);
-__webpack_require__(726);
-__webpack_require__(727);
-__webpack_require__(323);
-var CodeMirrorSpellChecker = __webpack_require__(728);
-var marked = __webpack_require__(735);
+var CodeMirror = __webpack_require__(163);
+__webpack_require__(738);
+__webpack_require__(739);
+__webpack_require__(740);
+__webpack_require__(331);
+__webpack_require__(333);
+__webpack_require__(742);
+__webpack_require__(743);
+__webpack_require__(744);
+__webpack_require__(332);
+var CodeMirrorSpellChecker = __webpack_require__(745);
+var marked = __webpack_require__(752);
 
 
 // Some variables
@@ -13219,7 +13219,7 @@ module.exports = SimpleMDE;
 
 /***/ }),
 
-/***/ 721:
+/***/ 738:
 /***/ (function(module, exports, __webpack_require__) {
 
 // CodeMirror, copyright (c) by Marijn Haverbeke and others
@@ -13227,7 +13227,7 @@ module.exports = SimpleMDE;
 
 (function(mod) {
   if (true) // CommonJS
-    mod(__webpack_require__(160));
+    mod(__webpack_require__(163));
   else if (typeof define == "function" && define.amd) // AMD
     define(["../../lib/codemirror"], mod);
   else // Plain browser env
@@ -13315,13 +13315,13 @@ module.exports = SimpleMDE;
 
 /***/ }),
 
-/***/ 722:
+/***/ 739:
 /***/ (function(module, exports, __webpack_require__) {
 
 // CodeMirror, copyright (c) by Marijn Haverbeke and others
 // Distributed under an MIT license: http://codemirror.net/LICENSE
 
-var CodeMirror = __webpack_require__(160);
+var CodeMirror = __webpack_require__(163);
 
 CodeMirror.commands.tabAndIndentMarkdownList = function (cm) {
 	var ranges = cm.listSelections();
@@ -13366,7 +13366,7 @@ CodeMirror.commands.shiftTabAndUnindentMarkdownList = function (cm) {
 
 /***/ }),
 
-/***/ 723:
+/***/ 740:
 /***/ (function(module, exports, __webpack_require__) {
 
 // CodeMirror, copyright (c) by Marijn Haverbeke and others
@@ -13374,7 +13374,7 @@ CodeMirror.commands.shiftTabAndUnindentMarkdownList = function (cm) {
 
 (function(mod) {
   if (true) // CommonJS
-    mod(__webpack_require__(160));
+    mod(__webpack_require__(163));
   else if (typeof define == "function" && define.amd) // AMD
     define(["../../lib/codemirror"], mod);
   else // Plain browser env
@@ -13414,7 +13414,7 @@ CodeMirror.commands.shiftTabAndUnindentMarkdownList = function (cm) {
 
 /***/ }),
 
-/***/ 724:
+/***/ 741:
 /***/ (function(module, exports, __webpack_require__) {
 
 // CodeMirror, copyright (c) by Marijn Haverbeke and others
@@ -13422,7 +13422,7 @@ CodeMirror.commands.shiftTabAndUnindentMarkdownList = function (cm) {
 
 (function(mod) {
   if (true) // CommonJS
-    mod(__webpack_require__(160));
+    mod(__webpack_require__(163));
   else if (typeof define == "function" && define.amd) // AMD
     define(["../lib/codemirror"], mod);
   else // Plain browser env
@@ -13637,7 +13637,7 @@ CodeMirror.commands.shiftTabAndUnindentMarkdownList = function (cm) {
 
 /***/ }),
 
-/***/ 725:
+/***/ 742:
 /***/ (function(module, exports, __webpack_require__) {
 
 // CodeMirror, copyright (c) by Marijn Haverbeke and others
@@ -13645,7 +13645,7 @@ CodeMirror.commands.shiftTabAndUnindentMarkdownList = function (cm) {
 
 (function(mod) {
   if (true) // CommonJS
-    mod(__webpack_require__(160));
+    mod(__webpack_require__(163));
   else if (typeof define == "function" && define.amd) // AMD
     define(["../../lib/codemirror"], mod);
   else // Plain browser env
@@ -13706,7 +13706,7 @@ CodeMirror.commands.shiftTabAndUnindentMarkdownList = function (cm) {
 
 /***/ }),
 
-/***/ 726:
+/***/ 743:
 /***/ (function(module, exports, __webpack_require__) {
 
 // CodeMirror, copyright (c) by Marijn Haverbeke and others
@@ -13720,7 +13720,7 @@ CodeMirror.commands.shiftTabAndUnindentMarkdownList = function (cm) {
 
 (function(mod) {
   if (true) // CommonJS
-    mod(__webpack_require__(160));
+    mod(__webpack_require__(163));
   else if (typeof define == "function" && define.amd) // AMD
     define(["../../lib/codemirror"], mod);
   else // Plain browser env
@@ -13832,7 +13832,7 @@ CodeMirror.commands.shiftTabAndUnindentMarkdownList = function (cm) {
 
 /***/ }),
 
-/***/ 727:
+/***/ 744:
 /***/ (function(module, exports, __webpack_require__) {
 
 // CodeMirror, copyright (c) by Marijn Haverbeke and others
@@ -13840,7 +13840,7 @@ CodeMirror.commands.shiftTabAndUnindentMarkdownList = function (cm) {
 
 (function(mod) {
   if (true) // CommonJS
-    mod(__webpack_require__(160), __webpack_require__(322), __webpack_require__(324));
+    mod(__webpack_require__(163), __webpack_require__(331), __webpack_require__(333));
   else if (typeof define == "function" && define.amd) // AMD
     define(["../../lib/codemirror", "../markdown/markdown", "../../addon/mode/overlay"], mod);
   else // Plain browser env
@@ -13968,7 +13968,7 @@ CodeMirror.defineMode("gfm", function(config, modeConfig) {
 
 /***/ }),
 
-/***/ 728:
+/***/ 745:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13977,7 +13977,7 @@ CodeMirror.defineMode("gfm", function(config, modeConfig) {
 
 
 // Requires
-var Typo = __webpack_require__(729);
+var Typo = __webpack_require__(746);
 
 
 // Create function
@@ -14094,7 +14094,7 @@ module.exports = CodeMirrorSpellChecker;
 
 /***/ }),
 
-/***/ 729:
+/***/ 746:
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(__dirname, Buffer) {/* globals chrome: false */
@@ -14357,7 +14357,7 @@ Typo.prototype = {
 		}
 		else if (true) {
 			// Node.js
-			var fs = __webpack_require__(734);
+			var fs = __webpack_require__(751);
 			
 			try {
 				if (fs.existsSync(path)) {
@@ -15028,11 +15028,11 @@ Typo.prototype = {
 if (true) {
 	module.exports = Typo;
 }
-/* WEBPACK VAR INJECTION */}.call(exports, "/", __webpack_require__(730).Buffer))
+/* WEBPACK VAR INJECTION */}.call(exports, "/", __webpack_require__(747).Buffer))
 
 /***/ }),
 
-/***/ 730:
+/***/ 747:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15046,9 +15046,9 @@ if (true) {
 
 
 
-var base64 = __webpack_require__(731)
-var ieee754 = __webpack_require__(732)
-var isArray = __webpack_require__(733)
+var base64 = __webpack_require__(748)
+var ieee754 = __webpack_require__(749)
+var isArray = __webpack_require__(750)
 
 exports.Buffer = Buffer
 exports.SlowBuffer = SlowBuffer
@@ -16830,7 +16830,7 @@ function isnan (val) {
 
 /***/ }),
 
-/***/ 731:
+/***/ 748:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16952,7 +16952,7 @@ function fromByteArray (uint8) {
 
 /***/ }),
 
-/***/ 732:
+/***/ 749:
 /***/ (function(module, exports) {
 
 exports.read = function (buffer, offset, isLE, mLen, nBytes) {
@@ -17043,7 +17043,7 @@ exports.write = function (buffer, value, offset, isLE, mLen, nBytes) {
 
 /***/ }),
 
-/***/ 733:
+/***/ 750:
 /***/ (function(module, exports) {
 
 var toString = {}.toString;
@@ -17055,14 +17055,14 @@ module.exports = Array.isArray || function (arr) {
 
 /***/ }),
 
-/***/ 734:
+/***/ 751:
 /***/ (function(module, exports) {
 
 /* (ignored) */
 
 /***/ }),
 
-/***/ 735:
+/***/ 752:
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global) {/**
@@ -18390,13 +18390,13 @@ if (true) {
 
 /***/ }),
 
-/***/ 736:
+/***/ 753:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(737);
+var content = __webpack_require__(754);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -18422,7 +18422,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 737:
+/***/ 754:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(2)(false);
@@ -18437,7 +18437,7 @@ exports.push([module.i, "/**\n * simplemde v1.11.2\n * Copyright Next Step Webs,
 
 /***/ }),
 
-/***/ 738:
+/***/ 755:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {

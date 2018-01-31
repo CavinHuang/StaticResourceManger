@@ -1,122 +1,18 @@
 webpackJsonp([10],{
 
-/***/ 112:
-/***/ (function(module, exports, __webpack_require__) {
-
-var disposed = false
-var normalizeComponent = __webpack_require__(1)
-/* script */
-var __vue_script__ = __webpack_require__(348)
-/* template */
-var __vue_template__ = __webpack_require__(354)
-/* template functional */
-var __vue_template_functional__ = false
-/* styles */
-var __vue_styles__ = null
-/* scopeId */
-var __vue_scopeId__ = null
-/* moduleIdentifier (server only) */
-var __vue_module_identifier__ = null
-var Component = normalizeComponent(
-  __vue_script__,
-  __vue_template__,
-  __vue_template_functional__,
-  __vue_styles__,
-  __vue_scopeId__,
-  __vue_module_identifier__
-)
-Component.options.__file = "resources\\assets\\js\\views\\main-components\\lockscreen\\components\\locking-page.vue"
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-4ddcf765", Component.options)
-  } else {
-    hotAPI.reload("data-v-4ddcf765", Component.options)
-  }
-  module.hot.dispose(function (data) {
-    disposed = true
-  })
-})()}
-
-module.exports = Component.exports
-
-
-/***/ }),
-
-/***/ 348:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__unlock_vue__ = __webpack_require__(349);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__unlock_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__unlock_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_js_cookie__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_js_cookie___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_js_cookie__);
-//
-//
-//
-//
-//
-//
-//
-//
-
-
-
-/* harmony default export */ __webpack_exports__["default"] = ({
-    components: {
-        unlock: __WEBPACK_IMPORTED_MODULE_0__unlock_vue___default.a
-    },
-    data: function data() {
-        return {
-            showUnlock: false
-        };
-    },
-
-    methods: {
-        handleUnlock: function handleUnlock() {
-            var lockScreenBack = document.getElementById('lock_screen_back');
-            this.showUnlock = false;
-            lockScreenBack.style.zIndex = -1;
-            lockScreenBack.style.boxShadow = '0 0 0 0 #667aa6 inset';
-            this.$router.push({
-                name: __WEBPACK_IMPORTED_MODULE_1_js_cookie___default.a.get('last_page_name') // 解锁之后跳转到锁屏之前的页面
-            });
-        }
-    },
-    mounted: function mounted() {
-        this.showUnlock = true;
-        if (!document.getElementById('lock_screen_back')) {
-            var lockdiv = document.createElement('div');
-            lockdiv.setAttribute('id', 'lock_screen_back');
-            lockdiv.setAttribute('class', 'lock-screen-back');
-            document.body.appendChild(lockdiv);
-        }
-        var lockScreenBack = document.getElementById('lock_screen_back');
-        lockScreenBack.style.zIndex = -1;
-    }
-});
-
-/***/ }),
-
-/***/ 349:
+/***/ 130:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(350)
+  __webpack_require__(778)
 }
 var normalizeComponent = __webpack_require__(1)
 /* script */
-var __vue_script__ = __webpack_require__(352)
+var __vue_script__ = __webpack_require__(780)
 /* template */
-var __vue_template__ = __webpack_require__(353)
+var __vue_template__ = __webpack_require__(784)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -133,7 +29,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources\\assets\\js\\views\\main-components\\lockscreen\\components\\unlock.vue"
+Component.options.__file = "resources\\assets\\js\\views\\my-components\\count-to\\count-to.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -142,9 +38,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-ef195d38", Component.options)
+    hotAPI.createRecord("data-v-72abbeda", Component.options)
   } else {
-    hotAPI.reload("data-v-ef195d38", Component.options)
+    hotAPI.reload("data-v-72abbeda", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -156,23 +52,34 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 350:
+/***/ 255:
+/***/ (function(module, exports, __webpack_require__) {
+
+var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;!function(a,t){ true?!(__WEBPACK_AMD_DEFINE_FACTORY__ = (t),
+				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
+				(__WEBPACK_AMD_DEFINE_FACTORY__.call(exports, __webpack_require__, exports, module)) :
+				__WEBPACK_AMD_DEFINE_FACTORY__),
+				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)):"object"==typeof exports?module.exports=t(require,exports,module):a.CountUp=t()}(this,function(a,t,n){var e=function(a,t,n,e,i,r){for(var o=0,s=["webkit","moz","ms","o"],m=0;m<s.length&&!window.requestAnimationFrame;++m)window.requestAnimationFrame=window[s[m]+"RequestAnimationFrame"],window.cancelAnimationFrame=window[s[m]+"CancelAnimationFrame"]||window[s[m]+"CancelRequestAnimationFrame"];window.requestAnimationFrame||(window.requestAnimationFrame=function(a,t){var n=(new Date).getTime(),e=Math.max(0,16-(n-o)),i=window.setTimeout(function(){a(n+e)},e);return o=n+e,i}),window.cancelAnimationFrame||(window.cancelAnimationFrame=function(a){clearTimeout(a)});var u=this;u.options={useEasing:!0,useGrouping:!0,separator:",",decimal:".",easingFn:null,formattingFn:null};for(var l in r)r.hasOwnProperty(l)&&(u.options[l]=r[l]);""===u.options.separator&&(u.options.useGrouping=!1),u.options.prefix||(u.options.prefix=""),u.options.suffix||(u.options.suffix=""),u.d="string"==typeof a?document.getElementById(a):a,u.startVal=Number(t),u.endVal=Number(n),u.countDown=u.startVal>u.endVal,u.frameVal=u.startVal,u.decimals=Math.max(0,e||0),u.dec=Math.pow(10,u.decimals),u.duration=1e3*Number(i)||2e3,u.formatNumber=function(a){a=a.toFixed(u.decimals),a+="";var t,n,e,i;if(t=a.split("."),n=t[0],e=t.length>1?u.options.decimal+t[1]:"",i=/(\d+)(\d{3})/,u.options.useGrouping)for(;i.test(n);)n=n.replace(i,"$1"+u.options.separator+"$2");return u.options.prefix+n+e+u.options.suffix},u.easeOutExpo=function(a,t,n,e){return n*(-Math.pow(2,-10*a/e)+1)*1024/1023+t},u.easingFn=u.options.easingFn?u.options.easingFn:u.easeOutExpo,u.formattingFn=u.options.formattingFn?u.options.formattingFn:u.formatNumber,u.version=function(){return"1.7.1"},u.printValue=function(a){var t=u.formattingFn(a);"INPUT"===u.d.tagName?this.d.value=t:"text"===u.d.tagName||"tspan"===u.d.tagName?this.d.textContent=t:this.d.innerHTML=t},u.count=function(a){u.startTime||(u.startTime=a),u.timestamp=a;var t=a-u.startTime;u.remaining=u.duration-t,u.options.useEasing?u.countDown?u.frameVal=u.startVal-u.easingFn(t,0,u.startVal-u.endVal,u.duration):u.frameVal=u.easingFn(t,u.startVal,u.endVal-u.startVal,u.duration):u.countDown?u.frameVal=u.startVal-(u.startVal-u.endVal)*(t/u.duration):u.frameVal=u.startVal+(u.endVal-u.startVal)*(t/u.duration),u.countDown?u.frameVal=u.frameVal<u.endVal?u.endVal:u.frameVal:u.frameVal=u.frameVal>u.endVal?u.endVal:u.frameVal,u.frameVal=Math.round(u.frameVal*u.dec)/u.dec,u.printValue(u.frameVal),t<u.duration?u.rAF=requestAnimationFrame(u.count):u.callback&&u.callback()},u.start=function(a){return u.callback=a,u.rAF=requestAnimationFrame(u.count),!1},u.pauseResume=function(){u.paused?(u.paused=!1,delete u.startTime,u.duration=u.remaining,u.startVal=u.frameVal,requestAnimationFrame(u.count)):(u.paused=!0,cancelAnimationFrame(u.rAF))},u.reset=function(){u.paused=!1,delete u.startTime,u.startVal=t,cancelAnimationFrame(u.rAF),u.printValue(u.startVal)},u.update=function(a){cancelAnimationFrame(u.rAF),u.paused=!1,delete u.startTime,u.startVal=u.frameVal,u.endVal=Number(a),u.countDown=u.startVal>u.endVal,u.rAF=requestAnimationFrame(u.count)},u.printValue(u.startVal)};return e});
+
+/***/ }),
+
+/***/ 778:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(351);
+var content = __webpack_require__(779);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(5)("f98aece4", content, false);
+var update = __webpack_require__(5)("6a76dddc", content, false);
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../../../../../node_modules/css-loader/index.js!../../../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-ef195d38\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../../../node_modules/less-loader/index.js!../../../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./unlock.vue", function() {
-     var newContent = require("!!../../../../../../../node_modules/css-loader/index.js!../../../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-ef195d38\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../../../node_modules/less-loader/index.js!../../../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./unlock.vue");
+   module.hot.accept("!!../../../../../../node_modules/css-loader/index.js!../../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-72abbeda\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../../node_modules/less-loader/index.js!../../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./count-to.vue", function() {
+     var newContent = require("!!../../../../../../node_modules/css-loader/index.js!../../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-72abbeda\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../../node_modules/less-loader/index.js!../../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./count-to.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -183,7 +90,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 351:
+/***/ 779:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(2)(false);
@@ -191,20 +98,136 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, "\n.unlock-body-con {\n  position: absolute;\n  width: 400px;\n  height: 100px;\n  left: 50%;\n  top: 50%;\n  margin-left: -200px;\n  margin-top: -200px;\n  -webkit-transform-origin: center center;\n          transform-origin: center center;\n  z-index: 10;\n}\n.unlock-body-con .unlock-avator-con {\n  position: absolute;\n  left: 50%;\n  top: 50%;\n  -webkit-transform: translate(-50%, -50%);\n          transform: translate(-50%, -50%);\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n  width: 100px;\n  height: 100px;\n  border-radius: 50%;\n  overflow: hidden;\n  border: 2px solid white;\n  cursor: pointer;\n  -webkit-transition: all .5s;\n  transition: all .5s;\n  z-index: 12;\n  -webkit-box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.3);\n          box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.3);\n}\n.unlock-body-con .unlock-avator-con .unlock-avator-img {\n  width: 100%;\n  height: 100%;\n  display: block;\n  z-index: 7;\n}\n.unlock-body-con .unlock-avator-con .unlock-avator-cover {\n  width: 100%;\n  height: 100%;\n  background: rgba(0, 0, 0, 0.6);\n  z-index: 11600;\n  position: absolute;\n  left: 0;\n  top: 0;\n  opacity: 0;\n  -webkit-transition: opacity .2s;\n  transition: opacity .2s;\n  color: white;\n}\n.unlock-body-con .unlock-avator-con .unlock-avator-cover span {\n  display: block;\n  margin: 20px auto 5px;\n  text-align: center;\n}\n.unlock-body-con .unlock-avator-con .unlock-avator-cover p {\n  text-align: center;\n  font-size: 16px;\n  font-weight: 500;\n}\n.unlock-body-con .unlock-avator-con:hover .unlock-avator-cover {\n  opacity: 1;\n  -webkit-transition: opacity .2s;\n  transition: opacity .2s;\n}\n.unlock-body-con .unlock-avator-under-back {\n  position: absolute;\n  left: 50%;\n  top: 50%;\n  -webkit-transform: translate(-45px, -50%);\n          transform: translate(-45px, -50%);\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n  width: 100px;\n  height: 100px;\n  border-radius: 50%;\n  background: #667aa6;\n  -webkit-transition: all .5s;\n  transition: all .5s;\n  z-index: 5;\n}\n.unlock-body-con .unlock-input-con {\n  position: absolute;\n  height: 70px;\n  width: 350px;\n  top: 15px;\n  right: 0px;\n}\n.unlock-body-con .unlock-input-con .unlock-input-overflow-con {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  left: 0;\n  top: 0;\n  overflow: hidden;\n}\n.unlock-body-con .unlock-input-con .unlock-input-overflow-con .unlock-overflow-body {\n  position: absolute;\n  top: 0;\n  right: 0;\n  width: 100%;\n  height: 100%;\n  -webkit-transition: all .5s ease .5s;\n  transition: all .5s ease .5s;\n}\n.unlock-body-con .unlock-input-con .unlock-input-overflow-con .unlock-overflow-body .unlock-input {\n  float: left;\n  display: block;\n  -webkit-box-sizing: content-box;\n          box-sizing: content-box;\n  height: 22px;\n  width: 230px;\n  font-size: 18px;\n  outline: none;\n  padding: 11px 10px 11px 30px;\n  border: 2px solid #e2ddde;\n  margin-top: 10px;\n}\n.unlock-body-con .unlock-input-con .unlock-input-overflow-con .unlock-overflow-body .unlock-btn {\n  float: left;\n  display: block;\n  font-size: 20px;\n  padding: 7px 30px;\n  cursor: pointer;\n  border-radius: 0 25px 25px 0;\n  border: 2px solid #e2ddde;\n  border-left: none;\n  background: #2d8cf0;\n  outline: none;\n  -webkit-transition: all .2s;\n  transition: all .2s;\n  margin-top: 10px;\n}\n.unlock-body-con .unlock-input-con .unlock-input-overflow-con .unlock-overflow-body .unlock-btn:hover {\n  background: #5cadff;\n  -webkit-box-shadow: 0 0 10px 3px rgba(255, 255, 255, 0.2);\n          box-shadow: 0 0 10px 3px rgba(255, 255, 255, 0.2);\n}\n.unlock-body-con .unlock-input-con .unlock-input-overflow-con .unlock-overflow-body .click-unlock-btn {\n  background: #2b85e4 !important;\n}\n.unlock-body-con .unlock-locking-tip-con {\n  width: 100px;\n  height: 30px;\n  text-align: center;\n  position: absolute;\n  left: 50%;\n  margin-left: -50px;\n  bottom: -80px;\n  color: white;\n  font-size: 18px;\n}\n@-webkit-keyframes unlock-in {\n0% {\n    -webkit-transform: scale(0);\n            transform: scale(0);\n}\n80% {\n    -webkit-transform: scale(0);\n            transform: scale(0);\n}\n88% {\n    -webkit-transform: scale(1.3);\n            transform: scale(1.3);\n}\n100% {\n    -webkit-transform: scale(1);\n            transform: scale(1);\n}\n}\n@keyframes unlock-in {\n0% {\n    -webkit-transform: scale(0);\n            transform: scale(0);\n}\n80% {\n    -webkit-transform: scale(0);\n            transform: scale(0);\n}\n88% {\n    -webkit-transform: scale(1.3);\n            transform: scale(1.3);\n}\n100% {\n    -webkit-transform: scale(1);\n            transform: scale(1);\n}\n}\n@-webkit-keyframes unlock-out {\n0% {\n    -webkit-transform: scale(1);\n            transform: scale(1);\n}\n60% {\n    -webkit-transform: scale(1.2);\n            transform: scale(1.2);\n}\n100% {\n    -webkit-transform: scale(0);\n            transform: scale(0);\n}\n}\n@keyframes unlock-out {\n0% {\n    -webkit-transform: scale(1);\n            transform: scale(1);\n}\n60% {\n    -webkit-transform: scale(1.2);\n            transform: scale(1.2);\n}\n100% {\n    -webkit-transform: scale(0);\n            transform: scale(0);\n}\n}\n.show-unlock-enter-active {\n  -webkit-animation: unlock-in 1.4s ease;\n          animation: unlock-in 1.4s ease;\n}\n.show-unlock-leave-to {\n  opacity: 0;\n}\n.show-unlock-leave-active {\n  -webkit-transition: opacity .2s;\n  transition: opacity .2s;\n}\n.unlock-con {\n  width: 100%;\n  height: 100%;\n}\n", ""]);
+exports.push([module.i, "\n.margin-top-8 {\n  margin-top: 8px;\n}\n.margin-top-10 {\n  margin-top: 10px;\n}\n.margin-top-20 {\n  margin-top: 20px;\n}\n.margin-left-10 {\n  margin-left: 10px;\n}\n.margin-bottom-10 {\n  margin-bottom: 10px;\n}\n.margin-bottom-100 {\n  margin-bottom: 100px;\n}\n.margin-right-10 {\n  margin-right: 10px;\n}\n.padding-left-6 {\n  padding-left: 6px;\n}\n.padding-left-8 {\n  padding-left: 5px;\n}\n.padding-left-10 {\n  padding-left: 10px;\n}\n.padding-left-20 {\n  padding-left: 20px;\n}\n.height-100 {\n  height: 100%;\n}\n.height-120px {\n  height: 100px;\n}\n.height-200px {\n  height: 200px;\n}\n.height-492px {\n  height: 492px;\n}\n.height-460px {\n  height: 460px;\n}\n.line-gray {\n  height: 0;\n  border-bottom: 2px solid #dcdcdc;\n}\n.notwrap {\n  word-break: keep-all;\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis;\n}\n.padding-left-5 {\n  padding-left: 10px;\n}\n[v-cloak] {\n  display: none;\n}\n.countto-page-row {\n  height: 200px;\n}\n.count-to-con {\n  display: block;\n  width: 100%;\n  text-align: center;\n}\n.pre-code-show-con p {\n  height: 30px;\n  margin: 0;\n}\n", ""]);
 
 // exports
 
 
 /***/ }),
 
-/***/ 352:
+/***/ 780:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_js_cookie__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_js_cookie___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_js_cookie__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__CountTo_vue__ = __webpack_require__(781);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__CountTo_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__CountTo_vue__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -236,189 +259,262 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-    name: 'Unlock',
+    name: 'count-to',
+    components: {
+        CountTo: __WEBPACK_IMPORTED_MODULE_0__CountTo_vue___default.a
+    },
     data: function data() {
         return {
-            avatorLeft: '0px',
-            inputLeft: '400px',
-            password: '',
-            check: null
+            endVal: 0,
+            mainStyle: {
+                fontSize: '30px'
+            },
+            countStyle: {
+                fontSize: '50px',
+                color: '#dc9387'
+            },
+            mainStyle2: {
+                fontSize: '22px'
+            },
+            countStyle2: {
+                fontSize: '30px',
+                color: '#dc9387'
+            },
+            unit: [[3, '千多'], [4, '万多'], [5, '十万多']],
+            unit2: [[1, '十多'], [2, '百多'], [3, '千多'], [4, '万多'], [5, '十万多'], [6, '百万多'], [7, '千万多'], [8, '亿多']],
+            asynEndVal: 487,
+            integratedEndVal: 3
+        };
+    },
+
+    methods: {
+        init: function init() {
+            var _this = this;
+
+            setInterval(function () {
+                _this.asynEndVal += parseInt(Math.random() * 20);
+                _this.integratedEndVal += parseInt(Math.random() * 30);
+            }, 2000);
+        }
+    },
+    mounted: function mounted() {
+        this.init();
+    }
+});
+
+/***/ }),
+
+/***/ 781:
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var normalizeComponent = __webpack_require__(1)
+/* script */
+var __vue_script__ = __webpack_require__(782)
+/* template */
+var __vue_template__ = __webpack_require__(783)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources\\assets\\js\\views\\my-components\\count-to\\CountTo.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-3debd379", Component.options)
+  } else {
+    hotAPI.reload("data-v-3debd379", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+
+/***/ 782:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_countup__ = __webpack_require__(255);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_countup___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_countup__);
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    name: 'CountTo',
+    data: function data() {
+        return {
+            counter: {},
+            unitText: '',
+            countId: 'count' + parseInt(Math.random() * 1000000)
         };
     },
 
     props: {
-        showUnlock: {
+        mainClass: String,
+        countClass: String,
+        mainStyle: {
+            type: Object,
+            default: function _default() {
+                return {
+                    fontSize: '16px',
+                    fontWeight: 500,
+                    color: 'gray'
+                };
+            }
+        },
+        countStyle: Object,
+        initCount: {
+            type: Number,
+            default: 0
+        },
+        startVal: {
+            type: Number,
+            default: 0
+        },
+        endVal: {
+            type: Number,
+            required: true
+        },
+        simplify: {
             type: Boolean,
             default: false
-        }
-    },
-    computed: {
-        avatorPath: function avatorPath() {
-            return localStorage.avatorImgPath;
+        },
+        duration: {
+            type: Number,
+            default: 2
+        },
+        delay: {
+            type: Number,
+            default: 200
+        },
+        uneasing: {
+            type: Boolean,
+            default: false
+        },
+        ungroup: {
+            type: Boolean,
+            default: false
+        },
+        separator: {
+            type: String,
+            default: ','
+        },
+        decimals: {
+            type: Number,
+            default: 0
+        },
+        decimal: {
+            type: String,
+            default: '.'
+        },
+        unit: {
+            type: Array,
+            default: function _default() {
+                return [[3, 'K+'], [6, 'M+'], [9, 'B+']];
+            }
         }
     },
     methods: {
-        validator: function validator() {
-            return true; // 你可以在这里写密码验证方式，如发起ajax请求将用户输入的密码this.password与数据库用户密码对比
-        },
-        handleClickAvator: function handleClickAvator() {
-            this.avatorLeft = '-180px';
-            this.inputLeft = '0px';
-            this.$refs.inputEle.focus();
-        },
-        handleUnlock: function handleUnlock() {
-            if (this.validator()) {
-                this.avatorLeft = '0px';
-                this.inputLeft = '400px';
-                this.password = '';
-                __WEBPACK_IMPORTED_MODULE_0_js_cookie___default.a.set('locking', '0');
-                this.$emit('on-unlock');
+        transformValue: function transformValue(val) {
+            var endVal = 0;
+            var unit = '';
+            var len = this.unit.length;
+            if (val < Math.pow(10, this.unit[0][0])) {
+                endVal = val;
             } else {
-                this.$Message.error('密码错误,请重新输入。如果忘了密码，清除浏览器缓存重新登录即可，这里没有做后端验证');
+                for (var i = 1; i < len; i++) {
+                    if (val >= Math.pow(10, this.unit[i - 1][0]) && val < Math.pow(10, this.unit[i][0])) {
+                        endVal = parseInt(val / Math.pow(10, this.unit[i - 1][0]));
+                        unit = this.unit[i - 1][1];
+                    }
+                }
             }
-        },
-        unlockMousedown: function unlockMousedown() {
-            this.$refs.unlockBtn.className = 'unlock-btn click-unlock-btn';
-        },
-        unlockMouseup: function unlockMouseup() {
-            this.$refs.unlockBtn.className = 'unlock-btn';
+            if (val > Math.pow(10, this.unit[len - 1][0])) {
+                endVal = parseInt(val / Math.pow(10, this.unit[len - 1][0]));
+                unit = this.unit[len - 1][1];
+            }
+            return {
+                val: endVal,
+                unit: unit
+            };
+        }
+    },
+    mounted: function mounted() {
+        var _this = this;
+
+        this.$nextTick(function () {
+            setTimeout(function () {
+                var endVal = 0;
+                var res = {};
+                if (_this.simplify) {
+                    res = _this.transformValue(_this.endVal);
+                    endVal = res.val;
+                    _this.unitText = res.unit;
+                } else {
+                    endVal = _this.endVal;
+                }
+                var counter = {};
+                _this.counter = counter = new __WEBPACK_IMPORTED_MODULE_0_countup___default.a(_this.countId, _this.startVal, endVal, _this.decimals, _this.duration, {
+                    useEasing: !_this.uneasing,
+                    useGrouping: !_this.ungroup,
+                    separator: _this.separator,
+                    decimal: _this.decimal
+                });
+                if (!counter.error) {
+                    counter.start();
+                }
+            }, _this.delay);
+        });
+    },
+
+    watch: {
+        endVal: function endVal(val) {
+            var endVal = 0;
+            if (this.simplify) {
+                var res = this.transformValue(this.endVal);
+                endVal = res.val;
+                this.unitText = res.unit;
+            } else {
+                endVal = this.endVal;
+            }
+            this.counter.update(endVal);
         }
     }
 });
 
 /***/ }),
 
-/***/ 353:
-/***/ (function(module, exports, __webpack_require__) {
-
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c("transition", { attrs: { name: "show-unlock" } }, [
-    _vm.showUnlock
-      ? _c(
-          "div",
-          {
-            staticClass: "unlock-body-con",
-            on: {
-              keydown: function($event) {
-                if (
-                  !("button" in $event) &&
-                  _vm._k($event.keyCode, "enter", 13, $event.key)
-                ) {
-                  return null
-                }
-                _vm.handleUnlock($event)
-              }
-            }
-          },
-          [
-            _c(
-              "div",
-              {
-                staticClass: "unlock-avator-con",
-                style: { marginLeft: _vm.avatorLeft },
-                on: { click: _vm.handleClickAvator }
-              },
-              [
-                _c("img", {
-                  staticClass: "unlock-avator-img",
-                  attrs: { src: _vm.avatorPath }
-                }),
-                _vm._v(" "),
-                _c("div", { staticClass: "unlock-avator-cover" }, [
-                  _c(
-                    "span",
-                    [_c("Icon", { attrs: { type: "unlocked", size: 30 } })],
-                    1
-                  ),
-                  _vm._v(" "),
-                  _c("p", [_vm._v("解锁")])
-                ])
-              ]
-            ),
-            _vm._v(" "),
-            _c("div", {
-              staticClass: "unlock-avator-under-back",
-              style: { marginLeft: _vm.avatorLeft }
-            }),
-            _vm._v(" "),
-            _c("div", { staticClass: "unlock-input-con" }, [
-              _c("div", { staticClass: "unlock-input-overflow-con" }, [
-                _c(
-                  "div",
-                  {
-                    staticClass: "unlock-overflow-body",
-                    style: { right: _vm.inputLeft }
-                  },
-                  [
-                    _c("input", {
-                      directives: [
-                        {
-                          name: "model",
-                          rawName: "v-model",
-                          value: _vm.password,
-                          expression: "password"
-                        }
-                      ],
-                      ref: "inputEle",
-                      staticClass: "unlock-input",
-                      attrs: {
-                        type: "password",
-                        placeholder: "密码同登录密码"
-                      },
-                      domProps: { value: _vm.password },
-                      on: {
-                        input: function($event) {
-                          if ($event.target.composing) {
-                            return
-                          }
-                          _vm.password = $event.target.value
-                        }
-                      }
-                    }),
-                    _vm._v(" "),
-                    _c(
-                      "button",
-                      {
-                        ref: "unlockBtn",
-                        staticClass: "unlock-btn",
-                        on: {
-                          mousedown: _vm.unlockMousedown,
-                          mouseup: _vm.unlockMouseup,
-                          click: _vm.handleUnlock
-                        }
-                      },
-                      [_c("Icon", { attrs: { color: "white", type: "key" } })],
-                      1
-                    )
-                  ]
-                )
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "unlock-locking-tip-con" }, [
-              _vm._v("已锁定")
-            ])
-          ]
-        )
-      : _vm._e()
-  ])
-}
-var staticRenderFns = []
-render._withStripped = true
-module.exports = { render: render, staticRenderFns: staticRenderFns }
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-ef195d38", module.exports)
-  }
-}
-
-/***/ }),
-
-/***/ 354:
+/***/ 783:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -426,21 +522,21 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c(
-    "div",
-    { staticStyle: { width: "100%", height: "100%", background: "#667aa6" } },
+    "p",
+    { class: _vm.mainClass, style: _vm.mainStyle },
     [
-      _c(
-        "div",
-        { staticClass: "unlock-con" },
-        [
-          _c("unlock", {
-            attrs: { "show-unlock": _vm.showUnlock },
-            on: { "on-unlock": _vm.handleUnlock }
-          })
-        ],
-        1
-      )
-    ]
+      _vm._t("leftText"),
+      _vm._v(" "),
+      _c("span", { class: _vm.countClass, style: _vm.countStyle }, [
+        _c("span", { attrs: { id: _vm.countId } }, [
+          _vm._v(_vm._s(_vm.initCount))
+        ]),
+        _c("span", [_vm._v(_vm._s(_vm.unitText))])
+      ]),
+      _vm._v(" "),
+      _vm._t("rightText")
+    ],
+    2
   )
 }
 var staticRenderFns = []
@@ -449,7 +545,640 @@ module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-4ddcf765", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-3debd379", module.exports)
+  }
+}
+
+/***/ }),
+
+/***/ 784:
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    [
+      _c(
+        "Row",
+        [
+          _c(
+            "Col",
+            { attrs: { span: "3" } },
+            [
+              _c(
+                "Card",
+                [
+                  _c(
+                    "p",
+                    { attrs: { slot: "title" }, slot: "title" },
+                    [
+                      _c("Icon", { attrs: { type: "waterdrop" } }),
+                      _vm._v(
+                        "\n                    CountTo组件基础用法\n                "
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "Row",
+                    {
+                      staticClass: "countto-page-row",
+                      attrs: {
+                        type: "flex",
+                        justify: "center",
+                        align: "middle"
+                      }
+                    },
+                    [
+                      _c(
+                        "div",
+                        { staticClass: "count-to-con" },
+                        [_c("CountTo", { attrs: { endVal: 2534 } })],
+                        1
+                      )
+                    ]
+                  )
+                ],
+                1
+              )
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c(
+            "Col",
+            { staticClass: "padding-left-10", attrs: { span: "5" } },
+            [
+              _c(
+                "Card",
+                [
+                  _c(
+                    "p",
+                    { attrs: { slot: "title" }, slot: "title" },
+                    [
+                      _c("Icon", { attrs: { type: "code" } }),
+                      _vm._v(
+                        "\n                    可添加左右文字\n                "
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "Row",
+                    {
+                      staticClass: "countto-page-row",
+                      attrs: {
+                        type: "flex",
+                        justify: "center",
+                        align: "middle"
+                      }
+                    },
+                    [
+                      _c(
+                        "div",
+                        { staticClass: "count-to-con" },
+                        [
+                          _c("CountTo", { attrs: { endVal: 2534 } }, [
+                            _c(
+                              "span",
+                              { attrs: { slot: "leftText" }, slot: "leftText" },
+                              [_vm._v("Total: ")]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "span",
+                              {
+                                attrs: { slot: "rightText" },
+                                slot: "rightText"
+                              },
+                              [_vm._v(" times")]
+                            )
+                          ])
+                        ],
+                        1
+                      )
+                    ]
+                  )
+                ],
+                1
+              )
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c(
+            "Col",
+            { staticClass: "padding-left-10", attrs: { span: "8" } },
+            [
+              _c(
+                "Card",
+                [
+                  _c(
+                    "p",
+                    { attrs: { slot: "title" }, slot: "title" },
+                    [
+                      _c("Icon", { attrs: { type: "paintbucket" } }),
+                      _vm._v(
+                        "\n                    自定义样式\n                "
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "Row",
+                    {
+                      staticClass: "countto-page-row",
+                      attrs: {
+                        type: "flex",
+                        justify: "center",
+                        align: "middle"
+                      }
+                    },
+                    [
+                      _c(
+                        "div",
+                        { staticClass: "count-to-con" },
+                        [
+                          _c(
+                            "CountTo",
+                            {
+                              attrs: {
+                                endVal: 2534,
+                                mainStyle: _vm.mainStyle,
+                                countStyle: _vm.countStyle
+                              }
+                            },
+                            [
+                              _c(
+                                "span",
+                                {
+                                  attrs: { slot: "leftText" },
+                                  slot: "leftText"
+                                },
+                                [_vm._v("Total: ")]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "span",
+                                {
+                                  attrs: { slot: "rightText" },
+                                  slot: "rightText"
+                                },
+                                [_vm._v(" times")]
+                              )
+                            ]
+                          )
+                        ],
+                        1
+                      )
+                    ]
+                  )
+                ],
+                1
+              )
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c(
+            "Col",
+            { staticClass: "padding-left-10", attrs: { span: "8" } },
+            [
+              _c(
+                "Card",
+                [
+                  _c(
+                    "p",
+                    { attrs: { slot: "title" }, slot: "title" },
+                    [
+                      _c("Icon", { attrs: { type: "settings" } }),
+                      _vm._v(
+                        "\n                    设置数据格式\n                "
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "Row",
+                    {
+                      staticClass: "countto-page-row",
+                      attrs: {
+                        type: "flex",
+                        justify: "center",
+                        align: "middle"
+                      }
+                    },
+                    [
+                      _c(
+                        "div",
+                        { staticClass: "count-to-con" },
+                        [
+                          _c(
+                            "CountTo",
+                            {
+                              attrs: {
+                                endVal: 2534,
+                                mainStyle: _vm.mainStyle,
+                                countStyle: _vm.countStyle,
+                                decimals: 2
+                              }
+                            },
+                            [
+                              _c(
+                                "span",
+                                {
+                                  attrs: { slot: "leftText" },
+                                  slot: "leftText"
+                                },
+                                [_vm._v("Total: ")]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "span",
+                                {
+                                  attrs: { slot: "rightText" },
+                                  slot: "rightText"
+                                },
+                                [_vm._v(" times")]
+                              )
+                            ]
+                          )
+                        ],
+                        1
+                      )
+                    ]
+                  )
+                ],
+                1
+              )
+            ],
+            1
+          )
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "Row",
+        { staticClass: "margin-top-10" },
+        [
+          _c(
+            "Col",
+            { attrs: { span: "8" } },
+            [
+              _c(
+                "Card",
+                [
+                  _c(
+                    "p",
+                    { attrs: { slot: "title" }, slot: "title" },
+                    [
+                      _c("Icon", { attrs: { type: "ios-color-wand" } }),
+                      _vm._v(
+                        "\n                    转换单位简化数据\n                "
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "Row",
+                    {
+                      staticClass: "countto-page-row",
+                      attrs: {
+                        type: "flex",
+                        justify: "center",
+                        align: "middle"
+                      }
+                    },
+                    [
+                      _c(
+                        "div",
+                        { staticClass: "count-to-con" },
+                        [
+                          _c(
+                            "CountTo",
+                            {
+                              attrs: {
+                                simplify: true,
+                                endVal: 2534,
+                                mainStyle: _vm.mainStyle,
+                                countStyle: _vm.countStyle
+                              }
+                            },
+                            [
+                              _c(
+                                "span",
+                                {
+                                  attrs: { slot: "leftText" },
+                                  slot: "leftText"
+                                },
+                                [_vm._v("Total: ")]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "span",
+                                {
+                                  attrs: { slot: "rightText" },
+                                  slot: "rightText"
+                                },
+                                [_vm._v(" times")]
+                              )
+                            ]
+                          )
+                        ],
+                        1
+                      )
+                    ]
+                  )
+                ],
+                1
+              )
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c(
+            "Col",
+            { staticClass: "padding-left-10", attrs: { span: "8" } },
+            [
+              _c(
+                "Card",
+                [
+                  _c(
+                    "p",
+                    { attrs: { slot: "title" }, slot: "title" },
+                    [
+                      _c("Icon", { attrs: { type: "ios-shuffle-strong" } }),
+                      _vm._v(
+                        "\n                    自定义单位\n                "
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "Row",
+                    {
+                      staticClass: "countto-page-row",
+                      attrs: {
+                        type: "flex",
+                        justify: "center",
+                        align: "middle"
+                      }
+                    },
+                    [
+                      _c(
+                        "div",
+                        { staticClass: "count-to-con" },
+                        [
+                          _c(
+                            "CountTo",
+                            {
+                              attrs: {
+                                simplify: true,
+                                unit: _vm.unit,
+                                endVal: 253,
+                                mainStyle: _vm.mainStyle2,
+                                countStyle: _vm.countStyle2
+                              }
+                            },
+                            [
+                              _c(
+                                "span",
+                                {
+                                  attrs: { slot: "leftText" },
+                                  slot: "leftText"
+                                },
+                                [_vm._v("原始数据：253 => ")]
+                              )
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "CountTo",
+                            {
+                              attrs: {
+                                simplify: true,
+                                unit: _vm.unit,
+                                endVal: 2534,
+                                mainStyle: _vm.mainStyle2,
+                                countStyle: _vm.countStyle2
+                              }
+                            },
+                            [
+                              _c(
+                                "span",
+                                {
+                                  attrs: { slot: "leftText" },
+                                  slot: "leftText"
+                                },
+                                [_vm._v("原始数据：2534 => ")]
+                              )
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "CountTo",
+                            {
+                              attrs: {
+                                simplify: true,
+                                unit: _vm.unit,
+                                endVal: 257678,
+                                mainStyle: _vm.mainStyle2,
+                                countStyle: _vm.countStyle2
+                              }
+                            },
+                            [
+                              _c(
+                                "span",
+                                {
+                                  attrs: { slot: "leftText" },
+                                  slot: "leftText"
+                                },
+                                [_vm._v("原始数据：257678 => ")]
+                              )
+                            ]
+                          )
+                        ],
+                        1
+                      )
+                    ]
+                  )
+                ],
+                1
+              )
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c(
+            "Col",
+            { staticClass: "padding-left-10", attrs: { span: "8" } },
+            [
+              _c(
+                "Card",
+                [
+                  _c(
+                    "p",
+                    { attrs: { slot: "title" }, slot: "title" },
+                    [
+                      _c("Icon", { attrs: { type: "android-stopwatch" } }),
+                      _vm._v(
+                        "\n                    可异步更新数据\n                "
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "Row",
+                    {
+                      staticClass: "countto-page-row",
+                      attrs: {
+                        type: "flex",
+                        justify: "center",
+                        align: "middle"
+                      }
+                    },
+                    [
+                      _c(
+                        "div",
+                        { staticClass: "count-to-con" },
+                        [
+                          _c(
+                            "CountTo",
+                            {
+                              attrs: {
+                                endVal: _vm.asynEndVal,
+                                mainStyle: _vm.mainStyle,
+                                countStyle: _vm.countStyle
+                              }
+                            },
+                            [
+                              _c(
+                                "span",
+                                {
+                                  attrs: { slot: "leftText" },
+                                  slot: "leftText"
+                                },
+                                [_vm._v("Total: ")]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "span",
+                                {
+                                  attrs: { slot: "rightText" },
+                                  slot: "rightText"
+                                },
+                                [_vm._v(" times")]
+                              )
+                            ]
+                          )
+                        ],
+                        1
+                      )
+                    ]
+                  )
+                ],
+                1
+              )
+            ],
+            1
+          )
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "Row",
+        { staticClass: "margin-top-10" },
+        [
+          _c(
+            "Card",
+            [
+              _c(
+                "p",
+                { attrs: { slot: "title" }, slot: "title" },
+                [
+                  _c("Icon", { attrs: { type: "ios-analytics" } }),
+                  _vm._v("\n                综合实例\n            ")
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "Row",
+                {
+                  staticClass: "countto-page-row",
+                  attrs: { type: "flex", justify: "center", align: "middle" }
+                },
+                [
+                  _c(
+                    "div",
+                    { staticClass: "count-to-con" },
+                    [
+                      _c(
+                        "CountTo",
+                        {
+                          attrs: {
+                            delay: 500,
+                            simplify: true,
+                            unit: _vm.unit2,
+                            endVal: _vm.integratedEndVal,
+                            mainStyle: _vm.mainStyle,
+                            countStyle: _vm.countStyle
+                          }
+                        },
+                        [
+                          _c(
+                            "span",
+                            { attrs: { slot: "leftText" }, slot: "leftText" },
+                            [
+                              _vm._v(
+                                "原始数据: " +
+                                  _vm._s(_vm.integratedEndVal) +
+                                  " => "
+                              )
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "span",
+                            { attrs: { slot: "rightText" }, slot: "rightText" },
+                            [_vm._v(" times")]
+                          )
+                        ]
+                      )
+                    ],
+                    1
+                  )
+                ]
+              )
+            ],
+            1
+          )
+        ],
+        1
+      )
+    ],
+    1
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-72abbeda", module.exports)
   }
 }
 

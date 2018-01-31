@@ -1,24 +1,24 @@
 webpackJsonp([46],{
 
-/***/ 134:
+/***/ 130:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(808)
+  __webpack_require__(778)
 }
 var normalizeComponent = __webpack_require__(1)
 /* script */
-var __vue_script__ = __webpack_require__(810)
+var __vue_script__ = __webpack_require__(780)
 /* template */
-var __vue_template__ = __webpack_require__(814)
+var __vue_template__ = __webpack_require__(784)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
 var __vue_styles__ = injectStyle
 /* scopeId */
-var __vue_scopeId__ = "data-v-ec30fcee"
+var __vue_scopeId__ = null
 /* moduleIdentifier (server only) */
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
@@ -29,7 +29,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources\\assets\\js\\views\\tables\\exportable-table.vue"
+Component.options.__file = "resources\\assets\\js\\views\\my-components\\count-to\\count-to.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -38,9 +38,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-ec30fcee", Component.options)
+    hotAPI.createRecord("data-v-72abbeda", Component.options)
   } else {
-    hotAPI.reload("data-v-ec30fcee", Component.options)
+    hotAPI.reload("data-v-72abbeda", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -52,23 +52,34 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 808:
+/***/ 255:
+/***/ (function(module, exports, __webpack_require__) {
+
+var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;!function(a,t){ true?!(__WEBPACK_AMD_DEFINE_FACTORY__ = (t),
+				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
+				(__WEBPACK_AMD_DEFINE_FACTORY__.call(exports, __webpack_require__, exports, module)) :
+				__WEBPACK_AMD_DEFINE_FACTORY__),
+				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)):"object"==typeof exports?module.exports=t(require,exports,module):a.CountUp=t()}(this,function(a,t,n){var e=function(a,t,n,e,i,r){for(var o=0,s=["webkit","moz","ms","o"],m=0;m<s.length&&!window.requestAnimationFrame;++m)window.requestAnimationFrame=window[s[m]+"RequestAnimationFrame"],window.cancelAnimationFrame=window[s[m]+"CancelAnimationFrame"]||window[s[m]+"CancelRequestAnimationFrame"];window.requestAnimationFrame||(window.requestAnimationFrame=function(a,t){var n=(new Date).getTime(),e=Math.max(0,16-(n-o)),i=window.setTimeout(function(){a(n+e)},e);return o=n+e,i}),window.cancelAnimationFrame||(window.cancelAnimationFrame=function(a){clearTimeout(a)});var u=this;u.options={useEasing:!0,useGrouping:!0,separator:",",decimal:".",easingFn:null,formattingFn:null};for(var l in r)r.hasOwnProperty(l)&&(u.options[l]=r[l]);""===u.options.separator&&(u.options.useGrouping=!1),u.options.prefix||(u.options.prefix=""),u.options.suffix||(u.options.suffix=""),u.d="string"==typeof a?document.getElementById(a):a,u.startVal=Number(t),u.endVal=Number(n),u.countDown=u.startVal>u.endVal,u.frameVal=u.startVal,u.decimals=Math.max(0,e||0),u.dec=Math.pow(10,u.decimals),u.duration=1e3*Number(i)||2e3,u.formatNumber=function(a){a=a.toFixed(u.decimals),a+="";var t,n,e,i;if(t=a.split("."),n=t[0],e=t.length>1?u.options.decimal+t[1]:"",i=/(\d+)(\d{3})/,u.options.useGrouping)for(;i.test(n);)n=n.replace(i,"$1"+u.options.separator+"$2");return u.options.prefix+n+e+u.options.suffix},u.easeOutExpo=function(a,t,n,e){return n*(-Math.pow(2,-10*a/e)+1)*1024/1023+t},u.easingFn=u.options.easingFn?u.options.easingFn:u.easeOutExpo,u.formattingFn=u.options.formattingFn?u.options.formattingFn:u.formatNumber,u.version=function(){return"1.7.1"},u.printValue=function(a){var t=u.formattingFn(a);"INPUT"===u.d.tagName?this.d.value=t:"text"===u.d.tagName||"tspan"===u.d.tagName?this.d.textContent=t:this.d.innerHTML=t},u.count=function(a){u.startTime||(u.startTime=a),u.timestamp=a;var t=a-u.startTime;u.remaining=u.duration-t,u.options.useEasing?u.countDown?u.frameVal=u.startVal-u.easingFn(t,0,u.startVal-u.endVal,u.duration):u.frameVal=u.easingFn(t,u.startVal,u.endVal-u.startVal,u.duration):u.countDown?u.frameVal=u.startVal-(u.startVal-u.endVal)*(t/u.duration):u.frameVal=u.startVal+(u.endVal-u.startVal)*(t/u.duration),u.countDown?u.frameVal=u.frameVal<u.endVal?u.endVal:u.frameVal:u.frameVal=u.frameVal>u.endVal?u.endVal:u.frameVal,u.frameVal=Math.round(u.frameVal*u.dec)/u.dec,u.printValue(u.frameVal),t<u.duration?u.rAF=requestAnimationFrame(u.count):u.callback&&u.callback()},u.start=function(a){return u.callback=a,u.rAF=requestAnimationFrame(u.count),!1},u.pauseResume=function(){u.paused?(u.paused=!1,delete u.startTime,u.duration=u.remaining,u.startVal=u.frameVal,requestAnimationFrame(u.count)):(u.paused=!0,cancelAnimationFrame(u.rAF))},u.reset=function(){u.paused=!1,delete u.startTime,u.startVal=t,cancelAnimationFrame(u.rAF),u.printValue(u.startVal)},u.update=function(a){cancelAnimationFrame(u.rAF),u.paused=!1,delete u.startTime,u.startVal=u.frameVal,u.endVal=Number(a),u.countDown=u.startVal>u.endVal,u.rAF=requestAnimationFrame(u.count)},u.printValue(u.startVal)};return e});
+
+/***/ }),
+
+/***/ 778:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(809);
+var content = __webpack_require__(779);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(5)("36d4218e", content, false);
+var update = __webpack_require__(5)("6a76dddc", content, false);
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-ec30fcee\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../../node_modules/less-loader/index.js!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./exportable-table.vue", function() {
-     var newContent = require("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-ec30fcee\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../../node_modules/less-loader/index.js!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./exportable-table.vue");
+   module.hot.accept("!!../../../../../../node_modules/css-loader/index.js!../../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-72abbeda\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../../node_modules/less-loader/index.js!../../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./count-to.vue", function() {
+     var newContent = require("!!../../../../../../node_modules/css-loader/index.js!../../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-72abbeda\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../../node_modules/less-loader/index.js!../../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./count-to.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -79,7 +90,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 809:
+/***/ 779:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(2)(false);
@@ -87,21 +98,20 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, "\n.margin-top-8[data-v-ec30fcee] {\n  margin-top: 8px;\n}\n.margin-top-10[data-v-ec30fcee] {\n  margin-top: 10px;\n}\n.margin-top-20[data-v-ec30fcee] {\n  margin-top: 20px;\n}\n.margin-left-10[data-v-ec30fcee] {\n  margin-left: 10px;\n}\n.margin-bottom-10[data-v-ec30fcee] {\n  margin-bottom: 10px;\n}\n.margin-bottom-100[data-v-ec30fcee] {\n  margin-bottom: 100px;\n}\n.margin-right-10[data-v-ec30fcee] {\n  margin-right: 10px;\n}\n.padding-left-6[data-v-ec30fcee] {\n  padding-left: 6px;\n}\n.padding-left-8[data-v-ec30fcee] {\n  padding-left: 5px;\n}\n.padding-left-10[data-v-ec30fcee] {\n  padding-left: 10px;\n}\n.padding-left-20[data-v-ec30fcee] {\n  padding-left: 20px;\n}\n.height-100[data-v-ec30fcee] {\n  height: 100%;\n}\n.height-120px[data-v-ec30fcee] {\n  height: 100px;\n}\n.height-200px[data-v-ec30fcee] {\n  height: 200px;\n}\n.height-492px[data-v-ec30fcee] {\n  height: 492px;\n}\n.height-460px[data-v-ec30fcee] {\n  height: 460px;\n}\n.line-gray[data-v-ec30fcee] {\n  height: 0;\n  border-bottom: 2px solid #dcdcdc;\n}\n.notwrap[data-v-ec30fcee] {\n  word-break: keep-all;\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis;\n}\n.padding-left-5[data-v-ec30fcee] {\n  padding-left: 10px;\n}\n[v-cloak][data-v-ec30fcee] {\n  display: none;\n}\n.dragging-tip-enter-active[data-v-ec30fcee] {\n  opacity: 1;\n  -webkit-transition: opacity .3s;\n  transition: opacity .3s;\n}\n.dragging-tip-enter[data-v-ec30fcee],\n.dragging-tip-leave-to[data-v-ec30fcee] {\n  opacity: 0;\n  -webkit-transition: opacity 0.3s;\n  transition: opacity 0.3s;\n}\n.dragging-tip-con[data-v-ec30fcee] {\n  display: block;\n  text-align: center;\n  width: 100%;\n  height: 50px;\n}\n.dragging-tip-con span[data-v-ec30fcee] {\n  font-size: 18px;\n}\n.record-tip-con[data-v-ec30fcee] {\n  display: block;\n  width: 100%;\n  height: 292px;\n  overflow: auto;\n}\n.record-item[data-v-ec30fcee] {\n  -webkit-box-sizing: content-box;\n          box-sizing: content-box;\n  display: block;\n  overflow: hidden;\n  height: 24px;\n  line-height: 24px;\n  padding: 8px 10px;\n  border-bottom: 1px dashed gainsboro;\n}\n.record-tip-con span[data-v-ec30fcee] {\n  font-size: 14px;\n}\n.edittable-test-con[data-v-ec30fcee] {\n  height: 160px;\n}\n.edittable-table-height-con[data-v-ec30fcee] {\n  height: 190px;\n}\n.edittable-con-1[data-v-ec30fcee] {\n  -webkit-box-sizing: content-box;\n          box-sizing: content-box;\n  padding: 15px 0 0;\n  height: 196px;\n}\n.edittable-table-get-currentdata-con[data-v-ec30fcee] {\n  height: 190px !important;\n}\n.exportable-table-download-con1[data-v-ec30fcee] {\n  padding: 16px 0 16px 20px;\n  border-bottom: 1px dashed #c3c3c3;\n  margin-bottom: 16px;\n}\n.exportable-table-download-con2[data-v-ec30fcee] {\n  padding-left: 20px;\n}\n.show-image[data-v-ec30fcee] {\n  padding: 20px 0px;\n}\n.show-image img[data-v-ec30fcee] {\n  display: block;\n  width: 100%;\n  height: auto;\n}\n.searchable-table-con1[data-v-ec30fcee] {\n  height: 230px !important;\n}\n", ""]);
+exports.push([module.i, "\n.margin-top-8 {\n  margin-top: 8px;\n}\n.margin-top-10 {\n  margin-top: 10px;\n}\n.margin-top-20 {\n  margin-top: 20px;\n}\n.margin-left-10 {\n  margin-left: 10px;\n}\n.margin-bottom-10 {\n  margin-bottom: 10px;\n}\n.margin-bottom-100 {\n  margin-bottom: 100px;\n}\n.margin-right-10 {\n  margin-right: 10px;\n}\n.padding-left-6 {\n  padding-left: 6px;\n}\n.padding-left-8 {\n  padding-left: 5px;\n}\n.padding-left-10 {\n  padding-left: 10px;\n}\n.padding-left-20 {\n  padding-left: 20px;\n}\n.height-100 {\n  height: 100%;\n}\n.height-120px {\n  height: 100px;\n}\n.height-200px {\n  height: 200px;\n}\n.height-492px {\n  height: 492px;\n}\n.height-460px {\n  height: 460px;\n}\n.line-gray {\n  height: 0;\n  border-bottom: 2px solid #dcdcdc;\n}\n.notwrap {\n  word-break: keep-all;\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis;\n}\n.padding-left-5 {\n  padding-left: 10px;\n}\n[v-cloak] {\n  display: none;\n}\n.countto-page-row {\n  height: 200px;\n}\n.count-to-con {\n  display: block;\n  width: 100%;\n  text-align: center;\n}\n.pre-code-show-con p {\n  height: 30px;\n  margin: 0;\n}\n", ""]);
 
 // exports
 
 
 /***/ }),
 
-/***/ 810:
+/***/ 780:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__data_table2csv_js__ = __webpack_require__(811);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__data_table2excel_js__ = __webpack_require__(812);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__libs_table2excel_js__ = __webpack_require__(813);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__CountTo_vue__ = __webpack_require__(781);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__CountTo_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__CountTo_vue__);
 //
 //
 //
@@ -173,563 +183,375 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-
-
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-    name: 'exportable-table',
+    name: 'count-to',
+    components: {
+        CountTo: __WEBPACK_IMPORTED_MODULE_0__CountTo_vue___default.a
+    },
     data: function data() {
         return {
-            columnsCsv: __WEBPACK_IMPORTED_MODULE_0__data_table2csv_js__["a" /* csvColumns */],
-            csvData: __WEBPACK_IMPORTED_MODULE_0__data_table2csv_js__["b" /* table2csvData */],
-            table2excelData: __WEBPACK_IMPORTED_MODULE_1__data_table2excel_js__["b" /* table2excelData */],
-            excelColumns: __WEBPACK_IMPORTED_MODULE_1__data_table2excel_js__["a" /* excelColumns */],
-            rowNum: __WEBPACK_IMPORTED_MODULE_0__data_table2csv_js__["b" /* table2csvData */].length,
-            colNum: __WEBPACK_IMPORTED_MODULE_0__data_table2csv_js__["a" /* csvColumns */].length,
-            selectMinRow: 1,
-            selectMaxRow: __WEBPACK_IMPORTED_MODULE_0__data_table2csv_js__["b" /* table2csvData */].length,
-            selectMinCol: 1,
-            selectMaxCol: __WEBPACK_IMPORTED_MODULE_0__data_table2csv_js__["a" /* csvColumns */].length,
-            maxRow: 0,
-            minRow: 1,
-            maxCol: 0,
-            minCol: 1,
-            csvFileName: '',
-            excelFileName: '',
-            tableExcel: {},
-            fontSize: 16
+            endVal: 0,
+            mainStyle: {
+                fontSize: '30px'
+            },
+            countStyle: {
+                fontSize: '50px',
+                color: '#dc9387'
+            },
+            mainStyle2: {
+                fontSize: '22px'
+            },
+            countStyle2: {
+                fontSize: '30px',
+                color: '#dc9387'
+            },
+            unit: [[3, '千多'], [4, '万多'], [5, '十万多']],
+            unit2: [[1, '十多'], [2, '百多'], [3, '千多'], [4, '万多'], [5, '十万多'], [6, '百万多'], [7, '千万多'], [8, '亿多']],
+            asynEndVal: 487,
+            integratedEndVal: 3
         };
     },
 
     methods: {
-        exportData: function exportData(type) {
+        init: function init() {
             var _this = this;
 
-            if (type === 1) {
-                this.$refs.tableCsv.exportCsv({
-                    filename: '原始数据'
-                });
-            } else if (type === 2) {
-                this.$refs.tableCsv.exportCsv({
-                    filename: '排序和过滤后的数据',
-                    original: false
-                });
-            } else if (type === 3) {
-                this.$refs.tableCsv.exportCsv({
-                    filename: this.csvFileName,
-                    columns: this.columnsCsv.filter(function (col, index) {
-                        return index >= _this.selectMinCol - 1 && index <= _this.selectMaxCol - 1;
-                    }),
-                    data: this.csvData.filter(function (data, index) {
-                        return index >= _this.selectMinRow - 1 && index <= _this.selectMaxRow - 1;
-                    })
-                });
+            setInterval(function () {
+                _this.asynEndVal += parseInt(Math.random() * 20);
+                _this.integratedEndVal += parseInt(Math.random() * 30);
+            }, 2000);
+        }
+    },
+    mounted: function mounted() {
+        this.init();
+    }
+});
+
+/***/ }),
+
+/***/ 781:
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var normalizeComponent = __webpack_require__(1)
+/* script */
+var __vue_script__ = __webpack_require__(782)
+/* template */
+var __vue_template__ = __webpack_require__(783)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources\\assets\\js\\views\\my-components\\count-to\\CountTo.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-3debd379", Component.options)
+  } else {
+    hotAPI.reload("data-v-3debd379", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+
+/***/ 782:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_countup__ = __webpack_require__(255);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_countup___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_countup__);
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    name: 'CountTo',
+    data: function data() {
+        return {
+            counter: {},
+            unitText: '',
+            countId: 'count' + parseInt(Math.random() * 1000000)
+        };
+    },
+
+    props: {
+        mainClass: String,
+        countClass: String,
+        mainStyle: {
+            type: Object,
+            default: function _default() {
+                return {
+                    fontSize: '16px',
+                    fontWeight: 500,
+                    color: 'gray'
+                };
             }
         },
-        exportExcel: function exportExcel() {
-            __WEBPACK_IMPORTED_MODULE_2__libs_table2excel_js__["a" /* default */].transform(this.$refs.tableExcel, 'hrefToExportTable', this.excelFileName);
+        countStyle: Object,
+        initCount: {
+            type: Number,
+            default: 0
+        },
+        startVal: {
+            type: Number,
+            default: 0
+        },
+        endVal: {
+            type: Number,
+            required: true
+        },
+        simplify: {
+            type: Boolean,
+            default: false
+        },
+        duration: {
+            type: Number,
+            default: 2
+        },
+        delay: {
+            type: Number,
+            default: 200
+        },
+        uneasing: {
+            type: Boolean,
+            default: false
+        },
+        ungroup: {
+            type: Boolean,
+            default: false
+        },
+        separator: {
+            type: String,
+            default: ','
+        },
+        decimals: {
+            type: Number,
+            default: 0
+        },
+        decimal: {
+            type: String,
+            default: '.'
+        },
+        unit: {
+            type: Array,
+            default: function _default() {
+                return [[3, 'K+'], [6, 'M+'], [9, 'B+']];
+            }
+        }
+    },
+    methods: {
+        transformValue: function transformValue(val) {
+            var endVal = 0;
+            var unit = '';
+            var len = this.unit.length;
+            if (val < Math.pow(10, this.unit[0][0])) {
+                endVal = val;
+            } else {
+                for (var i = 1; i < len; i++) {
+                    if (val >= Math.pow(10, this.unit[i - 1][0]) && val < Math.pow(10, this.unit[i][0])) {
+                        endVal = parseInt(val / Math.pow(10, this.unit[i - 1][0]));
+                        unit = this.unit[i - 1][1];
+                    }
+                }
+            }
+            if (val > Math.pow(10, this.unit[len - 1][0])) {
+                endVal = parseInt(val / Math.pow(10, this.unit[len - 1][0]));
+                unit = this.unit[len - 1][1];
+            }
+            return {
+                val: endVal,
+                unit: unit
+            };
+        }
+    },
+    mounted: function mounted() {
+        var _this = this;
+
+        this.$nextTick(function () {
+            setTimeout(function () {
+                var endVal = 0;
+                var res = {};
+                if (_this.simplify) {
+                    res = _this.transformValue(_this.endVal);
+                    endVal = res.val;
+                    _this.unitText = res.unit;
+                } else {
+                    endVal = _this.endVal;
+                }
+                var counter = {};
+                _this.counter = counter = new __WEBPACK_IMPORTED_MODULE_0_countup___default.a(_this.countId, _this.startVal, endVal, _this.decimals, _this.duration, {
+                    useEasing: !_this.uneasing,
+                    useGrouping: !_this.ungroup,
+                    separator: _this.separator,
+                    decimal: _this.decimal
+                });
+                if (!counter.error) {
+                    counter.start();
+                }
+            }, _this.delay);
+        });
+    },
+
+    watch: {
+        endVal: function endVal(val) {
+            var endVal = 0;
+            if (this.simplify) {
+                var res = this.transformValue(this.endVal);
+                endVal = res.val;
+                this.unitText = res.unit;
+            } else {
+                endVal = this.endVal;
+            }
+            this.counter.update(endVal);
         }
     }
 });
 
 /***/ }),
 
-/***/ 811:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ 783:
+/***/ (function(module, exports, __webpack_require__) {
 
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return table2csvData; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return csvColumns; });
-var table2csvData = [{
-    'name': '推广名称1',
-    'fav': 0,
-    'show': 7302,
-    'weak': 5627,
-    'signin': 1563,
-    'click': 4254,
-    'active': 1438,
-    'day7': 274,
-    'day30': 285,
-    'tomorrow': 1727,
-    'day': 558,
-    'week': 4440,
-    'month': 5610
-}, {
-    'name': '推广名称2',
-    'fav': 0,
-    'show': 4720,
-    'weak': 4086,
-    'signin': 3792,
-    'click': 8690,
-    'active': 8470,
-    'day7': 8172,
-    'day30': 5197,
-    'tomorrow': 1684,
-    'day': 2593,
-    'week': 2507,
-    'month': 1537
-}, {
-    'name': '推广名称3',
-    'fav': 0,
-    'show': 7181,
-    'weak': 8007,
-    'signin': 8477,
-    'click': 1879,
-    'active': 16,
-    'day7': 2249,
-    'day30': 3450,
-    'tomorrow': 377,
-    'day': 1561,
-    'week': 3219,
-    'month': 1588
-}, {
-    'name': '推广名称4',
-    'fav': 0,
-    'show': 9911,
-    'weak': 8976,
-    'signin': 8807,
-    'click': 8050,
-    'active': 7668,
-    'day7': 1547,
-    'day30': 2357,
-    'tomorrow': 7278,
-    'day': 5309,
-    'week': 1655,
-    'month': 9043
-}, {
-    'name': '推广名称5',
-    'fav': 0,
-    'show': 934,
-    'weak': 1394,
-    'signin': 6463,
-    'click': 5278,
-    'active': 9256,
-    'day7': 209,
-    'day30': 3563,
-    'tomorrow': 8285,
-    'day': 1230,
-    'week': 4840,
-    'month': 9908
-}, {
-    'name': '推广名称6',
-    'fav': 0,
-    'show': 6856,
-    'weak': 1608,
-    'signin': 457,
-    'click': 4949,
-    'active': 2909,
-    'day7': 4525,
-    'day30': 6171,
-    'tomorrow': 1920,
-    'day': 1966,
-    'week': 904,
-    'month': 6851
-}, {
-    'name': '推广名称7',
-    'fav': 0,
-    'show': 5107,
-    'weak': 6407,
-    'signin': 4166,
-    'click': 7970,
-    'active': 1002,
-    'day7': 8701,
-    'day30': 9040,
-    'tomorrow': 7632,
-    'day': 4061,
-    'week': 4359,
-    'month': 3676
-}];
-
-var csvColumns = [{
-    'title': '名称',
-    'key': 'name',
-    'fixed': 'left',
-    'width': 200
-}, {
-    'title': '展示',
-    'key': 'show',
-    'width': 150,
-    'sortable': true,
-    filters: [{
-        label: '大于4000',
-        value: 1
-    }, {
-        label: '小于4000',
-        value: 2
-    }],
-    filterMultiple: false,
-    filterMethod: function filterMethod(value, row) {
-        if (value === 1) {
-            return row.show > 4000;
-        } else if (value === 2) {
-            return row.show < 4000;
-        }
-    }
-}, {
-    'title': '唤醒',
-    'key': 'weak',
-    'width': 150,
-    'sortable': true
-}, {
-    'title': '登录',
-    'key': 'signin',
-    'width': 150,
-    'sortable': true
-}, {
-    'title': '点击',
-    'key': 'click',
-    'width': 150,
-    'sortable': true
-}, {
-    'title': '激活',
-    'key': 'active',
-    'width': 150,
-    'sortable': true
-}, {
-    'title': '7日留存',
-    'key': 'day7',
-    'width': 150,
-    'sortable': true
-}, {
-    'title': '30日留存',
-    'key': 'day30',
-    'width': 150,
-    'sortable': true
-}, {
-    'title': '次日留存',
-    'key': 'tomorrow',
-    'width': 150,
-    'sortable': true
-}, {
-    'title': '日活跃',
-    'key': 'day',
-    'width': 150,
-    'sortable': true
-}, {
-    'title': '周活跃',
-    'key': 'week',
-    'width': 150,
-    'sortable': true
-}, {
-    'title': '月活跃',
-    'key': 'month',
-    'width': 150,
-    'sortable': true
-}];
-
-/***/ }),
-
-/***/ 812:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return table2excelData; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return excelColumns; });
-var table2excelData = [{
-    'name': '推广名称1',
-    'fav': 0,
-    'show': 7302,
-    'weak': 5627,
-    'signin': 1563,
-    'click': 4254,
-    'active': 1438,
-    'day7': 274,
-    'day30': 285,
-    'tomorrow': 1727,
-    'day': 558,
-    'week': 4440,
-    'month': 5610
-}, {
-    'name': '推广名称2',
-    'fav': 0,
-    'show': 4720,
-    'weak': 4086,
-    'signin': 3792,
-    'click': 8690,
-    'active': 8470,
-    'day7': 8172,
-    'day30': 5197,
-    'tomorrow': 1684,
-    'day': 2593,
-    'week': 2507,
-    'month': 1537
-}, {
-    'name': '推广名称3',
-    'fav': 0,
-    'show': 7181,
-    'weak': 8007,
-    'signin': 8477,
-    'click': 1879,
-    'active': 16,
-    'day7': 2249,
-    'day30': 3450,
-    'tomorrow': 377,
-    'day': 1561,
-    'week': 3219,
-    'month': 1588
-}, {
-    'name': '推广名称4',
-    'fav': 0,
-    'show': 9911,
-    'weak': 8976,
-    'signin': 8807,
-    'click': 8050,
-    'active': 7668,
-    'day7': 1547,
-    'day30': 2357,
-    'tomorrow': 7278,
-    'day': 5309,
-    'week': 1655,
-    'month': 9043
-}, {
-    'name': '推广名称5',
-    'fav': 0,
-    'show': 934,
-    'weak': 1394,
-    'signin': 6463,
-    'click': 5278,
-    'active': 9256,
-    'day7': 209,
-    'day30': 3563,
-    'tomorrow': 8285,
-    'day': 1230,
-    'week': 4840,
-    'month': 9908
-}, {
-    'name': '推广名称6',
-    'fav': 0,
-    'show': 6856,
-    'weak': 1608,
-    'signin': 457,
-    'click': 4949,
-    'active': 2909,
-    'day7': 4525,
-    'day30': 6171,
-    'tomorrow': 1920,
-    'day': 1966,
-    'week': 904,
-    'month': 6851
-}, {
-    'name': '推广名称7',
-    'fav': 0,
-    'show': 5107,
-    'weak': 6407,
-    'signin': 4166,
-    'click': 7970,
-    'active': 1002,
-    'day7': 8701,
-    'day30': 9040,
-    'tomorrow': 7632,
-    'day': 4061,
-    'week': 4359,
-    'month': 3676
-}, {
-    'name': '推广名称8',
-    'fav': 0,
-    'show': 5107,
-    'weak': 6407,
-    'signin': 4166,
-    'click': 7970,
-    'active': 1002,
-    'day7': 8701,
-    'day30': 9040,
-    'tomorrow': 7632,
-    'day': 4061,
-    'week': 4359,
-    'month': 3676
-}, {
-    'name': '推广名称9',
-    'fav': 0,
-    'show': 5107,
-    'weak': 6407,
-    'signin': 4166,
-    'click': 7970,
-    'active': 1002,
-    'day7': 8701,
-    'day30': 9040,
-    'tomorrow': 7632,
-    'day': 4061,
-    'week': 4359,
-    'month': 3676
-}, {
-    'name': '推广名称10',
-    'fav': 0,
-    'show': 5107,
-    'weak': 6407,
-    'signin': 4166,
-    'click': 7970,
-    'active': 1002,
-    'day7': 8701,
-    'day30': 9040,
-    'tomorrow': 7632,
-    'day': 4061,
-    'week': 4359,
-    'month': 3676
-}];
-
-var excelColumns = [{
-    'title': '名称',
-    'key': 'name'
-}, {
-    'title': '展示',
-    'key': 'show',
-    'sortable': true,
-    filters: [{
-        label: '大于4000',
-        value: 1
-    }, {
-        label: '小于4000',
-        value: 2
-    }],
-    filterMultiple: false,
-    filterMethod: function filterMethod(value, row) {
-        if (value === 1) {
-            return row.show > 4000;
-        } else if (value === 2) {
-            return row.show < 4000;
-        }
-    }
-}, {
-    'title': '唤醒',
-    'key': 'weak',
-    'sortable': true
-}, {
-    'title': '登录',
-    'key': 'signin',
-    'sortable': true
-}, {
-    'title': '点击',
-    'key': 'click',
-    'sortable': true
-}, {
-    'title': '激活',
-    'key': 'active',
-    'sortable': true
-}, {
-    'title': '30日留存',
-    'key': 'day30',
-    'sortable': true
-}, {
-    'title': '月活跃',
-    'key': 'month',
-    'sortable': true
-}];
-
-/***/ }),
-
-/***/ 813:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-var idTmr;
-function getExplorer() {
-    var explorer = window.navigator.userAgent;
-    if (explorer.indexOf('MSIE') >= 0) {
-        // ie
-        return 'ie';
-    } else if (explorer.indexOf('Firefox') >= 0) {
-        // firefox
-        return 'Firefox';
-    } else if (explorer.indexOf('Chrome') >= 0) {
-        // Chrome
-        return 'Chrome';
-    } else if (explorer.indexOf('Opera') >= 0) {
-        // Opera
-        return 'Opera';
-    } else if (explorer.indexOf('Safari') >= 0) {
-        // Safari
-        return 'Safari';
-    };
-};
-function tranform(table, aId, name) {
-    var tableHead = table.$children[0].$el;
-    var tableBody = table.$children[1].$el;
-    var tableInnerHTML = '<thead><tr>';
-    if (table.$children.length !== 1) {
-        var len = tableBody.rows.length;
-        var i = -1;
-        while (i < len) {
-            if (i === -1) {
-                Array.from(tableHead.rows[0].children).forEach(function (td) {
-                    tableInnerHTML = tableInnerHTML + '<th>' + td.children[0].children[0].innerHTML + '</th>';
-                });
-                tableInnerHTML += '</tr><thead><tbody>';
-            } else {
-                tableInnerHTML += '<tr>';
-                Array.from(tableBody.rows[i].children).forEach(function (td) {
-                    tableInnerHTML = tableInnerHTML + '<td>' + td.children[0].children[0].innerHTML + '</td>';
-                });
-                tableInnerHTML += '</tr>';
-            }
-            i++;
-        }
-        tableInnerHTML += '</tbody>';
-    }
-
-    if (getExplorer() !== 'Safari' && name.substr(-1, 4) !== '.xls') {
-        name += '.xls';
-    }
-
-    if (getExplorer() === 'ie') {
-        var curTbl = table;
-        var oXL = new ActiveXObject('Excel.Application');
-        var oWB = oXL.Workbooks.Add();
-        var xlsheet = oWB.Worksheets(1);
-        var sel = document.body.createTextRange();
-        sel.moveToElementText(curTbl);
-        sel.select();
-        sel.execCommand('Copy');
-        xlsheet.Paste();
-        oXL.Visible = true;
-
-        try {
-            var fname = oXL.Application.GetSaveAsFilename('Excel.xls', 'Excel Spreadsheets (*.xls), *.xls');
-        } catch (e) {
-            print('Nested catch caught ' + e);
-        } finally {
-            oWB.SaveAs(fname);
-            // oWB.Close(savechanges = false);
-            oXL.Quit();
-            oXL = null;
-            idTmr = setInterval(Cleanup(), 1);
-        }
-    } else {
-        tableToExcel(tableInnerHTML, aId, name);
-    }
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "p",
+    { class: _vm.mainClass, style: _vm.mainStyle },
+    [
+      _vm._t("leftText"),
+      _vm._v(" "),
+      _c("span", { class: _vm.countClass, style: _vm.countStyle }, [
+        _c("span", { attrs: { id: _vm.countId } }, [
+          _vm._v(_vm._s(_vm.initCount))
+        ]),
+        _c("span", [_vm._v(_vm._s(_vm.unitText))])
+      ]),
+      _vm._v(" "),
+      _vm._t("rightText")
+    ],
+    2
+  )
 }
-function Cleanup() {
-    window.clearInterval(idTmr);
-    // CollectGarbage();
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-3debd379", module.exports)
+  }
 }
-var tableToExcel = function () {
-    var uri = 'data:application/vnd.ms-excel;base64,';
-    var template = '<html><head><meta charset="UTF-8"></head><body><table>{table}</table></body></html>';
-    var base64 = function base64(s) {
-        return window.btoa(unescape(encodeURIComponent(s)));
-    };
-    var format = function format(s, c) {
-        return s.replace(/{(\w+)}/g, function (m, p) {
-            return c[p];
-        });
-    };
-    return function (table, aId, name) {
-        var ctx = { worksheet: name || 'Worksheet', table: table };
-        document.getElementById(aId).href = uri + base64(format(template, ctx));
-        document.getElementById(aId).download = name;
-        document.getElementById(aId).click();
-    };
-}();
-
-var table2excel = {};
-
-table2excel.transform = tranform;
-
-/* harmony default export */ __webpack_exports__["a"] = (table2excel);
 
 /***/ }),
 
-/***/ 814:
+/***/ 784:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -743,218 +565,525 @@ var render = function() {
         "Row",
         [
           _c(
-            "Card",
+            "Col",
+            { attrs: { span: "3" } },
             [
               _c(
-                "h4",
-                { attrs: { slot: "title" }, slot: "title" },
-                [
-                  _c("Icon", { attrs: { type: "android-archive" } }),
-                  _vm._v(
-                    "\n                导出表格数据到 .Csv 文件\n            "
-                  )
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "Row",
+                "Card",
                 [
                   _c(
-                    "Col",
-                    { attrs: { span: "18" } },
+                    "p",
+                    { attrs: { slot: "title" }, slot: "title" },
                     [
-                      _c("Table", {
-                        ref: "tableCsv",
-                        attrs: {
-                          columns: _vm.columnsCsv,
-                          data: _vm.csvData,
-                          size: "small"
-                        }
-                      })
+                      _c("Icon", { attrs: { type: "waterdrop" } }),
+                      _vm._v(
+                        "\n                    CountTo组件基础用法\n                "
+                      )
                     ],
                     1
                   ),
                   _vm._v(" "),
                   _c(
-                    "Col",
-                    { staticClass: "padding-left-10", attrs: { span: "6" } },
+                    "Row",
+                    {
+                      staticClass: "countto-page-row",
+                      attrs: {
+                        type: "flex",
+                        justify: "center",
+                        align: "middle"
+                      }
+                    },
                     [
                       _c(
                         "div",
-                        { staticClass: "exportable-table-download-con1" },
+                        { staticClass: "count-to-con" },
+                        [_c("CountTo", { attrs: { endVal: 2534 } })],
+                        1
+                      )
+                    ]
+                  )
+                ],
+                1
+              )
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c(
+            "Col",
+            { staticClass: "padding-left-10", attrs: { span: "5" } },
+            [
+              _c(
+                "Card",
+                [
+                  _c(
+                    "p",
+                    { attrs: { slot: "title" }, slot: "title" },
+                    [
+                      _c("Icon", { attrs: { type: "code" } }),
+                      _vm._v(
+                        "\n                    可添加左右文字\n                "
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "Row",
+                    {
+                      staticClass: "countto-page-row",
+                      attrs: {
+                        type: "flex",
+                        justify: "center",
+                        align: "middle"
+                      }
+                    },
+                    [
+                      _c(
+                        "div",
+                        { staticClass: "count-to-con" },
+                        [
+                          _c("CountTo", { attrs: { endVal: 2534 } }, [
+                            _c(
+                              "span",
+                              { attrs: { slot: "leftText" }, slot: "leftText" },
+                              [_vm._v("Total: ")]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "span",
+                              {
+                                attrs: { slot: "rightText" },
+                                slot: "rightText"
+                              },
+                              [_vm._v(" times")]
+                            )
+                          ])
+                        ],
+                        1
+                      )
+                    ]
+                  )
+                ],
+                1
+              )
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c(
+            "Col",
+            { staticClass: "padding-left-10", attrs: { span: "8" } },
+            [
+              _c(
+                "Card",
+                [
+                  _c(
+                    "p",
+                    { attrs: { slot: "title" }, slot: "title" },
+                    [
+                      _c("Icon", { attrs: { type: "paintbucket" } }),
+                      _vm._v(
+                        "\n                    自定义样式\n                "
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "Row",
+                    {
+                      staticClass: "countto-page-row",
+                      attrs: {
+                        type: "flex",
+                        justify: "center",
+                        align: "middle"
+                      }
+                    },
+                    [
+                      _c(
+                        "div",
+                        { staticClass: "count-to-con" },
                         [
                           _c(
-                            "span",
-                            { staticStyle: { "margin-right": "16px" } },
-                            [
-                              _c(
-                                "Button",
-                                {
-                                  attrs: { type: "primary", size: "large" },
-                                  on: {
-                                    click: function($event) {
-                                      _vm.exportData(1)
-                                    }
-                                  }
-                                },
-                                [
-                                  _c("Icon", {
-                                    attrs: { type: "ios-download-outline" }
-                                  }),
-                                  _vm._v(" 导出原始数据")
-                                ],
-                                1
-                              )
-                            ],
-                            1
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "Button",
+                            "CountTo",
                             {
-                              attrs: { type: "primary", size: "large" },
-                              on: {
-                                click: function($event) {
-                                  _vm.exportData(2)
-                                }
+                              attrs: {
+                                endVal: 2534,
+                                mainStyle: _vm.mainStyle,
+                                countStyle: _vm.countStyle
                               }
                             },
                             [
-                              _c("Icon", {
-                                attrs: { type: "ios-download-outline" }
-                              }),
-                              _vm._v(" 导出排序和过滤后的数据")
-                            ],
-                            1
+                              _c(
+                                "span",
+                                {
+                                  attrs: { slot: "leftText" },
+                                  slot: "leftText"
+                                },
+                                [_vm._v("Total: ")]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "span",
+                                {
+                                  attrs: { slot: "rightText" },
+                                  slot: "rightText"
+                                },
+                                [_vm._v(" times")]
+                              )
+                            ]
                           )
                         ],
                         1
-                      ),
-                      _vm._v(" "),
+                      )
+                    ]
+                  )
+                ],
+                1
+              )
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c(
+            "Col",
+            { staticClass: "padding-left-10", attrs: { span: "8" } },
+            [
+              _c(
+                "Card",
+                [
+                  _c(
+                    "p",
+                    { attrs: { slot: "title" }, slot: "title" },
+                    [
+                      _c("Icon", { attrs: { type: "settings" } }),
+                      _vm._v(
+                        "\n                    设置数据格式\n                "
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "Row",
+                    {
+                      staticClass: "countto-page-row",
+                      attrs: {
+                        type: "flex",
+                        justify: "center",
+                        align: "middle"
+                      }
+                    },
+                    [
                       _c(
                         "div",
-                        { staticClass: "exportable-table-download-con2" },
+                        { staticClass: "count-to-con" },
                         [
                           _c(
-                            "div",
-                            [
-                              _c("span", [_vm._v("选取行范围： ")]),
-                              _c("InputNumber", {
-                                attrs: { min: 1, max: _vm.selectMaxRow },
-                                model: {
-                                  value: _vm.selectMinRow,
-                                  callback: function($$v) {
-                                    _vm.selectMinRow = $$v
-                                  },
-                                  expression: "selectMinRow"
-                                }
-                              }),
-                              _vm._v(" "),
-                              _c("span", [_vm._v("  -  ")]),
-                              _vm._v(" "),
-                              _c("InputNumber", {
-                                attrs: {
-                                  min: _vm.selectMinRow,
-                                  max: _vm.rowNum
-                                },
-                                model: {
-                                  value: _vm.selectMaxRow,
-                                  callback: function($$v) {
-                                    _vm.selectMaxRow = $$v
-                                  },
-                                  expression: "selectMaxRow"
-                                }
-                              })
-                            ],
-                            1
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "div",
-                            { staticClass: "margin-top-10" },
-                            [
-                              _c("span", [_vm._v("选取列范围： ")]),
-                              _c("InputNumber", {
-                                attrs: { min: 1, max: _vm.selectMaxCol },
-                                model: {
-                                  value: _vm.selectMinCol,
-                                  callback: function($$v) {
-                                    _vm.selectMinCol = $$v
-                                  },
-                                  expression: "selectMinCol"
-                                }
-                              }),
-                              _vm._v(" "),
-                              _c("span", [_vm._v("  -  ")]),
-                              _vm._v(" "),
-                              _c("InputNumber", {
-                                attrs: {
-                                  min: _vm.selectMinCol,
-                                  max: _vm.colNum
-                                },
-                                model: {
-                                  value: _vm.selectMaxCol,
-                                  callback: function($$v) {
-                                    _vm.selectMaxCol = $$v
-                                  },
-                                  expression: "selectMaxCol"
-                                }
-                              })
-                            ],
-                            1
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "div",
-                            { staticClass: "margin-top-10" },
-                            [
-                              _c("span", [_vm._v("输入文件名：")]),
-                              _vm._v(" "),
-                              _c("Input", {
-                                staticStyle: { width: "190px" },
-                                attrs: {
-                                  icon: "document",
-                                  placeholder: "请输入文件名"
-                                },
-                                model: {
-                                  value: _vm.csvFileName,
-                                  callback: function($$v) {
-                                    _vm.csvFileName = $$v
-                                  },
-                                  expression: "csvFileName"
-                                }
-                              })
-                            ],
-                            1
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "div",
-                            { staticClass: "margin-top-20" },
+                            "CountTo",
+                            {
+                              attrs: {
+                                endVal: 2534,
+                                mainStyle: _vm.mainStyle,
+                                countStyle: _vm.countStyle,
+                                decimals: 2
+                              }
+                            },
                             [
                               _c(
-                                "Button",
+                                "span",
                                 {
-                                  attrs: { type: "primary", size: "large" },
-                                  on: {
-                                    click: function($event) {
-                                      _vm.exportData(3)
-                                    }
-                                  }
+                                  attrs: { slot: "leftText" },
+                                  slot: "leftText"
                                 },
-                                [
-                                  _c("Icon", {
-                                    attrs: { type: "ios-download-outline" }
-                                  }),
-                                  _vm._v(" 导出自定义数据")
-                                ],
-                                1
+                                [_vm._v("Total: ")]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "span",
+                                {
+                                  attrs: { slot: "rightText" },
+                                  slot: "rightText"
+                                },
+                                [_vm._v(" times")]
                               )
-                            ],
-                            1
+                            ]
                           )
-                        ]
+                        ],
+                        1
+                      )
+                    ]
+                  )
+                ],
+                1
+              )
+            ],
+            1
+          )
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "Row",
+        { staticClass: "margin-top-10" },
+        [
+          _c(
+            "Col",
+            { attrs: { span: "8" } },
+            [
+              _c(
+                "Card",
+                [
+                  _c(
+                    "p",
+                    { attrs: { slot: "title" }, slot: "title" },
+                    [
+                      _c("Icon", { attrs: { type: "ios-color-wand" } }),
+                      _vm._v(
+                        "\n                    转换单位简化数据\n                "
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "Row",
+                    {
+                      staticClass: "countto-page-row",
+                      attrs: {
+                        type: "flex",
+                        justify: "center",
+                        align: "middle"
+                      }
+                    },
+                    [
+                      _c(
+                        "div",
+                        { staticClass: "count-to-con" },
+                        [
+                          _c(
+                            "CountTo",
+                            {
+                              attrs: {
+                                simplify: true,
+                                endVal: 2534,
+                                mainStyle: _vm.mainStyle,
+                                countStyle: _vm.countStyle
+                              }
+                            },
+                            [
+                              _c(
+                                "span",
+                                {
+                                  attrs: { slot: "leftText" },
+                                  slot: "leftText"
+                                },
+                                [_vm._v("Total: ")]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "span",
+                                {
+                                  attrs: { slot: "rightText" },
+                                  slot: "rightText"
+                                },
+                                [_vm._v(" times")]
+                              )
+                            ]
+                          )
+                        ],
+                        1
+                      )
+                    ]
+                  )
+                ],
+                1
+              )
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c(
+            "Col",
+            { staticClass: "padding-left-10", attrs: { span: "8" } },
+            [
+              _c(
+                "Card",
+                [
+                  _c(
+                    "p",
+                    { attrs: { slot: "title" }, slot: "title" },
+                    [
+                      _c("Icon", { attrs: { type: "ios-shuffle-strong" } }),
+                      _vm._v(
+                        "\n                    自定义单位\n                "
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "Row",
+                    {
+                      staticClass: "countto-page-row",
+                      attrs: {
+                        type: "flex",
+                        justify: "center",
+                        align: "middle"
+                      }
+                    },
+                    [
+                      _c(
+                        "div",
+                        { staticClass: "count-to-con" },
+                        [
+                          _c(
+                            "CountTo",
+                            {
+                              attrs: {
+                                simplify: true,
+                                unit: _vm.unit,
+                                endVal: 253,
+                                mainStyle: _vm.mainStyle2,
+                                countStyle: _vm.countStyle2
+                              }
+                            },
+                            [
+                              _c(
+                                "span",
+                                {
+                                  attrs: { slot: "leftText" },
+                                  slot: "leftText"
+                                },
+                                [_vm._v("原始数据：253 => ")]
+                              )
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "CountTo",
+                            {
+                              attrs: {
+                                simplify: true,
+                                unit: _vm.unit,
+                                endVal: 2534,
+                                mainStyle: _vm.mainStyle2,
+                                countStyle: _vm.countStyle2
+                              }
+                            },
+                            [
+                              _c(
+                                "span",
+                                {
+                                  attrs: { slot: "leftText" },
+                                  slot: "leftText"
+                                },
+                                [_vm._v("原始数据：2534 => ")]
+                              )
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "CountTo",
+                            {
+                              attrs: {
+                                simplify: true,
+                                unit: _vm.unit,
+                                endVal: 257678,
+                                mainStyle: _vm.mainStyle2,
+                                countStyle: _vm.countStyle2
+                              }
+                            },
+                            [
+                              _c(
+                                "span",
+                                {
+                                  attrs: { slot: "leftText" },
+                                  slot: "leftText"
+                                },
+                                [_vm._v("原始数据：257678 => ")]
+                              )
+                            ]
+                          )
+                        ],
+                        1
+                      )
+                    ]
+                  )
+                ],
+                1
+              )
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c(
+            "Col",
+            { staticClass: "padding-left-10", attrs: { span: "8" } },
+            [
+              _c(
+                "Card",
+                [
+                  _c(
+                    "p",
+                    { attrs: { slot: "title" }, slot: "title" },
+                    [
+                      _c("Icon", { attrs: { type: "android-stopwatch" } }),
+                      _vm._v(
+                        "\n                    可异步更新数据\n                "
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "Row",
+                    {
+                      staticClass: "countto-page-row",
+                      attrs: {
+                        type: "flex",
+                        justify: "center",
+                        align: "middle"
+                      }
+                    },
+                    [
+                      _c(
+                        "div",
+                        { staticClass: "count-to-con" },
+                        [
+                          _c(
+                            "CountTo",
+                            {
+                              attrs: {
+                                endVal: _vm.asynEndVal,
+                                mainStyle: _vm.mainStyle,
+                                countStyle: _vm.countStyle
+                              }
+                            },
+                            [
+                              _c(
+                                "span",
+                                {
+                                  attrs: { slot: "leftText" },
+                                  slot: "leftText"
+                                },
+                                [_vm._v("Total: ")]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "span",
+                                {
+                                  attrs: { slot: "rightText" },
+                                  slot: "rightText"
+                                },
+                                [_vm._v(" times")]
+                              )
+                            ]
+                          )
+                        ],
+                        1
                       )
                     ]
                   )
@@ -976,95 +1105,62 @@ var render = function() {
             "Card",
             [
               _c(
-                "h4",
+                "p",
                 { attrs: { slot: "title" }, slot: "title" },
                 [
-                  _c("Icon", { attrs: { type: "android-archive" } }),
-                  _vm._v(
-                    "\n                导出表格数据到 .Xls 文件 (Excel)\n            "
-                  )
+                  _c("Icon", { attrs: { type: "ios-analytics" } }),
+                  _vm._v("\n                综合实例\n            ")
                 ],
                 1
               ),
               _vm._v(" "),
               _c(
                 "Row",
+                {
+                  staticClass: "countto-page-row",
+                  attrs: { type: "flex", justify: "center", align: "middle" }
+                },
                 [
                   _c(
-                    "Col",
-                    { attrs: { span: "18" } },
-                    [
-                      _c("Table", {
-                        ref: "tableExcel",
-                        attrs: {
-                          columns: _vm.excelColumns,
-                          height: "390px",
-                          data: _vm.table2excelData,
-                          size: "small"
-                        }
-                      })
-                    ],
-                    1
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "Col",
-                    { staticClass: "padding-left-10", attrs: { span: "6" } },
+                    "div",
+                    { staticClass: "count-to-con" },
                     [
                       _c(
-                        "div",
-                        { staticClass: "margin-top-10 margin-left-10" },
+                        "CountTo",
+                        {
+                          attrs: {
+                            delay: 500,
+                            simplify: true,
+                            unit: _vm.unit2,
+                            endVal: _vm.integratedEndVal,
+                            mainStyle: _vm.mainStyle,
+                            countStyle: _vm.countStyle
+                          }
+                        },
                         [
-                          _c("span", [_vm._v("输入文件名：")]),
-                          _vm._v(" "),
-                          _c("Input", {
-                            staticStyle: { width: "190px" },
-                            attrs: {
-                              icon: "document",
-                              placeholder: "请输入文件名"
-                            },
-                            model: {
-                              value: _vm.excelFileName,
-                              callback: function($$v) {
-                                _vm.excelFileName = $$v
-                              },
-                              expression: "excelFileName"
-                            }
-                          })
-                        ],
-                        1
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "div",
-                        { staticClass: "margin-left-10 margin-top-20" },
-                        [
-                          _c("a", {
-                            staticStyle: {
-                              postion: "absolute",
-                              left: "-10px",
-                              top: "-10px",
-                              width: "0px",
-                              height: "0px"
-                            },
-                            attrs: { id: "hrefToExportTable" }
-                          }),
+                          _c(
+                            "span",
+                            { attrs: { slot: "leftText" }, slot: "leftText" },
+                            [
+                              _vm._v(
+                                "原始数据: " +
+                                  _vm._s(_vm.integratedEndVal) +
+                                  " => "
+                              )
+                            ]
+                          ),
                           _vm._v(" "),
                           _c(
-                            "Button",
-                            {
-                              attrs: { type: "primary", size: "large" },
-                              on: { click: _vm.exportExcel }
-                            },
-                            [_vm._v("下载表格数据")]
+                            "span",
+                            { attrs: { slot: "rightText" }, slot: "rightText" },
+                            [_vm._v(" times")]
                           )
-                        ],
-                        1
+                        ]
                       )
-                    ]
+                    ],
+                    1
                   )
-                ],
-                1
+                ]
               )
             ],
             1
@@ -1082,7 +1178,7 @@ module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-ec30fcee", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-72abbeda", module.exports)
   }
 }
 

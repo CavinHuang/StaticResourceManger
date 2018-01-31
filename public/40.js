@@ -1,18 +1,18 @@
 webpackJsonp([40],{
 
-/***/ 132:
+/***/ 135:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(793)
+  __webpack_require__(810)
 }
 var normalizeComponent = __webpack_require__(1)
 /* script */
-var __vue_script__ = __webpack_require__(795)
+var __vue_script__ = __webpack_require__(812)
 /* template */
-var __vue_template__ = __webpack_require__(802)
+var __vue_template__ = __webpack_require__(814)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -52,216 +52,19 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 793:
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(794);
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var update = __webpack_require__(5)("22bfe2e8", content, false);
-// Hot Module Replacement
-if(false) {
- // When the styles change, update the <style> tags
- if(!content.locals) {
-   module.hot.accept("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-8abfa442\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../node_modules/less-loader/index.js!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./editable-table.vue", function() {
-     var newContent = require("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-8abfa442\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../node_modules/less-loader/index.js!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./editable-table.vue");
-     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-     update(newContent);
-   });
- }
- // When the module is disposed, remove the <style> tags
- module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-
-/***/ 794:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(2)(false);
-// imports
-
-
-// module
-exports.push([module.i, "\n.margin-top-8 {\n  margin-top: 8px;\n}\n.margin-top-10 {\n  margin-top: 10px;\n}\n.margin-top-20 {\n  margin-top: 20px;\n}\n.margin-left-10 {\n  margin-left: 10px;\n}\n.margin-bottom-10 {\n  margin-bottom: 10px;\n}\n.margin-bottom-100 {\n  margin-bottom: 100px;\n}\n.margin-right-10 {\n  margin-right: 10px;\n}\n.padding-left-6 {\n  padding-left: 6px;\n}\n.padding-left-8 {\n  padding-left: 5px;\n}\n.padding-left-10 {\n  padding-left: 10px;\n}\n.padding-left-20 {\n  padding-left: 20px;\n}\n.height-100 {\n  height: 100%;\n}\n.height-120px {\n  height: 100px;\n}\n.height-200px {\n  height: 200px;\n}\n.height-492px {\n  height: 492px;\n}\n.height-460px {\n  height: 460px;\n}\n.line-gray {\n  height: 0;\n  border-bottom: 2px solid #dcdcdc;\n}\n.notwrap {\n  word-break: keep-all;\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis;\n}\n.padding-left-5 {\n  padding-left: 10px;\n}\n[v-cloak] {\n  display: none;\n}\n.dragging-tip-enter-active {\n  opacity: 1;\n  -webkit-transition: opacity .3s;\n  transition: opacity .3s;\n}\n.dragging-tip-enter,\n.dragging-tip-leave-to {\n  opacity: 0;\n  -webkit-transition: opacity 0.3s;\n  transition: opacity 0.3s;\n}\n.dragging-tip-con {\n  display: block;\n  text-align: center;\n  width: 100%;\n  height: 50px;\n}\n.dragging-tip-con span {\n  font-size: 18px;\n}\n.record-tip-con {\n  display: block;\n  width: 100%;\n  height: 292px;\n  overflow: auto;\n}\n.record-item {\n  -webkit-box-sizing: content-box;\n          box-sizing: content-box;\n  display: block;\n  overflow: hidden;\n  height: 24px;\n  line-height: 24px;\n  padding: 8px 10px;\n  border-bottom: 1px dashed gainsboro;\n}\n.record-tip-con span {\n  font-size: 14px;\n}\n.edittable-test-con {\n  height: 160px;\n}\n.edittable-table-height-con {\n  height: 190px;\n}\n.edittable-con-1 {\n  -webkit-box-sizing: content-box;\n          box-sizing: content-box;\n  padding: 15px 0 0;\n  height: 196px;\n}\n.edittable-table-get-currentdata-con {\n  height: 190px !important;\n}\n.exportable-table-download-con1 {\n  padding: 16px 0 16px 20px;\n  border-bottom: 1px dashed #c3c3c3;\n  margin-bottom: 16px;\n}\n.exportable-table-download-con2 {\n  padding-left: 20px;\n}\n.show-image {\n  padding: 20px 0px;\n}\n.show-image img {\n  display: block;\n  width: 100%;\n  height: auto;\n}\n.searchable-table-con1 {\n  height: 230px !important;\n}\n", ""]);
-
-// exports
-
-
-/***/ }),
-
-/***/ 795:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_canEditTable_vue__ = __webpack_require__(796);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_canEditTable_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__components_canEditTable_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_table_data_js__ = __webpack_require__(801);
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-
-
-/* harmony default export */ __webpack_exports__["default"] = ({
-    name: 'editable-table',
-    components: {
-        canEditTable: __WEBPACK_IMPORTED_MODULE_0__components_canEditTable_vue___default.a
-    },
-    data: function data() {
-        return {
-            columnsList: [],
-            tableData: [],
-            editInlineColumns: [],
-            editInlineData: [],
-            editIncellColumns: [],
-            editIncellData: [],
-            editInlineAndCellColumn: [],
-            editInlineAndCellData: [],
-            showCurrentColumns: [],
-            showCurrentTableData: false
-        };
-    },
-
-    methods: {
-        getData: function getData() {
-            this.columnsList = __WEBPACK_IMPORTED_MODULE_1__components_table_data_js__["a" /* default */].table1Columns;
-            this.tableData = __WEBPACK_IMPORTED_MODULE_1__components_table_data_js__["a" /* default */].table1Data;
-            this.editInlineColumns = __WEBPACK_IMPORTED_MODULE_1__components_table_data_js__["a" /* default */].editInlineColumns;
-            this.editInlineData = __WEBPACK_IMPORTED_MODULE_1__components_table_data_js__["a" /* default */].editInlineData;
-            this.editIncellColumns = __WEBPACK_IMPORTED_MODULE_1__components_table_data_js__["a" /* default */].editIncellColumns;
-            this.editIncellData = __WEBPACK_IMPORTED_MODULE_1__components_table_data_js__["a" /* default */].editIncellData;
-            this.editInlineAndCellColumn = __WEBPACK_IMPORTED_MODULE_1__components_table_data_js__["a" /* default */].editInlineAndCellColumn;
-            this.editInlineAndCellData = __WEBPACK_IMPORTED_MODULE_1__components_table_data_js__["a" /* default */].editInlineAndCellData;
-            this.showCurrentColumns = __WEBPACK_IMPORTED_MODULE_1__components_table_data_js__["a" /* default */].showCurrentColumns;
-        },
-        handleNetConnect: function handleNetConnect(state) {
-            this.breakConnect = state;
-        },
-        handleLowSpeed: function handleLowSpeed(state) {
-            this.lowNetSpeed = state;
-        },
-        getCurrentData: function getCurrentData() {
-            this.showCurrentTableData = true;
-        },
-        handleDel: function handleDel(val, index) {
-            this.$Message.success('删除了第' + (index + 1) + '行数据');
-        },
-        handleCellChange: function handleCellChange(val, index, key) {
-            this.$Message.success('修改了第 ' + (index + 1) + ' 行列名为 ' + key + ' 的数据');
-        },
-        handleChange: function handleChange(val, index) {
-            this.$Message.success('修改了第' + (index + 1) + '行数据');
-        }
-    },
-    created: function created() {
-        this.getData();
-    }
-});
-
-/***/ }),
-
-/***/ 796:
+/***/ 196:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(797)
+  __webpack_require__(197)
 }
 var normalizeComponent = __webpack_require__(1)
 /* script */
-var __vue_script__ = __webpack_require__(799)
+var __vue_script__ = __webpack_require__(199)
 /* template */
-var __vue_template__ = __webpack_require__(800)
+var __vue_template__ = __webpack_require__(200)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -301,13 +104,13 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 797:
+/***/ 197:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(798);
+var content = __webpack_require__(198);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -328,7 +131,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 798:
+/***/ 198:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(2)(false);
@@ -343,7 +146,7 @@ exports.push([module.i, "\n.show-edit-btn {\n  display: none;\n  margin-left: -1
 
 /***/ }),
 
-/***/ 799:
+/***/ 199:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -612,6 +415,15 @@ var cellInput = function cellInput(vm, h, param, item) {
                 delete item.saving;
             });
             return clonedData;
+        },
+        OnSelectionChange: function OnSelectionChange(selection) {
+            this.$emit('on-selection-change', selection);
+        },
+        OnSelectionAll: function OnSelectionAll(selection) {
+            this.$emit('on-selection-all', selection);
+        },
+        OnSelect: function OnSelect(selection, raw) {
+            this.$emit('on-select', { selection: selection, raw: raw });
         }
     },
     watch: {
@@ -623,7 +435,7 @@ var cellInput = function cellInput(vm, h, param, item) {
 
 /***/ }),
 
-/***/ 800:
+/***/ 200:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -640,6 +452,11 @@ var render = function() {
           data: _vm.thisTableData,
           border: "",
           "disabled-hover": ""
+        },
+        on: {
+          "on-selection-change": _vm.OnSelectionChange,
+          "on-select-all": _vm.OnSelectionAll,
+          "on-select": _vm.OnSelect
         }
       })
     ],
@@ -658,7 +475,204 @@ if (false) {
 
 /***/ }),
 
-/***/ 801:
+/***/ 810:
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(811);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(5)("22bfe2e8", content, false);
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-8abfa442\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../node_modules/less-loader/index.js!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./editable-table.vue", function() {
+     var newContent = require("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-8abfa442\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../node_modules/less-loader/index.js!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./editable-table.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ 811:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(2)(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n.margin-top-8 {\n  margin-top: 8px;\n}\n.margin-top-10 {\n  margin-top: 10px;\n}\n.margin-top-20 {\n  margin-top: 20px;\n}\n.margin-left-10 {\n  margin-left: 10px;\n}\n.margin-bottom-10 {\n  margin-bottom: 10px;\n}\n.margin-bottom-100 {\n  margin-bottom: 100px;\n}\n.margin-right-10 {\n  margin-right: 10px;\n}\n.padding-left-6 {\n  padding-left: 6px;\n}\n.padding-left-8 {\n  padding-left: 5px;\n}\n.padding-left-10 {\n  padding-left: 10px;\n}\n.padding-left-20 {\n  padding-left: 20px;\n}\n.height-100 {\n  height: 100%;\n}\n.height-120px {\n  height: 100px;\n}\n.height-200px {\n  height: 200px;\n}\n.height-492px {\n  height: 492px;\n}\n.height-460px {\n  height: 460px;\n}\n.line-gray {\n  height: 0;\n  border-bottom: 2px solid #dcdcdc;\n}\n.notwrap {\n  word-break: keep-all;\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis;\n}\n.padding-left-5 {\n  padding-left: 10px;\n}\n[v-cloak] {\n  display: none;\n}\n.dragging-tip-enter-active {\n  opacity: 1;\n  -webkit-transition: opacity .3s;\n  transition: opacity .3s;\n}\n.dragging-tip-enter,\n.dragging-tip-leave-to {\n  opacity: 0;\n  -webkit-transition: opacity 0.3s;\n  transition: opacity 0.3s;\n}\n.dragging-tip-con {\n  display: block;\n  text-align: center;\n  width: 100%;\n  height: 50px;\n}\n.dragging-tip-con span {\n  font-size: 18px;\n}\n.record-tip-con {\n  display: block;\n  width: 100%;\n  height: 292px;\n  overflow: auto;\n}\n.record-item {\n  -webkit-box-sizing: content-box;\n          box-sizing: content-box;\n  display: block;\n  overflow: hidden;\n  height: 24px;\n  line-height: 24px;\n  padding: 8px 10px;\n  border-bottom: 1px dashed gainsboro;\n}\n.record-tip-con span {\n  font-size: 14px;\n}\n.edittable-test-con {\n  height: 160px;\n}\n.edittable-table-height-con {\n  height: 190px;\n}\n.edittable-con-1 {\n  -webkit-box-sizing: content-box;\n          box-sizing: content-box;\n  padding: 15px 0 0;\n  height: 196px;\n}\n.edittable-table-get-currentdata-con {\n  height: 190px !important;\n}\n.exportable-table-download-con1 {\n  padding: 16px 0 16px 20px;\n  border-bottom: 1px dashed #c3c3c3;\n  margin-bottom: 16px;\n}\n.exportable-table-download-con2 {\n  padding-left: 20px;\n}\n.show-image {\n  padding: 20px 0px;\n}\n.show-image img {\n  display: block;\n  width: 100%;\n  height: auto;\n}\n.searchable-table-con1 {\n  height: 230px !important;\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ 812:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_canEditTable_vue__ = __webpack_require__(196);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_canEditTable_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__components_canEditTable_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_table_data_js__ = __webpack_require__(813);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    name: 'editable-table',
+    components: {
+        canEditTable: __WEBPACK_IMPORTED_MODULE_0__components_canEditTable_vue___default.a
+    },
+    data: function data() {
+        return {
+            columnsList: [],
+            tableData: [],
+            editInlineColumns: [],
+            editInlineData: [],
+            editIncellColumns: [],
+            editIncellData: [],
+            editInlineAndCellColumn: [],
+            editInlineAndCellData: [],
+            showCurrentColumns: [],
+            showCurrentTableData: false
+        };
+    },
+
+    methods: {
+        getData: function getData() {
+            this.columnsList = __WEBPACK_IMPORTED_MODULE_1__components_table_data_js__["a" /* default */].table1Columns;
+            this.tableData = __WEBPACK_IMPORTED_MODULE_1__components_table_data_js__["a" /* default */].table1Data;
+            this.editInlineColumns = __WEBPACK_IMPORTED_MODULE_1__components_table_data_js__["a" /* default */].editInlineColumns;
+            this.editInlineData = __WEBPACK_IMPORTED_MODULE_1__components_table_data_js__["a" /* default */].editInlineData;
+            this.editIncellColumns = __WEBPACK_IMPORTED_MODULE_1__components_table_data_js__["a" /* default */].editIncellColumns;
+            this.editIncellData = __WEBPACK_IMPORTED_MODULE_1__components_table_data_js__["a" /* default */].editIncellData;
+            this.editInlineAndCellColumn = __WEBPACK_IMPORTED_MODULE_1__components_table_data_js__["a" /* default */].editInlineAndCellColumn;
+            this.editInlineAndCellData = __WEBPACK_IMPORTED_MODULE_1__components_table_data_js__["a" /* default */].editInlineAndCellData;
+            this.showCurrentColumns = __WEBPACK_IMPORTED_MODULE_1__components_table_data_js__["a" /* default */].showCurrentColumns;
+        },
+        handleNetConnect: function handleNetConnect(state) {
+            this.breakConnect = state;
+        },
+        handleLowSpeed: function handleLowSpeed(state) {
+            this.lowNetSpeed = state;
+        },
+        getCurrentData: function getCurrentData() {
+            this.showCurrentTableData = true;
+        },
+        handleDel: function handleDel(val, index) {
+            this.$Message.success('删除了第' + (index + 1) + '行数据');
+        },
+        handleCellChange: function handleCellChange(val, index, key) {
+            this.$Message.success('修改了第 ' + (index + 1) + ' 行列名为 ' + key + ' 的数据');
+        },
+        handleChange: function handleChange(val, index) {
+            this.$Message.success('修改了第' + (index + 1) + '行数据');
+        }
+    },
+    created: function created() {
+        this.getData();
+    }
+});
+
+/***/ }),
+
+/***/ 813:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -880,7 +894,7 @@ var tableData = {
 
 /***/ }),
 
-/***/ 802:
+/***/ 814:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {

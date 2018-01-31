@@ -1,18 +1,18 @@
-webpackJsonp([65],{
+webpackJsonp([67],{
 
-/***/ 139:
+/***/ 140:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(832)
+  __webpack_require__(836)
 }
 var normalizeComponent = __webpack_require__(1)
 /* script */
-var __vue_script__ = __webpack_require__(834)
+var __vue_script__ = __webpack_require__(838)
 /* template */
-var __vue_template__ = __webpack_require__(835)
+var __vue_template__ = __webpack_require__(839)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -29,7 +29,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources\\assets\\js\\views\\advanced-router\\mutative-router.vue"
+Component.options.__file = "resources\\assets\\js\\views\\advanced-router\\argument-page.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -38,9 +38,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-3ffb7c90", Component.options)
+    hotAPI.createRecord("data-v-1deac4fa", Component.options)
   } else {
-    hotAPI.reload("data-v-3ffb7c90", Component.options)
+    hotAPI.reload("data-v-1deac4fa", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -52,23 +52,23 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 832:
+/***/ 836:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(833);
+var content = __webpack_require__(837);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(5)("5ca8e98c", content, false);
+var update = __webpack_require__(5)("62f617a1", content, false);
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-3ffb7c90\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../node_modules/less-loader/index.js!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./mutative-router.vue", function() {
-     var newContent = require("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-3ffb7c90\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../node_modules/less-loader/index.js!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./mutative-router.vue");
+   module.hot.accept("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-1deac4fa\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../node_modules/less-loader/index.js!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./argument-page.vue", function() {
+     var newContent = require("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-1deac4fa\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../node_modules/less-loader/index.js!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./argument-page.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -79,7 +79,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 833:
+/***/ 837:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(2)(false);
@@ -94,7 +94,7 @@ exports.push([module.i, "\n.advanced-router {\n  height: 240px !important;\n}\n.
 
 /***/ }),
 
-/***/ 834:
+/***/ 838:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -119,28 +119,30 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-    name: 'mutative-router',
+    name: 'argument-page',
     data: function data() {
         var _this = this;
 
         return {
-            orderColumns: [{
+            shoppingColumns: [{
                 type: 'index',
                 title: '序号',
                 width: 60
             }, {
-                title: '订单号',
-                key: 'order_id',
+                title: '购物单号',
+                key: 'shopping_id',
                 align: 'center'
             }, {
-                title: '用户',
-                key: 'user_name'
+                title: '购买物品名称',
+                key: 'name',
+                align: 'center'
             }, {
-                title: '详情',
+                title: '购买时间',
+                key: 'time'
+            }, {
+                title: '查看详情',
                 key: 'show_more',
                 align: 'center',
                 render: function render(h, params) {
@@ -151,42 +153,40 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                         },
                         on: {
                             click: function click() {
-                                var argu = { order_id: params.row.order_id };
+                                var query = { shopping_id: params.row.shopping_id };
                                 _this.$router.push({
-                                    name: 'order-info',
-                                    params: argu
+                                    name: 'shopping',
+                                    query: query
                                 });
                             }
                         }
                     }, '了解详情');
                 }
             }],
-            orderData: [{
-                order_id: '1000001',
-                user_name: 'Aresn'
+            shoppingData: [{
+                shopping_id: 100001,
+                name: '《vue.js实战》',
+                time: '2017年11月12日'
             }, {
-                order_id: '1000002',
-                user_name: 'Lison'
+                shopping_id: 100002,
+                name: '面包',
+                time: '2017年11月5日'
             }, {
-                order_id: '1000003',
-                user_name: 'lili'
+                shopping_id: 100003,
+                name: '咖啡',
+                time: '2017年11月8日'
             }, {
-                order_id: '1000004',
-                user_name: 'lala'
+                shopping_id: 100004,
+                name: '超级豪华土豪金牙签',
+                time: '2017年11月9日'
             }]
         };
-    },
-
-    computed: {
-        avatorImage: function avatorImage() {
-            return localStorage.avatorImgPath;
-        }
     }
 });
 
 /***/ }),
 
-/***/ 835:
+/***/ 839:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -200,45 +200,32 @@ var render = function() {
         "Row",
         [
           _c(
-            "Col",
-            { attrs: { span: "24" } },
+            "Card",
             [
               _c(
-                "Card",
+                "p",
+                { attrs: { slot: "title" }, slot: "title" },
                 [
-                  _c(
-                    "p",
-                    { attrs: { slot: "title" }, slot: "title" },
-                    [
-                      _c("Icon", { attrs: { type: "ios-list" } }),
-                      _vm._v(
-                        "\n                    订单详情(动态路由)\n                "
-                      )
-                    ],
-                    1
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "Row",
-                    {
-                      staticClass: "advanced-router",
-                      attrs: {
-                        type: "flex",
-                        justify: "center",
-                        align: "middle"
-                      }
-                    },
-                    [
-                      _c("Table", {
-                        staticStyle: { width: "100%" },
-                        attrs: {
-                          columns: _vm.orderColumns,
-                          data: _vm.orderData
-                        }
-                      })
-                    ],
-                    1
-                  )
+                  _c("Icon", { attrs: { type: "ios-list" } }),
+                  _vm._v("\n                购物记录(传递参数)\n            ")
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "Row",
+                {
+                  staticClass: "advanced-router",
+                  attrs: { type: "flex", justify: "center", align: "middle" }
+                },
+                [
+                  _c("Table", {
+                    staticStyle: { width: "100%" },
+                    attrs: {
+                      columns: _vm.shoppingColumns,
+                      data: _vm.shoppingData
+                    }
+                  })
                 ],
                 1
               )
@@ -258,7 +245,7 @@ module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-3ffb7c90", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-1deac4fa", module.exports)
   }
 }
 

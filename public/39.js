@@ -1,19 +1,19 @@
 webpackJsonp([39],{
 
-/***/ 123:
+/***/ 126:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(739)
-  __webpack_require__(741)
+  __webpack_require__(756)
+  __webpack_require__(758)
 }
 var normalizeComponent = __webpack_require__(1)
 /* script */
-var __vue_script__ = __webpack_require__(743)
+var __vue_script__ = __webpack_require__(760)
 /* template */
-var __vue_template__ = __webpack_require__(747)
+var __vue_template__ = __webpack_require__(764)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -53,20 +53,20 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 325:
+/***/ 334:
 /***/ (function(module, exports) {
 
 module.exports = "/images/cropper-test.png?5ed6323d59d43d0b46c0c4bafe4ca42c";
 
 /***/ }),
 
-/***/ 739:
+/***/ 756:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(740);
+var content = __webpack_require__(757);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -87,7 +87,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 740:
+/***/ 757:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(2)(false);
@@ -102,13 +102,13 @@ exports.push([module.i, "\n.margin-top-8 {\n  margin-top: 8px;\n}\n.margin-top-1
 
 /***/ }),
 
-/***/ 741:
+/***/ 758:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(742);
+var content = __webpack_require__(759);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -129,7 +129,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 742:
+/***/ 759:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(2)(false);
@@ -144,14 +144,14 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 /***/ }),
 
-/***/ 743:
+/***/ 760:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_cropperjs__ = __webpack_require__(744);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_cropperjs__ = __webpack_require__(761);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_cropperjs___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_cropperjs__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__cropper_min_css__ = __webpack_require__(745);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__cropper_min_css__ = __webpack_require__(762);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__cropper_min_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__cropper_min_css__);
 //
 //
@@ -475,7 +475,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /***/ }),
 
-/***/ 744:
+/***/ 761:
 /***/ (function(module, exports, __webpack_require__) {
 
 /*!
@@ -4248,13 +4248,13 @@ return Cropper;
 
 /***/ }),
 
-/***/ 745:
+/***/ 762:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(746);
+var content = __webpack_require__(763);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -4280,7 +4280,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 746:
+/***/ 763:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(2)(false);
@@ -4295,7 +4295,7 @@ exports.push([module.i, "/*!\n * Cropper.js v1.1.2\n * https://github.com/fengyu
 
 /***/ }),
 
-/***/ 747:
+/***/ 764:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -4488,7 +4488,7 @@ var render = function() {
                             _c("img", {
                               attrs: {
                                 id: "cropimg2",
-                                src: __webpack_require__(325),
+                                src: __webpack_require__(334),
                                 alt: ""
                               }
                             })
@@ -4721,7 +4721,7 @@ var render = function() {
                         _c("img", {
                           attrs: {
                             id: "cropimg3",
-                            src: __webpack_require__(325),
+                            src: __webpack_require__(334),
                             alt: ""
                           }
                         })

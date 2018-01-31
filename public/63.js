@@ -1,18 +1,18 @@
 webpackJsonp([63],{
 
-/***/ 136:
+/***/ 107:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(820)
+  __webpack_require__(220)
 }
 var normalizeComponent = __webpack_require__(1)
 /* script */
-var __vue_script__ = __webpack_require__(822)
+var __vue_script__ = __webpack_require__(222)
 /* template */
-var __vue_template__ = __webpack_require__(823)
+var __vue_template__ = __webpack_require__(223)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -29,7 +29,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources\\assets\\js\\views\\advanced-router\\mutative-router.vue"
+Component.options.__file = "resources\\assets\\js\\views\\error-page\\404.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -38,9 +38,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-3ffb7c90", Component.options)
+    hotAPI.createRecord("data-v-1dfd65bd", Component.options)
   } else {
-    hotAPI.reload("data-v-3ffb7c90", Component.options)
+    hotAPI.reload("data-v-1dfd65bd", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -52,23 +52,23 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 820:
+/***/ 220:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(821);
+var content = __webpack_require__(221);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(5)("5ca8e98c", content, false);
+var update = __webpack_require__(5)("7ce92542", content, false);
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-3ffb7c90\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../node_modules/less-loader/index.js!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./mutative-router.vue", function() {
-     var newContent = require("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-3ffb7c90\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../node_modules/less-loader/index.js!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./mutative-router.vue");
+   module.hot.accept("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-1dfd65bd\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../node_modules/less-loader/index.js!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./404.vue", function() {
+     var newContent = require("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-1dfd65bd\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../node_modules/less-loader/index.js!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./404.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -79,7 +79,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 821:
+/***/ 221:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(2)(false);
@@ -87,14 +87,14 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, "\n.advanced-router {\n  height: 240px !important;\n}\n.advanced-router-tip-p {\n  padding: 10px 0;\n}\n", ""]);
+exports.push([module.i, "\n@-webkit-keyframes error404animation {\n0% {\n    -webkit-transform: rotateZ(0deg);\n            transform: rotateZ(0deg);\n}\n20% {\n    -webkit-transform: rotateZ(-60deg);\n            transform: rotateZ(-60deg);\n}\n40% {\n    -webkit-transform: rotateZ(-10deg);\n            transform: rotateZ(-10deg);\n}\n60% {\n    -webkit-transform: rotateZ(50deg);\n            transform: rotateZ(50deg);\n}\n80% {\n    -webkit-transform: rotateZ(-20deg);\n            transform: rotateZ(-20deg);\n}\n100% {\n    -webkit-transform: rotateZ(0deg);\n            transform: rotateZ(0deg);\n}\n}\n@keyframes error404animation {\n0% {\n    -webkit-transform: rotateZ(0deg);\n            transform: rotateZ(0deg);\n}\n20% {\n    -webkit-transform: rotateZ(-60deg);\n            transform: rotateZ(-60deg);\n}\n40% {\n    -webkit-transform: rotateZ(-10deg);\n            transform: rotateZ(-10deg);\n}\n60% {\n    -webkit-transform: rotateZ(50deg);\n            transform: rotateZ(50deg);\n}\n80% {\n    -webkit-transform: rotateZ(-20deg);\n            transform: rotateZ(-20deg);\n}\n100% {\n    -webkit-transform: rotateZ(0deg);\n            transform: rotateZ(0deg);\n}\n}\n.error404-body-con {\n  width: 700px;\n  height: 500px;\n  position: absolute;\n  left: 50%;\n  top: 50%;\n  -webkit-transform: translate(-50%, -50%);\n          transform: translate(-50%, -50%);\n}\n.error404-body-con-title {\n  text-align: center;\n  font-size: 240px;\n  font-weight: 700;\n  color: #2d8cf0;\n  height: 260px;\n  line-height: 260px;\n  margin-top: 40px;\n}\n.error404-body-con-title span {\n  display: inline-block;\n  color: #19be6b;\n  font-size: 230px;\n  -webkit-animation: error404animation 3s ease 0s infinite alternate;\n          animation: error404animation 3s ease 0s infinite alternate;\n}\n.error404-body-con-message {\n  display: block;\n  text-align: center;\n  font-size: 30px;\n  font-weight: 500;\n  letter-spacing: 12px;\n  color: #dddde2;\n}\n.error404-btn-con {\n  text-align: center;\n  padding: 20px 0;\n  margin-bottom: 40px;\n}\n", ""]);
 
 // exports
 
 
 /***/ }),
 
-/***/ 822:
+/***/ 222:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -118,139 +118,81 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-    name: 'mutative-router',
-    data: function data() {
-        var _this = this;
-
-        return {
-            orderColumns: [{
-                type: 'index',
-                title: '序号',
-                width: 60
-            }, {
-                title: '订单号',
-                key: 'order_id',
-                align: 'center'
-            }, {
-                title: '用户',
-                key: 'user_name'
-            }, {
-                title: '详情',
-                key: 'show_more',
-                align: 'center',
-                render: function render(h, params) {
-                    return h('Button', {
-                        props: {
-                            type: 'text',
-                            size: 'small'
-                        },
-                        on: {
-                            click: function click() {
-                                var argu = { order_id: params.row.order_id };
-                                _this.$router.push({
-                                    name: 'order-info',
-                                    params: argu
-                                });
-                            }
-                        }
-                    }, '了解详情');
-                }
-            }],
-            orderData: [{
-                order_id: '1000001',
-                user_name: 'Aresn'
-            }, {
-                order_id: '1000002',
-                user_name: 'Lison'
-            }, {
-                order_id: '1000003',
-                user_name: 'lili'
-            }, {
-                order_id: '1000004',
-                user_name: 'lala'
-            }]
-        };
-    },
-
-    computed: {
-        avatorImage: function avatorImage() {
-            return localStorage.avatorImgPath;
+    name: 'Error404',
+    methods: {
+        backPage: function backPage() {
+            this.$router.go(-1);
+        },
+        goHome: function goHome() {
+            this.$router.push({
+                name: 'home_index'
+            });
         }
     }
 });
 
 /***/ }),
 
-/***/ 823:
+/***/ 223:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c(
-    "div",
-    [
-      _c(
-        "Row",
-        [
+  return _c("div", { staticClass: "error404" }, [
+    _c(
+      "div",
+      { staticClass: "error404-body-con" },
+      [
+        _c("Card", [
+          _c("div", { staticClass: "error404-body-con-title" }, [
+            _vm._v("4"),
+            _c(
+              "span",
+              [_c("Icon", { attrs: { type: "ios-navigate-outline" } })],
+              1
+            ),
+            _vm._v("4")
+          ]),
+          _vm._v(" "),
+          _c("p", { staticClass: "error404-body-con-message" }, [
+            _vm._v("YOU  LOOK  LOST")
+          ]),
+          _vm._v(" "),
           _c(
-            "Col",
-            { attrs: { span: "24" } },
+            "div",
+            { staticClass: "error404-btn-con" },
             [
               _c(
-                "Card",
-                [
-                  _c(
-                    "p",
-                    { attrs: { slot: "title" }, slot: "title" },
-                    [
-                      _c("Icon", { attrs: { type: "ios-list" } }),
-                      _vm._v(
-                        "\n                    订单详情(动态路由)\n                "
-                      )
-                    ],
-                    1
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "Row",
-                    {
-                      staticClass: "advanced-router",
-                      attrs: {
-                        type: "flex",
-                        justify: "center",
-                        align: "middle"
-                      }
-                    },
-                    [
-                      _c("Table", {
-                        staticStyle: { width: "100%" },
-                        attrs: {
-                          columns: _vm.orderColumns,
-                          data: _vm.orderData
-                        }
-                      })
-                    ],
-                    1
-                  )
-                ],
-                1
+                "Button",
+                {
+                  staticStyle: { width: "200px" },
+                  attrs: { size: "large", type: "text" },
+                  on: { click: _vm.goHome }
+                },
+                [_vm._v("返回首页")]
+              ),
+              _vm._v(" "),
+              _c(
+                "Button",
+                {
+                  staticStyle: { width: "200px", "margin-left": "40px" },
+                  attrs: { size: "large", type: "primary" },
+                  on: { click: _vm.backPage }
+                },
+                [_vm._v("返回上一页")]
               )
             ],
             1
           )
-        ],
-        1
-      )
-    ],
-    1
-  )
+        ])
+      ],
+      1
+    )
+  ])
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -258,7 +200,7 @@ module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-3ffb7c90", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-1dfd65bd", module.exports)
   }
 }
 

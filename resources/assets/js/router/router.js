@@ -73,8 +73,7 @@ export const appRouter = [
     title: '静态资源管理',
     component: Main,
     children: [
-      {path: '/css', title: '样式资源管理', name: 'static-resource-css', icon: 'social-css3-outline', component: resolve => {require(['../views/static-resource/css.vue'], resolve)}},
-      {path: '/js', title: 'JS资源管理', name: 'static-resource-js', icon: 'social-javascript-outline', component: resolve => {require(['../views/static-resource/js.vue'], resolve)}}
+      {path: '/css', title: '样式资源管理', name: 'static-resource-css', icon: 'social-css3-outline', component: resolve => {require(['../views/static-resource/resource-list.vue'], resolve)}},
     ]
   },
   {

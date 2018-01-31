@@ -1,18 +1,18 @@
 webpackJsonp([6],{
 
-/***/ 120:
+/***/ 121:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(710)
+  __webpack_require__(714)
 }
 var normalizeComponent = __webpack_require__(1)
 /* script */
-var __vue_script__ = __webpack_require__(712)
+var __vue_script__ = __webpack_require__(716)
 /* template */
-var __vue_template__ = __webpack_require__(713)
+var __vue_template__ = __webpack_require__(717)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -29,7 +29,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources\\assets\\js\\views\\static-resource\\project-list.vue"
+Component.options.__file = "resources\\assets\\js\\views\\static-resource\\project-version.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -38,9 +38,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-37f27ca4", Component.options)
+    hotAPI.createRecord("data-v-52e79a10", Component.options)
   } else {
-    hotAPI.reload("data-v-37f27ca4", Component.options)
+    hotAPI.reload("data-v-52e79a10", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -52,19 +52,19 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 251:
+/***/ 196:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(252)
+  __webpack_require__(197)
 }
 var normalizeComponent = __webpack_require__(1)
 /* script */
-var __vue_script__ = __webpack_require__(254)
+var __vue_script__ = __webpack_require__(199)
 /* template */
-var __vue_template__ = __webpack_require__(255)
+var __vue_template__ = __webpack_require__(200)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -104,13 +104,13 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 252:
+/***/ 197:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(253);
+var content = __webpack_require__(198);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -131,7 +131,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 253:
+/***/ 198:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(2)(false);
@@ -146,7 +146,7 @@ exports.push([module.i, "\n.show-edit-btn {\n  display: none;\n  margin-left: -1
 
 /***/ }),
 
-/***/ 254:
+/***/ 199:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -435,7 +435,7 @@ var cellInput = function cellInput(vm, h, param, item) {
 
 /***/ }),
 
-/***/ 255:
+/***/ 200:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -475,23 +475,23 @@ if (false) {
 
 /***/ }),
 
-/***/ 710:
+/***/ 714:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(711);
+var content = __webpack_require__(715);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(5)("369c1404", content, false);
+var update = __webpack_require__(5)("0a6dd9b3", content, false);
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-37f27ca4\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./project-list.vue", function() {
-     var newContent = require("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-37f27ca4\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./project-list.vue");
+   module.hot.accept("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-52e79a10\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./project-version.vue", function() {
+     var newContent = require("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-52e79a10\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./project-version.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -502,7 +502,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 711:
+/***/ 715:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(2)(false);
@@ -517,15 +517,14 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 /***/ }),
 
-/***/ 712:
+/***/ 716:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__tables_components_canEditTable_vue__ = __webpack_require__(251);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__tables_components_canEditTable_vue__ = __webpack_require__(196);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__tables_components_canEditTable_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__tables_components_canEditTable_vue__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__libs_util__ = __webpack_require__(6);
-//
 //
 //
 //
@@ -598,44 +597,32 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         align: 'center',
         key: 'id'
       }, {
-        title: '项目名称',
+        title: '项目版本号',
         align: 'center',
         key: 'name',
         width: 200,
         editable: true
       }, {
-        title: '已有版本',
+        title: '所属项目',
         align: 'center',
-        key: 'version',
-        width: 200
+        key: 'project',
+        width: 300
       }, {
-        title: '项目描述',
+        title: '版本说明',
         align: 'center',
         width: 400,
         key: 'remake',
         editable: true
       }, {
-        title: '开源地址',
+        title: '更新说明',
         align: 'center',
-        width: 200,
-        key: 'open_url',
-        editable: true
-      }, {
-        title: '官方网站',
-        align: 'center',
-        width: 150,
-        key: 'site',
-        editable: true
-      }, {
-        title: 'README',
-        align: 'center',
-        width: 200,
-        key: 'readme',
+        width: 420,
+        key: 'update_remake',
         editable: true
       }, {
         title: '操作',
         align: 'center',
-        width: 180,
+        width: 200,
         key: 'handle',
         handle: ['edit', 'delete']
       }],
@@ -652,6 +639,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         name: { required: true, message: '名称不能为空', trigger: 'blur' }
       },
       selectId: [],
+      projectLabel: 0,
+      project: [],
       tableSelectAllStatus: false,
       addModelStatus: false,
       modelLoading: true
@@ -664,23 +653,33 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
       this.$axios.get('/api/project', {}).then(function (res) {
         if (res.success) {
-          _this.editInlineAndCellData = _this.saveTableData = res.data.data;
+          // this.editInlineAndCellData = this.saveTableData = res.data.data
+          _this.project = res.data.data;
+        }
+      });
+    },
+    getVersion: function getVersion() {
+      var _this2 = this;
+
+      this.$axios.get('/api/project_version', {}).then(function (res) {
+        if (res.success) {
+          _this2.editInlineAndCellData = _this2.saveTableData = res.data.data;
         }
       });
     },
     handleDel: function handleDel(val, index) {
-      var _this2 = this;
+      var _this3 = this;
 
-      this.$axios({ url: '/api/project', method: 'delete', data: { ids: this.saveTableData[index]['id'] } }).then(function (res) {
+      this.$axios({ url: '/api/project_version', method: 'delete', data: { ids: this.saveTableData[index]['id'] } }).then(function (res) {
         if (res.success) {
-          _this2.$Message.success('删除了第' + (index + 1) + '行数据');
-          _this2.saveTableData.splice(index, 1);
+          _this3.$Message.success('删除了第' + (index + 1) + '行数据');
+          _this3.saveTableData.splice(index, 1);
         }
       });
       return false;
     },
     handleCellChange: function handleCellChange(val, index, key) {
-      var _this3 = this;
+      var _this4 = this;
 
       var data = {};
       data['id'] = this.saveTableData[index].id;
@@ -688,14 +687,14 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
       this.updateServerData(data).then(function (res) {
         if (res.success) {
-          _this3.$Message.success('修改了第 ' + (index + 1) + ' 行列名为 ' + key + ' 的数据');
+          _this4.$Message.success('修改了第 ' + (index + 1) + ' 行列名为 ' + key + ' 的数据');
         } else {
-          _this3.$Message.error('修改失败');
+          _this4.$Message.error('修改失败');
         }
       });
     },
     handleChange: function handleChange(val, index) {
-      var _this4 = this;
+      var _this5 = this;
 
       var data = {};
 
@@ -705,9 +704,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
       data['id'] = val[index]['id'];
       this.updateServerData(data).then(function (res) {
         if (res.success) {
-          _this4.$Message.success('成功修改了第' + (index + 1) + '行数据');
+          _this5.$Message.success('成功修改了第' + (index + 1) + '行数据');
         } else {
-          _this4.$Message.error('修改失败');
+          _this5.$Message.error('修改失败');
         }
       });
     },
@@ -721,10 +720,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
       return arr;
     },
     updateServerData: function updateServerData(data) {
-      var _this5 = this;
+      var _this6 = this;
 
       return new Promise(function (resolve, reject) {
-        _this5.$axios.post('/api/project', data).then(function (res) {
+        _this6.$axios.post('/api/project_version', data).then(function (res) {
           resolve(res);
         }).catch(function (e) {
           reject(e);
@@ -737,45 +736,49 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     selectChange: function selectChange(val, raw) {
       this.selectId = __WEBPACK_IMPORTED_MODULE_1__libs_util__["a" /* default */].getIdFromData(val);
     },
+    selectProjectChange: function selectProjectChange(val) {
+      this.projectLabel = val.label;
+    },
     onModelOk: function onModelOk(formName) {
-      var _this6 = this;
+      var _this7 = this;
 
       this.$refs[formName].validate(function (valid) {
         if (valid) {
           // 服务器交互
-          _this6.$axios.post('/api/project', _this6.editProjectData).then(function (res) {
+          _this7.$axios.post('/api/project_version', _this7.editProjectData).then(function (res) {
             if (res.success) {
               if (!res.data.is_update) {
-                _this6.editProjectData['id'] = res.data.last_id;
-                _this6.editInlineAndCellData.push(_this6.editProjectData);
-                //this.saveTableData.push(this.editProjectData)
-                _this6.$Message.success('操作成功', 2);
-                _this6.addModelStatus = false;
+                _this7.editProjectData['id'] = res.data.last_id;
+                _this7.editProjectData['project'] = _this7.projectLabel;
+                _this7.editInlineAndCellData.push(_this7.editProjectData);
+                // this.saveTableData.push(this.editProjectData)
+                _this7.$Message.success('操作成功', 2);
+                _this7.addModelStatus = false;
               } else {
-                _this6.$Message.error('操作失败', 2);
+                _this7.$Message.error('操作失败', 2);
               }
             }
           });
         }
       });
       setTimeout(function () {
-        _this6.modelLoading = false;
-        _this6.$nextTick(function () {
-          _this6.modelLoading = true;
+        _this7.modelLoading = false;
+        _this7.$nextTick(function () {
+          _this7.modelLoading = true;
         });
       }, 2000);
       return false;
     },
     cancel: function cancel() {},
     deleteAll: function deleteAll() {
-      var _this7 = this;
+      var _this8 = this;
 
       var ids = this.selectId.join(',');
-      this.$axios({ url: '/api/project', method: 'delete', data: { ids: ids } }).then(function (res) {
+      this.$axios({ url: '/api/project_version', method: 'delete', data: { ids: ids } }).then(function (res) {
         if (res.success) {
-          _this7.$Message.success('删除了第' + ids + '行数据');
-          for (var i = 0; i < _this7.selectId.length; i++) {
-            _this7.saveTableData.splice(_this7.selectId[i], 1);
+          _this8.$Message.success('删除了第' + ids + '行数据');
+          for (var i = 0; i < _this8.selectId.length; i++) {
+            _this8.saveTableData.splice(_this8.selectId[i], 1);
           }
         }
       });
@@ -787,12 +790,13 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
   },
   created: function created() {
     this.getListData();
+    this.getVersion();
   }
 });
 
 /***/ }),
 
-/***/ 713:
+/***/ 717:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -847,7 +851,7 @@ var render = function() {
                 { attrs: { slot: "title" }, slot: "title" },
                 [
                   _c("Icon", { attrs: { type: "ios-keypad" } }),
-                  _vm._v("\n\t\t\t项目列表\n    ")
+                  _vm._v("\n\t\t\t项目版本列表\n    ")
                 ],
                 1
               ),
@@ -900,7 +904,7 @@ var render = function() {
       _c(
         "Modal",
         {
-          attrs: { loading: _vm.modelLoading, title: "添加项目" },
+          attrs: { loading: _vm.modelLoading, title: "添加版本" },
           on: {
             "on-ok": function($event) {
               _vm.onModelOk("formCustom")
@@ -928,7 +932,45 @@ var render = function() {
             [
               _c(
                 "FormItem",
-                { attrs: { label: "项目名称", prop: "name" } },
+                { attrs: { label: "所属项目", prop: "project_id" } },
+                [
+                  _c(
+                    "Select",
+                    {
+                      attrs: { "label-in-value": true },
+                      on: { "on-change": _vm.selectProjectChange },
+                      model: {
+                        value: _vm.editProjectData.project_id,
+                        callback: function($$v) {
+                          _vm.$set(_vm.editProjectData, "project_id", $$v)
+                        },
+                        expression: "editProjectData.project_id"
+                      }
+                    },
+                    _vm._l(_vm.project, function(item, i) {
+                      return _c(
+                        "Option",
+                        {
+                          key: item.id,
+                          model: {
+                            value: item.id,
+                            callback: function($$v) {
+                              _vm.$set(item, "id", $$v)
+                            },
+                            expression: "item.id"
+                          }
+                        },
+                        [_vm._v(_vm._s(item.name))]
+                      )
+                    })
+                  )
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "FormItem",
+                { attrs: { label: "版本号", prop: "name" } },
                 [
                   _c("Input", {
                     attrs: { type: "text" },
@@ -946,63 +988,7 @@ var render = function() {
               _vm._v(" "),
               _c(
                 "FormItem",
-                { attrs: { label: "开源地址", prop: "open_url" } },
-                [
-                  _c("Input", {
-                    attrs: { type: "text" },
-                    model: {
-                      value: _vm.editProjectData.open_url,
-                      callback: function($$v) {
-                        _vm.$set(_vm.editProjectData, "open_url", $$v)
-                      },
-                      expression: "editProjectData.open_url"
-                    }
-                  })
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "FormItem",
-                { attrs: { label: "官方网站", prop: "site" } },
-                [
-                  _c("Input", {
-                    attrs: { type: "text" },
-                    model: {
-                      value: _vm.editProjectData.site,
-                      callback: function($$v) {
-                        _vm.$set(_vm.editProjectData, "site", $$v)
-                      },
-                      expression: "editProjectData.site"
-                    }
-                  })
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "FormItem",
-                { attrs: { label: "README地址", prop: "readme" } },
-                [
-                  _vm._t("label", [_vm._v("可以是地址也可以是内容")]),
-                  _vm._v(" "),
-                  _c("Input", {
-                    attrs: { type: "textarea" },
-                    model: {
-                      value: _vm.editProjectData.readme,
-                      callback: function($$v) {
-                        _vm.$set(_vm.editProjectData, "readme", $$v)
-                      },
-                      expression: "editProjectData.readme"
-                    }
-                  })
-                ],
-                2
-              ),
-              _vm._v(" "),
-              _c(
-                "FormItem",
-                { attrs: { label: "项目描述", prop: "name" } },
+                { attrs: { label: "版本说明", prop: "site" } },
                 [
                   _c("Input", {
                     attrs: { type: "textarea" },
@@ -1016,6 +1002,26 @@ var render = function() {
                   })
                 ],
                 1
+              ),
+              _vm._v(" "),
+              _c(
+                "FormItem",
+                { attrs: { label: "更新说明", prop: "readme" } },
+                [
+                  _vm._t("label", [_vm._v("可以是地址也可以是内容")]),
+                  _vm._v(" "),
+                  _c("Input", {
+                    attrs: { type: "textarea" },
+                    model: {
+                      value: _vm.editProjectData.update_remake,
+                      callback: function($$v) {
+                        _vm.$set(_vm.editProjectData, "update_remake", $$v)
+                      },
+                      expression: "editProjectData.update_remake"
+                    }
+                  })
+                ],
+                2
               )
             ],
             1
@@ -1033,7 +1039,7 @@ module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-37f27ca4", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-52e79a10", module.exports)
   }
 }
 

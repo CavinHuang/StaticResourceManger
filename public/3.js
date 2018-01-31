@@ -53,7 +53,7 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 333:
+/***/ 334:
 /***/ (function(module, exports) {
 
 module.exports = "/images/cropper-test.png?5ed6323d59d43d0b46c0c4bafe4ca42c";
@@ -4488,7 +4488,7 @@ var render = function() {
                             _c("img", {
                               attrs: {
                                 id: "cropimg2",
-                                src: __webpack_require__(333),
+                                src: __webpack_require__(334),
                                 alt: ""
                               }
                             })
@@ -4721,7 +4721,7 @@ var render = function() {
                         _c("img", {
                           attrs: {
                             id: "cropimg3",
-                            src: __webpack_require__(333),
+                            src: __webpack_require__(334),
                             alt: ""
                           }
                         })
